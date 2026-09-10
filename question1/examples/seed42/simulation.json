@@ -1,0 +1,99 @@
+{
+  "seed": 42,
+  "arena_radius_m": 1800,
+  "noise": "uniform",
+  "error_bound_deg": 1,
+  "sigma_deg": null,
+  "receive_radius_m": 1429.2989599556913,
+  "min_distance_m": 50,
+  "source": [
+    178.81276514014175,
+    -1178.9792787914407
+  ],
+  "monitoring_points": [
+    [
+      -322.22434049003306,
+      -938.5999105681966
+    ],
+    [
+      262.2638898670643,
+      176.25957015697063
+    ],
+    [
+      1175.5964008795418,
+      -181.48675806218353
+    ],
+    [
+      58.3137051271216,
+      -831.7775253814098
+    ]
+  ],
+  "measurements": [
+    {
+      "measure_result": "direction",
+      "svd_deg": 334.78581887770434,
+      "true_deg": 334.3700033299615,
+      "error_deg": 0.4158155477428558,
+      "distance_m": 555.7161342679092
+    },
+    {
+      "measure_result": "direction",
+      "svd_deg": 267.3622044464754,
+      "true_deg": 266.476364467401,
+      "error_deg": 0.885839979074377,
+      "distance_m": 1357.805740125296
+    },
+    {
+      "measure_result": "direction",
+      "svd_deg": 225.9931157487444,
+      "true_deg": 225.0203663450704,
+      "error_deg": 0.9727494036740008,
+      "distance_m": 1410.166282886052
+    },
+    {
+      "measure_result": "direction",
+      "svd_deg": 288.2507391870821,
+      "true_deg": 289.1397274621245,
+      "error_deg": -0.8889882750423888,
+      "distance_m": 367.51745677589435
+    }
+  ],
+  "intersection_status": "bounded",
+  "vertices": [
+    [
+      179.12632630667787,
+      -1177.717403961251
+    ],
+    [
+      175.98230701150442,
+      -1180.8606678214248
+    ],
+    [
+      175.79486932110535,
+      -1183.8088692171523
+    ],
+    [
+      182.38719993739466,
+      -1187.0547249866574
+    ]
+  ],
+  "true_source_feasible": true,
+  "area_m2": 29.825208868989073,
+  "diameter_m": 9.890341792223463,
+  "diameter_endpoints": [
+    [
+      179.12632630667787,
+      -1177.717403961251
+    ],
+    [
+      182.38719993739466,
+      -1187.0547249866574
+    ]
+  ],
+  "arena_clipped": false,
+  "assumptions": [
+    "Independent fixed errors at distinct exact coordinates",
+    "Uniform-area source and valid monitoring point sampling",
+    "Synthetic environment, not the official simulator"
+  ]
+}
