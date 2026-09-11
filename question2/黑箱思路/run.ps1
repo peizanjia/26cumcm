@@ -1,6 +1,8 @@
 param(
     [ValidateSet('train','evaluate','candidates','plot','test','all')]
     [string]$Task = 'all',
+    [ValidateSet('radius20','area')]
+    [string]$Objective = 'radius20',
     [string]$Python = 'python'
 )
 $ErrorActionPreference = 'Stop'
@@ -12,6 +14,23 @@ $env:NUMBA_NUM_THREADS = '12'
 $repositoryPath = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '../..')).Path
 Push-Location -LiteralPath $repositoryPath
 try {
+    if ($Objective -eq 'radius20') {
+        $radiusModules = @()
+        if ($Task -in @('train','all')) { $radiusModules += 'train' }
+        if ($Task -in @('evaluate','all')) { $radiusModules += 'evaluate' }
+        if ($Task -in @('candidates','plot','all')) { $radiusModules += 'landscapes' }
+        if ($Task -in @('candidates','plot','all')) { $radiusModules += 'robust' }
+        if ($Task -in @('plot','all')) { $radiusModules += 'plot_statistics' }
+        foreach ($radiusModule in $radiusModules) {
+            & $Python -m "question2.黑箱思路.radius20.$radiusModule"
+            if ($LASTEXITCODE -ne 0) { throw "Radius20 $radiusModule failed" }
+        }
+        if ($Task -in @('test','all')) {
+            & $Python -m pytest question1 question2 -q
+            if ($LASTEXITCODE -ne 0) { throw 'Radius20 tests failed' }
+        }
+        return
+    }
     if ($Task -in @('train','all')) {
         & $Python -m question2.黑箱思路.train --steps 6000 --states 32768 --posterior 128 --batch 256 --samples 32 --models 4 --validate-every 300
         if ($LASTEXITCODE -ne 0) { throw 'Training failed' }
