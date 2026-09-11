@@ -1,0 +1,255 @@
+% 可直接插入中文数学建模论文正文。
+% 导言区至少需要：
+% \usepackage{amsmath,amssymb,bm,booktabs,threeparttable}
+% \usepackage{algorithm,algpseudocode}
+% \usepackage{tikz}
+% \usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+
+\section{第二监测点的集合成员--Minimax选址模型}
+\label{sec:q2-minimax}
+
+\subsection{建模思路}
+
+第一次测向只能确定干扰源所在的角区间，无法得到唯一位置。因此，第二个监测点的选择本质上不是点估计问题，而是一个带接收约束的集合压缩问题。本文首先利用第一次观测构造所有可能干扰源位置组成的可行域，然后在能够保证第二次接收到信号的测点集合内，选择使第二次观测后候选区域最坏直径最小的位置。该方法不依赖训练数据，每一步均有明确的几何含义。
+
+设目标区域为
+\begin{equation}
+    \mathcal D=\left\{\bm x\in\mathbb R^2:\|\bm x\|_2\le R_0\right\},
+    \qquad R_0=1800\ \mathrm{m}.
+\end{equation}
+第一监测点为 $\bm s_1$，测得示向度为 $\hat\theta_1$，测向误差上界为
+$\delta=1^\circ$。同一干扰源的有效接收半径记为 $R$，满足
+\begin{equation}
+    1000\le R\le1500\ \mathrm{m}.
+\end{equation}
+
+定义以 $\bm s$ 为顶点、中心方向为 $\theta$、半角为 $\delta$ 的角域
+\begin{equation}
+    \mathcal W(\bm s,\theta,\delta)
+    =\left\{\bm x:
+    \left|\operatorname{wrap}\!\left(
+    \arg(\bm x-\bm s)-\theta\right)\right|\le\delta
+    \right\}.
+\end{equation}
+于是第一次观测后的干扰源可行域为
+\begin{equation}
+    \mathcal P_1=
+    \mathcal D\cap
+    B(\bm s_1,1500)\cap
+    \mathcal W(\bm s_1,\hat\theta_1,\delta),
+    \label{eq:first-feasible-set}
+\end{equation}
+其中 $B(\bm c,r)$ 表示圆心为 $\bm c$、半径为 $r$ 的闭圆盘。式~\eqref{eq:first-feasible-set} 同时使用了目标区域、最大接收距离和第一次测向信息。
+
+\subsection{第二监测点的接收安全约束}
+
+第二监测点若不能接收到干扰信号，则无法产生新的示向度，定位区域不会得到有效压缩。由于接收半径 $R$ 对同一干扰源保持不变，若某个候选源位置为 $\bm g\in\mathcal P_1$，第一次测点到它的距离为
+$r_1=\|\bm g-\bm s_1\|_2$，则与第一次观测相容的最小接收半径为
+$\max\{1000,r_1\}$。因此，保证所有可能干扰源均可在第二点被接收的集合可写为
+\begin{equation}
+    \mathcal Q_{\mathrm{sig}}
+    =\bigcap_{\bm g\in\mathcal P_1}
+    B\!\left(\bm g,
+    \max\{1000,\|\bm g-\bm s_1\|_2\}\right).
+    \label{eq:exact-safe-set}
+\end{equation}
+
+为得到便于计算和解释的闭式充分条件，以第一次测向方向为局部极轴，令第二点相对第一点的位置为
+\begin{equation}
+    \bm q-\bm s_1=s(\cos\beta,\sin\beta),
+\end{equation}
+其中 $s$ 为移动距离，$\beta$ 为相对第一次示向方向的偏角。对角域中的任意方向和任意可能距离考察最不利情况，可得
+\begin{equation}
+    s\le1000,
+    \qquad
+    s\le2000\cos(|\beta|+\delta),
+    \qquad |\beta|+\delta<90^\circ.
+    \label{eq:closed-form-safe}
+\end{equation}
+满足式~\eqref{eq:closed-form-safe} 的点构成 $\mathcal Q_{\mathrm{safe}}$，且有
+$\mathcal Q_{\mathrm{safe}}\subseteq\mathcal Q_{\mathrm{sig}}$。该集合是接收安全点集的解析内近似：条件通过即能给出接收保证，而非仅给出经验成功概率。
+
+式~\eqref{eq:closed-form-safe} 可由余弦定理直接得到。对于距第一测点为 $r$、方向偏差为 $\gamma$ 的可能源位置，有
+\begin{equation}
+ \|\bm g-\bm q\|_2^2=r^2+s^2-2rs\cos\gamma,
+ \qquad |\gamma|\le |\beta|+\delta.
+\end{equation}
+当 $r\le1000$ 时，最小允许接收半径为 $1000$；当 $r\ge1000$ 时，最小允许半径为 $r$。两个区间的最紧约束均出现在端点 $r=0$ 或 $r=1000$，从而得到式~\eqref{eq:closed-form-safe}。
+
+\subsection{条件最坏直径目标}
+
+给定第二监测点 $\bm q\in\mathcal Q_{\mathrm{safe}}$，所有可能出现的第二次示向度构成集合
+\begin{equation}
+ \Theta(\bm q)=
+ \left\{
+ \arg(\bm g-\bm q)+e:
+ \bm g\in\mathcal P_1,\ |e|\le\delta
+ \right\}.
+\end{equation}
+若第二次测得示向度 $z\in\Theta(\bm q)$，则两次观测后的候选区域为
+\begin{equation}
+ \mathcal P_2(\bm q,z)=
+ \mathcal P_1\cap B(\bm q,1500)
+ \cap\mathcal W(\bm q,z,\delta).
+ \label{eq:second-feasible-set}
+\end{equation}
+其中第二个接收圆盘是第二次成功接收所蕴含的必要几何信息。
+
+对任意有界集合 $A$，定义其直径为
+\begin{equation}
+    \operatorname{diam}(A)
+    =\sup_{\bm x,\bm y\in A}\|\bm x-\bm y\|_2.
+\end{equation}
+在获得第二次示向度之前，实际返回值未知，因此采用条件最坏情形指标
+\begin{equation}
+    J_D(\bm q)=
+    \sup_{z\in\Theta(\bm q)}
+    \operatorname{diam}\!\left(\mathcal P_2(\bm q,z)\right).
+    \label{eq:minimax-objective}
+\end{equation}
+第二监测点选择模型为
+\begin{equation}
+    \bm q^*\in
+    \arg\min_{\bm q\in\mathcal Q_{\mathrm{safe}}}J_D(\bm q).
+    \label{eq:minimax-decision}
+\end{equation}
+若多个候选点的最坏直径相同，则以最坏候选面积
+\begin{equation}
+    J_A(\bm q)=\sup_{z\in\Theta(\bm q)}
+    \operatorname{area}\!\left(\mathcal P_2(\bm q,z)\right)
+\end{equation}
+作为次级判据。该目标直接控制最不利测向结果下仍可能存在的最大位置歧义，避免平均指标掩盖少量严重失效情形。
+
+\subsection{满足性能要求的候选区域}
+
+单个最优点不能完整表达实际部署的可选择空间。给定允许的直径退化量 $\Delta_D$，定义近优候选集合
+\begin{equation}
+    \mathcal C_{\Delta_D}
+    =\left\{\bm q\in\mathcal Q_{\mathrm{safe}}:
+    J_D(\bm q)\le J_D(\bm q^*)+\Delta_D\right\}.
+    \label{eq:near-optimal-set}
+\end{equation}
+若题目要求定位结果满足指定阈值 $D_0$，则相应的合格候选区域为
+\begin{equation}
+    \mathcal C(D_0)
+    =\left\{\bm q\in\mathcal Q_{\mathrm{safe}}:
+    J_D(\bm q)\le D_0\right\}.
+    \label{eq:threshold-set}
+\end{equation}
+实际任务可以在 $\mathcal C_{\Delta_D}$ 或 $\mathcal C(D_0)$ 内进一步按照移动距离、道路可达性或后续监测任务代价选点，而无需改变定位可靠性约束。
+
+\subsection{数值求解方法}
+
+圆盘采用外接正多边形近似，使离散可行域包含真实圆盘，避免因为内接近似误删可能的源位置。角域及圆盘切线均转化为半平面约束，使用 Sutherland--Hodgman 算法进行凸多边形裁剪。对给定候选点，遍历其可能第二示向度，并计算每个裁剪多边形的直径与面积。候选点采用``粗网格搜索--局部加密''方式求解。
+
+\begin{algorithm}[htbp]
+\caption{第二监测点的集合成员--Minimax选址算法}
+\label{alg:q2-minimax}
+\begin{algorithmic}[1]
+\Require 第一测点 $\bm s_1$，第一次示向度 $\hat\theta_1$，误差上界 $\delta$，退化量 $\Delta_D$
+\Ensure 最优第二测点 $\bm q^*$，近优候选集合 $\mathcal C_{\Delta_D}$
+\State 根据式~\eqref{eq:first-feasible-set} 构造第一次可行域 $\mathcal P_1$
+\State 在局部极坐标网格上生成第二测点候选集合 $\mathcal Q_0$
+\State 用式~\eqref{eq:closed-form-safe} 筛选，得到 $\mathcal Q_h=\mathcal Q_0\cap\mathcal Q_{\mathrm{safe}}$
+\For{每个 $\bm q\in\mathcal Q_h$}
+    \State 由 $\mathcal P_1$ 计算可能第二示向度集合 $\Theta(\bm q)$
+    \For{每个 $z\in\Theta(\bm q)$}
+        \State 根据式~\eqref{eq:second-feasible-set} 裁剪得到 $\mathcal P_2(\bm q,z)$
+        \State 计算 $\operatorname{diam}(\mathcal P_2)$ 与 $\operatorname{area}(\mathcal P_2)$
+    \EndFor
+    \State 记录 $J_D(\bm q)$ 和 $J_A(\bm q)$
+\EndFor
+\State 按 $(J_D,J_A)$ 的字典序选择粗网格最优点，并在其邻域局部加密
+\State 对加密候选重复上述评估，得到 $\bm q^*$
+\State 根据式~\eqref{eq:near-optimal-set} 输出 $\mathcal C_{\Delta_D}$
+\end{algorithmic}
+\end{algorithm}
+
+若候选点数为 $N_q$，每点检查的示向度数为 $N_\theta$，裁剪后多边形顶点数不超过 $n_v$，则直接实现的主要计算量约为
+$O(N_qN_\theta n_v^2)$，其中 $n_v^2$ 来自顶点对直径计算。由于角域很窄，实际裁剪多边形的顶点数较少，算法能够在普通计算机上完成求解。
+
+% 若总页数受限，可删除下一行并将流程图缩放后与正文混排。
+\clearpage
+\subsection{算法流程图}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=6mm and 13mm,
+    every node/.style={font=\small,align=center},
+    startstop/.style={rectangle,rounded corners,draw,minimum width=38mm,minimum height=8mm},
+    process/.style={rectangle,draw,minimum width=52mm,minimum height=9mm},
+    decision/.style={diamond,draw,aspect=2.35,inner sep=1.5pt},
+    flow/.style={-{Latex[length=2mm]},thick}
+]
+\node[startstop] (input) {输入 $\bm s_1,\hat\theta_1,\delta$};
+\node[process,below=of input] (p1) {构造第一次可行域 $\mathcal P_1$};
+\node[process,below=of p1] (grid) {生成粗网格候选点 $\bm q$};
+\node[decision,below=8mm of grid] (safe) {满足接收安全条件？};
+\node[process,right=18mm of safe] (reject) {剔除该候选点};
+\node[process,below=9mm of safe] (angles) {构造可能示向度集合 $\Theta(\bm q)$};
+\node[process,below=of angles] (clip) {逐个 $z$ 裁剪得到 $\mathcal P_2(\bm q,z)$};
+\node[process,below=of clip] (score) {计算直径和面积并取最坏值\ $J_D(\bm q),J_A(\bm q)$};
+\node[decision,below=8mm of score] (more) {候选点是否遍历完？};
+\node[process,below=9mm of more] (refine) {选择粗网格最优点并局部加密};
+\node[process,below=of refine] (set) {求 $\bm q^*$ 与近优候选集 $\mathcal C_{\Delta_D}$};
+\node[startstop,below=of set] (output) {输出第二监测点策略和候选区域};
+
+\draw[flow] (input)--(p1);
+\draw[flow] (p1)--(grid);
+\draw[flow] (grid)--(safe);
+\draw[flow] (safe)--node[left]{是}(angles);
+\draw[flow] (safe)--node[above]{否}(reject);
+\draw[flow] (reject.east) -- ++(7mm,0) |- (more.east);
+\draw[flow] (angles)--(clip);
+\draw[flow] (clip)--(score);
+\draw[flow] (score)--(more);
+\draw[flow] (more)--node[left]{是}(refine);
+\draw[flow] (more.west)--node[above]{否} ++(-15mm,0) |- (grid.west);
+\draw[flow] (refine)--(set);
+\draw[flow] (set)--(output);
+\end{tikzpicture}
+\caption{第二监测点集合成员--Minimax策略流程}
+\label{fig:q2-minimax-flow}
+\end{figure}
+
+\subsection{仿真结果与策略比较}
+
+为比较不同选址思想，在相同随机场景下分别测试固定几何策略、远场解析策略、旧面积神经网络和本文Minimax策略。干扰源与第一监测点在半径为 $1800\,\mathrm m$ 的圆域内按面积均匀抽取，接收半径在 $[1000,1500]$ m 内均匀抽取，两次测向误差均在 $[-1^\circ,1^\circ]$ 内均匀抽取，并以第一次成功接收为条件。当前 $128$ 组独立仿真结果见表~\ref{tab:q2-policy-comparison}。
+
+\begin{table}[htbp]
+\centering
+\caption{不同第二监测点策略的定位性能比较}
+\label{tab:q2-policy-comparison}
+\begin{threeparttable}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+策略 & \shortstack{平均直径\\/m} & \shortstack{P95直径\\/m} &
+\shortstack{最大直径\\/m} & \shortstack{平均条件最坏\\直径/m} & \shortstack{安全\\认证率} \\
+\midrule
+本文Minimax策略 & \textbf{47.26} & \textbf{82.16} & \textbf{101.82} & \textbf{95.46} & \textbf{100\%} \\
+远场解析策略 & 52.61 & 83.05 & 111.29 & 108.99 & 100\% \\
+固定$(750,375)$策略 & 53.62 & 112.72 & 151.13 & 132.26 & 100\% \\
+旧面积神经网络 & 56.36 & 100.87 & 119.18 & 122.68 & 33.6\% \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item 注：条件最坏直径是在给定第一次观测后，对所有相容第二示向度取上确界；安全认证率表示动作满足式~\eqref{eq:closed-form-safe} 的场景比例。神经网络仅作为跨模型参考，不参与本文策略定义。
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+结果表明，Minimax策略在平均直径、P95直径、最大直径以及条件最坏直径四项指标上均优于对比策略，并且所有动作都通过了解析接收充分条件。相较固定$(750,375)$策略，平均条件最坏直径由 $132.26$ m 降至 $95.46$ m，下降约 $27.8\%$；相较远场解析策略下降约 $12.4\%$。这说明局部边界位置及第一次可行域形状确实会影响最佳选点，仅使用固定角度和固定步长会损失部分定位性能。
+
+对于代表性状态 $\bm s_1=(0,0)$、$\hat\theta_1=0^\circ$，离散搜索得到的一支最优解约为
+\begin{equation}
+    \bm q^*=(838.67,\ 544.64)\ \mathrm m,
+\end{equation}
+其条件最坏直径约为 $111.68$ m。在 $\Delta_D=5$ m 时，搜索得到 $147$ 个安全候选点，其中 $28$ 个属于近优候选集合。由于问题关于第一次示向轴近似镜像对称，通常还存在对应的另一侧近优分支；在边界场景中，两支会因目标圆域裁剪而出现差异。
+
+\subsection{模型评价}
+
+本文模型具有以下优点：第一，决策仅依赖第一测点和第一次示向度，不使用未知干扰源真值；第二，目标函数直接控制最坏定位歧义，能够抑制小概率大误差；第三，接收约束具有解析证书；第四，模型不仅输出单个测点，还给出满足性能阈值的候选区域，便于结合实际可达性进行二次选择。
+
+模型仍存在三方面限制：其一，连续圆盘和连续示向度采用外接多边形与有限角度网格近似；其二，当前模型假设测向误差具有确定上界，并未引入非均匀误差分布；其三，当前目标仅考虑第二问的定位效果，未包含第三、四问中的总路程和多目标调度代价。为控制数值误差，应增加圆多边形边数并缩小角度扫描步长进行收敛性检验；后续任务则可在式~\eqref{eq:near-optimal-set} 给出的候选集合中加入路径代价。

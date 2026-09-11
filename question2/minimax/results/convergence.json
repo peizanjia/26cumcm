@@ -1,0 +1,426 @@
+{
+  "audit": [
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 4.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266419
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 4.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 4.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 2.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266419
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 2.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 1.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266419
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 1.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 0.5,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266419
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 0.5,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 48,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 4.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 4.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386699
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 4.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386699
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386699
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007996,
+      "worst_area_m2": 1847.0972972386699
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 4.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 4.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 4.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 2.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 2.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 1.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 1.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 0.5,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 0.5,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 96,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 4.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 4.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 4.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.93467885007993,
+      "worst_area_m2": 1847.0972972386735
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 4.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.67332879100826,
+      "worst_area_m2": 2167.2392774730433
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 4.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.91903786119175,
+      "worst_area_m2": 1846.7733563206675
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 4.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.92632705606115,
+      "worst_area_m2": 1922.4072065714317
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 2.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.67332879100826,
+      "worst_area_m2": 2167.2392774730433
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 2.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.91903786119175,
+      "worst_area_m2": 1846.7733563206675
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.92632705606115,
+      "worst_area_m2": 1922.4072065714317
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 1.0,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.67332879100826,
+      "worst_area_m2": 2167.2392774730433
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 1.0,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.91903786119175,
+      "worst_area_m2": 1846.7733563206675
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.92632705606115,
+      "worst_area_m2": 1922.4072065714317
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 0.5,
+      "point": "mechanistic",
+      "worst_diameter_m": 111.67332879100826,
+      "worst_area_m2": 2167.2392774730433
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 0.5,
+      "point": "repository_neural",
+      "worst_diameter_m": 131.91903786119175,
+      "worst_area_m2": 1846.7733563206675
+    },
+    {
+      "circle_sides": 192,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_diameter_m": 117.92632705606115,
+      "worst_area_m2": 1922.4072065714317
+    }
+  ],
+  "max_mechanistic_diameter_spread_m": 0.009811182380374817,
+  "interpretation": "Angle maxima occur at included critical directions; 48-192 circle sides change the representative robust diameter by less than the reported spread."
+}
