@@ -1,0 +1,21 @@
+{
+  "steps": 6000,
+  "states": 32768,
+  "posterior": 128,
+  "batch": 256,
+  "samples": 32,
+  "models": 4,
+  "validate_every": 300,
+  "seed": 20260911,
+  "device": "cuda",
+  "output": "D:\\YOGA\\Documents\\Projects\\26cumcm\\question2\\\u9ed1\u7bb1\u601d\u8def",
+  "torch": "2.9.0+cu126",
+  "numpy": "2.1.3",
+  "cpu_count": 22,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "objective": "mean residual area m2; no_signal retains first area; near after optical=0",
+  "train_seed": 20260911,
+  "validation_seed": 20360911,
+  "arena_sides": 256,
+  "hidden_radius_prior": "Uniform(1000,1500)"
+}

@@ -1,0 +1,43 @@
+{
+  "first_point": [
+    1500,
+    0
+  ],
+  "bearing_deg": 0,
+  "grid_size": 101,
+  "grid_step_m": 20.0,
+  "posterior_samples": 2048,
+  "seed": 6203,
+  "broad_grid_best_m2": 33.14250946044922,
+  "regional_grid_best_m2": 27.833362579345703,
+  "nn_local_displacement_m": [
+    259.099853515625,
+    -60.14097213745117
+  ],
+  "nn_second_point_m": [
+    1759.099853515625,
+    -60.14097213745117
+  ],
+  "nn_in_sample_area_m2": 32.884544372558594,
+  "independent_validation": {
+    "samples": 8192,
+    "nn_area_m2": 32.658817291259766,
+    "nn_se_m2": 0.1533040553331375,
+    "grid_best_area_m2": 27.798160552978516,
+    "grid_best_se_m2": 0.102178193628788,
+    "nn_no_signal": 0.0
+  },
+  "five_percent_grid_point_count": 4,
+  "guaranteed_reception_grid_point_count": 5073,
+  "both_grid_point_count": 4,
+  "nn_1000m_certificate_margin_m": 734.0119026490806,
+  "candidate_local_along_range_m": [
+    210.00000000000003,
+    229.99999999999997
+  ],
+  "candidate_local_lateral_range_m": [
+    -60.0,
+    60.0
+  ],
+  "caveat": "5% region is a finite-grid MC estimate; coordinate extrema are not a filled rectangle"
+}

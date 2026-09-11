@@ -1,0 +1,23 @@
+{
+  "command": [
+    "D:\\ProgramData\\anaconda3\\python.exe",
+    "-m",
+    "pytest",
+    "question1/tests",
+    "question2/黑箱思路/tests",
+    "-q"
+  ],
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 85%]\n............                                                             [100%]\n84 passed in 6.99s\n",
+  "stderr": "",
+  "elapsed_s": 10.727178699999058,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "D:\\ProgramData\\anaconda3\\python.exe",
+  "sha256": {
+    "B题.pdf": "81c992a9bee5376308c4768b58719b177f17d6ee1f9861577a851924c5a838ca",
+    "附件1.docx": "20a27603ea81efa8f11658b3fa5b859a69aa3ff88fb3664d2abb80d740b47553",
+    "附件2.docx": "c882513d5b7e0ec50f3068570ea55fdc1b5c4a5fa2d6e9e54e79b33cf0858cb2",
+    "question2\\黑箱思路\\checkpoints\\best.pt": "ba2268bbb0ff41c569b701b52821cfe68c0dd03a1b56b00af0a12ed82537d50f",
+    "question2\\黑箱思路\\checkpoints\\symmetry\\best.pt": "c3fe23cc9033bb9adcfe074fc7b3768c52170b65feef8254d9a1cf477ba90666"
+  }
+}

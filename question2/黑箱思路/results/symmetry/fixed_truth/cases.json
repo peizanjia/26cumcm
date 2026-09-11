@@ -1,0 +1,104 @@
+[
+  {
+    "tag": "near400",
+    "s": [
+      0,
+      0
+    ],
+    "g": [
+      400,
+      0
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.0,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  },
+  {
+    "tag": "mid800",
+    "s": [
+      0,
+      0
+    ],
+    "g": [
+      800,
+      0
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.0,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  },
+  {
+    "tag": "far1200",
+    "s": [
+      0,
+      0
+    ],
+    "g": [
+      1200,
+      0
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.0,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  },
+  {
+    "tag": "edge_out",
+    "s": [
+      1500,
+      0
+    ],
+    "g": [
+      1750,
+      0
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.0,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  },
+  {
+    "tag": "oblique_boundary",
+    "s": [
+      1000,
+      1200
+    ],
+    "g": [
+      1250,
+      1200
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.0,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  },
+  {
+    "tag": "first_error",
+    "s": [
+      0,
+      0
+    ],
+    "g": [
+      999.9025240093042,
+      -13.962180339145272
+    ],
+    "theta": 0,
+    "radius_m": 1250,
+    "second_error_midpoints": 256,
+    "first_error_deg": 0.8,
+    "score_definition": "E_epsilon2 conservative residual area; S,G,theta1,R held fixed; near after optical=0",
+    "caveat": "Diagnostic oracle truth is NOT available to any policy"
+  }
+]

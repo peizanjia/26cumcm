@@ -1,0 +1,42 @@
+{
+  "state": {
+    "p_m": [
+      0,
+      0
+    ],
+    "theta_rad": 0
+  },
+  "training_seed": 25260911,
+  "training_samples": 2048,
+  "test_seed": 26260911,
+  "test_samples": 16384,
+  "initial_q_m": [
+    750.0,
+    -375.0
+  ],
+  "initial_score_m2": 735.1818202815848,
+  "gradient_m2_per_m": [
+    -1.2357151251788068,
+    -0.13782908688432266
+  ],
+  "finite_difference_m2_per_m": [
+    -1.2357151253377197,
+    -0.1378290710147212
+  ],
+  "demonstration_step_q_m": [
+    774.7143025035762,
+    -372.2434182623135
+  ],
+  "demonstration_step_score_m2": 705.747682267084,
+  "optimized_q_m": [
+    973.3871261314438,
+    -270.62153318554334
+  ],
+  "optimized_training_score_m2": 566.5094323440495,
+  "initial_test_score_m2": 739.4252139099967,
+  "optimized_test_score_m2": 567.5346808840634,
+  "optimizer_success": true,
+  "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+  "iterations": 9,
+  "limits": "Single-state, single-start, restricted right-side action box, polygon score and finite posterior samples; no global certificate."
+}

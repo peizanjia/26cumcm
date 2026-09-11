@@ -1,0 +1,341 @@
+{
+  "test_seed": 20460911,
+  "states": 8192,
+  "samples_per_state": 256,
+  "independent_state_cluster_ci": true,
+  "summary": [
+    {
+      "policy": "neural",
+      "mean_area_m2": 503.42213378543966,
+      "ci95_low": 500.66962660550706,
+      "ci95_high": 506.17464096537225,
+      "no_signal_probability": 4.4154350575809076e-07,
+      "near_probability": 0.0,
+      "mean_move_m": 944.30419921875,
+      "outside_arena_fraction": 0.03271484375,
+      "radius_marginalized_loss_p50_m2": 430.330810546875,
+      "radius_marginalized_loss_p95_m2": 1080.3363037109375
+    },
+    {
+      "policy": "repeat",
+      "mean_area_m2": 33878.35466983169,
+      "ci95_low": 33666.6813677449,
+      "ci95_high": 34090.027971918484,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 0.0,
+      "outside_arena_fraction": 0.0,
+      "radius_marginalized_loss_p50_m2": 39270.90625,
+      "radius_marginalized_loss_p95_m2": 39270.90625
+    },
+    {
+      "policy": "perpendicular_500",
+      "mean_area_m2": 6613.6665781349875,
+      "ci95_low": 6557.898616054629,
+      "ci95_high": 6669.434540215346,
+      "no_signal_probability": 0.1305764764547348,
+      "near_probability": 0.0,
+      "mean_move_m": 500.0,
+      "outside_arena_fraction": 0.1290283203125,
+      "radius_marginalized_loss_p50_m2": 1889.82421875,
+      "radius_marginalized_loss_p95_m2": 21497.685546875
+    },
+    {
+      "policy": "forward_750",
+      "mean_area_m2": 4258.187253125012,
+      "ci95_low": 4233.763636674579,
+      "ci95_high": 4282.610869575445,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0030269622802734375,
+      "mean_move_m": 750.0,
+      "outside_arena_fraction": 0.044677734375,
+      "radius_marginalized_loss_p50_m2": 3999.125,
+      "radius_marginalized_loss_p95_m2": 9818.982421875
+    },
+    {
+      "policy": "fixed_750_375",
+      "mean_area_m2": 655.2549854405224,
+      "ci95_low": 652.1069817062198,
+      "ci95_high": 658.402989174825,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 838.5255737304688,
+      "outside_arena_fraction": 0.0985107421875,
+      "radius_marginalized_loss_p50_m2": 393.90582275390625,
+      "radius_marginalized_loss_p95_m2": 1872.1241455078125
+    },
+    {
+      "policy": "adaptive_60_28",
+      "mean_area_m2": 570.8983719672542,
+      "ci95_low": 567.9637908538901,
+      "ci95_high": 573.8329530806183,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 910.0,
+      "outside_arena_fraction": 0.0555419921875,
+      "radius_marginalized_loss_p50_m2": 475.51519775390625,
+      "radius_marginalized_loss_p95_m2": 1302.763671875
+    },
+    {
+      "policy": "neural_certified",
+      "mean_area_m2": 503.6788830466103,
+      "ci95_low": 500.9213851910477,
+      "ci95_high": 506.43638090217286,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 937.64306640625,
+      "outside_arena_fraction": 0.0322265625,
+      "radius_marginalized_loss_p50_m2": 424.85614013671875,
+      "radius_marginalized_loss_p95_m2": 1112.8870849609375
+    },
+    {
+      "policy": "analytic_moments",
+      "mean_area_m2": 502.7598996806191,
+      "ci95_low": 499.98458357169983,
+      "ci95_high": 505.5352157895384,
+      "no_signal_probability": 3.265056705004099e-07,
+      "near_probability": 0.0,
+      "mean_move_m": 947.9085083007812,
+      "outside_arena_fraction": 0.0369873046875,
+      "radius_marginalized_loss_p50_m2": 432.0641784667969,
+      "radius_marginalized_loss_p95_m2": 1062.8272705078125
+    }
+  ],
+  "paired": {
+    "neural": {
+      "baseline_minus_neural_m2": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "relative_improvement": 0.0
+    },
+    "repeat": {
+      "baseline_minus_neural_m2": 33374.9296875,
+      "ci95_low": 33165.96134314095,
+      "ci95_high": 33583.89803185905,
+      "relative_improvement": 0.9851398468017578
+    },
+    "perpendicular_500": {
+      "baseline_minus_neural_m2": 6110.244140625,
+      "ci95_low": 6057.114875593297,
+      "ci95_high": 6163.373405656703,
+      "relative_improvement": 0.9238812327384949
+    },
+    "forward_750": {
+      "baseline_minus_neural_m2": 3754.76513671875,
+      "ci95_low": 3732.634627800872,
+      "ci95_high": 3776.895645636628,
+      "relative_improvement": 0.8817758560180664
+    },
+    "fixed_750_375": {
+      "baseline_minus_neural_m2": 151.83285522460938,
+      "ci95_low": 150.9539455735833,
+      "ci95_high": 152.71176487563545,
+      "relative_improvement": 0.231715589761734
+    },
+    "adaptive_60_28": {
+      "baseline_minus_neural_m2": 67.47624206542969,
+      "ci95_low": 67.05523823415271,
+      "ci95_high": 67.89724589670666,
+      "relative_improvement": 0.1181931123137474
+    },
+    "neural_certified": {
+      "baseline_minus_neural_m2": 0.2567492723464966,
+      "ci95_low": 0.2318968765696124,
+      "ci95_high": 0.2816016681233808,
+      "relative_improvement": 0.0005097480025142431
+    },
+    "analytic_moments": {
+      "baseline_minus_neural_m2": -0.6622340679168701,
+      "ci95_low": -0.7708059944616963,
+      "ci95_high": -0.553662141372044,
+      "relative_improvement": -0.001317197340540588
+    }
+  },
+  "geometry_audit": {
+    "states": 256,
+    "direction_events": 1024,
+    "truth_containment_rate": 1.0,
+    "independent_cpu_finer_arena_mean_abs_error_m2": 0.0101854926212065,
+    "independent_cpu_finer_arena_max_abs_error_m2": 1.6528625154693088,
+    "independent_cpu_finer_arena_p95_relative_error": 1.2018964624778025e-05,
+    "clipped_diameter_p50_m": 49.49542147847992,
+    "clipped_diameter_p95_m": 102.27093731191295,
+    "pure_wedges_unbounded_count": 0,
+    "pure_wedges_mean_area_when_bounded_m2": 508.1604429097479,
+    "exact_circle_audit_events": 256,
+    "exact_circle_mean_abs_error_m2": 0.007590653043902107,
+    "exact_circle_max_abs_error_m2": 0.6777330872604352,
+    "conservative_1000m_certificate_fraction": 0.33984375
+  },
+  "sensitivity": [
+    {
+      "policy": "neural",
+      "mean_area_m2": 507.10054142354056,
+      "ci95_low": 501.6042850708993,
+      "ci95_high": 512.5967977761818,
+      "no_signal_probability": 4.7458638618991245e-07,
+      "near_probability": 0.0,
+      "mean_move_m": 946.8516235351562,
+      "outside_arena_fraction": 0.033203125,
+      "noise": "truncnorm",
+      "radius": "uniform",
+      "radius_marginalized_loss_p50_m2": 433.0134582519531,
+      "radius_marginalized_loss_p95_m2": 1093.4345703125
+    },
+    {
+      "policy": "fixed_750_375",
+      "mean_area_m2": 659.322470664978,
+      "ci95_low": 652.889843800679,
+      "ci95_high": 665.755097529277,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 838.5255737304688,
+      "outside_arena_fraction": 0.0869140625,
+      "noise": "truncnorm",
+      "radius": "uniform",
+      "radius_marginalized_loss_p50_m2": 395.74945068359375,
+      "radius_marginalized_loss_p95_m2": 1894.6044921875
+    },
+    {
+      "policy": "adaptive_60_28",
+      "mean_area_m2": 573.8440474430099,
+      "ci95_low": 567.9568428235531,
+      "ci95_high": 579.7312520624668,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 912.3950805664062,
+      "outside_arena_fraction": 0.05810546875,
+      "noise": "truncnorm",
+      "radius": "uniform",
+      "radius_marginalized_loss_p50_m2": 476.64599609375,
+      "radius_marginalized_loss_p95_m2": 1310.412353515625
+    },
+    {
+      "policy": "analytic_moments",
+      "mean_area_m2": 506.12346328166313,
+      "ci95_low": 500.54742413210187,
+      "ci95_high": 511.6995024312244,
+      "no_signal_probability": 3.359984930284554e-07,
+      "near_probability": 0.0,
+      "mean_move_m": 949.3270874023438,
+      "outside_arena_fraction": 0.037109375,
+      "noise": "truncnorm",
+      "radius": "uniform",
+      "radius_marginalized_loss_p50_m2": 434.39447021484375,
+      "radius_marginalized_loss_p95_m2": 1075.9466552734375
+    },
+    {
+      "policy": "neural",
+      "mean_area_m2": 415.9965584578458,
+      "ci95_low": 410.87013827667903,
+      "ci95_high": 421.1229786390126,
+      "no_signal_probability": 6.103515625e-05,
+      "near_probability": 0.0,
+      "mean_move_m": 920.8351440429688,
+      "outside_arena_fraction": 0.04541015625,
+      "noise": "uniform",
+      "radius": "1000",
+      "radius_marginalized_loss_p50_m2": 371.251708984375,
+      "radius_marginalized_loss_p95_m2": 711.3156127929688
+    },
+    {
+      "policy": "fixed_750_375",
+      "mean_area_m2": 375.91918516531587,
+      "ci95_low": 374.71910343894945,
+      "ci95_high": 377.1192668916823,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 838.5255737304688,
+      "outside_arena_fraction": 0.11962890625,
+      "noise": "uniform",
+      "radius": "1000",
+      "radius_marginalized_loss_p50_m2": 338.8595886230469,
+      "radius_marginalized_loss_p95_m2": 595.2243041992188
+    },
+    {
+      "policy": "adaptive_60_28",
+      "mean_area_m2": 406.7065565136727,
+      "ci95_low": 402.6868637422314,
+      "ci95_high": 410.72624928511397,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 882.0853881835938,
+      "outside_arena_fraction": 0.05517578125,
+      "noise": "uniform",
+      "radius": "1000",
+      "radius_marginalized_loss_p50_m2": 442.559814453125,
+      "radius_marginalized_loss_p95_m2": 528.6686401367188
+    },
+    {
+      "policy": "analytic_moments",
+      "mean_area_m2": 418.4956954650115,
+      "ci95_low": 413.32132122526133,
+      "ci95_high": 423.6700697047617,
+      "no_signal_probability": 5.7220458984375e-05,
+      "near_probability": 0.0,
+      "mean_move_m": 923.6841430664062,
+      "outside_arena_fraction": 0.05078125,
+      "noise": "uniform",
+      "radius": "1000",
+      "radius_marginalized_loss_p50_m2": 375.18280029296875,
+      "radius_marginalized_loss_p95_m2": 714.0108032226562
+    },
+    {
+      "policy": "neural",
+      "mean_area_m2": 675.5596512034535,
+      "ci95_low": 667.7788502505589,
+      "ci95_high": 683.3404521563482,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 962.2086791992188,
+      "outside_arena_fraction": 0.03173828125,
+      "noise": "uniform",
+      "radius": "1500",
+      "radius_marginalized_loss_p50_m2": 530.879638671875,
+      "radius_marginalized_loss_p95_m2": 1713.2994384765625
+    },
+    {
+      "policy": "fixed_750_375",
+      "mean_area_m2": 968.7979008853436,
+      "ci95_low": 957.2445521435263,
+      "ci95_high": 980.3512496271608,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 838.5255737304688,
+      "outside_arena_fraction": 0.06884765625,
+      "noise": "uniform",
+      "radius": "1500",
+      "radius_marginalized_loss_p50_m2": 594.1547241210938,
+      "radius_marginalized_loss_p95_m2": 2611.946533203125
+    },
+    {
+      "policy": "adaptive_60_28",
+      "mean_area_m2": 770.7797296373174,
+      "ci95_low": 762.3668570841685,
+      "ci95_high": 779.1926021904662,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 931.6748046875,
+      "outside_arena_fraction": 0.0439453125,
+      "noise": "uniform",
+      "radius": "1500",
+      "radius_marginalized_loss_p50_m2": 529.36181640625,
+      "radius_marginalized_loss_p95_m2": 1835.2203369140625
+    },
+    {
+      "policy": "analytic_moments",
+      "mean_area_m2": 671.7477331601549,
+      "ci95_low": 663.9625376558465,
+      "ci95_high": 679.5329286644633,
+      "no_signal_probability": 0.0,
+      "near_probability": 0.0,
+      "mean_move_m": 965.6723022460938,
+      "outside_arena_fraction": 0.03515625,
+      "noise": "uniform",
+      "radius": "1500",
+      "radius_marginalized_loss_p50_m2": 531.8436889648438,
+      "radius_marginalized_loss_p95_m2": 1697.0589599609375
+    }
+  ],
+  "elapsed_s": 9.425897400004033
+}

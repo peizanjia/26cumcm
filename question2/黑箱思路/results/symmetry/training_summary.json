@@ -1,0 +1,27 @@
+{
+  "seed": 21260911,
+  "validation_seed": 21360911,
+  "states": 32768,
+  "posterior": 96,
+  "batch_states": 192,
+  "batch_samples": 24,
+  "steps": 6000,
+  "selected": 3,
+  "best_networks_m2": [
+    503.2607116699219,
+    503.2008514404297,
+    502.81927490234375,
+    502.7867889404297
+  ],
+  "optimized_fixed": {
+    "a_m": 931.5302734375,
+    "abs_b_m": 277.7553405761719,
+    "validation_m2": 545.6986083984375,
+    "step": 300,
+    "start": 0
+  },
+  "elapsed_s": 160.66219880000426,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_gpu_memory_mb": 143.466796875,
+  "objective": "equal-weight mean of both side losses; side is external, never a true-target choice"
+}
