@@ -1,0 +1,87 @@
+{
+  "status": "provisional_unpaired_comparison",
+  "new_commit": "56d71c42248d5a9019bfb0100d4233a2f5a3f5a2",
+  "published_source": "https://github.com/peizanjia/26cumcm/blob/56d71c42248d5a9019bfb0100d4233a2f5a3f5a2/question2/%E9%BB%91%E7%AE%B1%E6%80%9D%E8%B7%AF/radius20/README.md",
+  "metric_correction": "The new primary loss is E[abs(MEC_radius-20)]/20, not polygon diameter.",
+  "missing_from_commit": [
+    "question2/黑箱思路/radius20/checkpoints/plain.pt",
+    "question2/黑箱思路/radius20/checkpoints/orthogonal.pt",
+    "question2/黑箱思路/radius20/results/evaluation.json",
+    "question2/黑箱思路/radius20/results/evaluation_samples.npz"
+  ],
+  "comparability": "Minimax uses 128 locally simulated one-event states and official second-reception geometry; new-NN numbers are author-reported over 2048 states x 256 events x two equally weighted sides and omit the second 1500 m feasible-set disk.",
+  "policies": {
+    "mechanistic_minimax": {
+      "events": 128,
+      "mean_mec_radius_m": 23.632999428009356,
+      "p95_mec_radius_m": 41.079900256953955,
+      "max_mec_radius_m": 50.91013922871024,
+      "mec_mae20_m": 5.68109476792892,
+      "mec_success_le20": 0.390625,
+      "no_signal_rate": 0.0,
+      "mean_diameter_m": 47.26395171769475,
+      "p95_diameter_m": 82.15980051390788,
+      "max_diameter_m": 101.82027845742032,
+      "certified_reception_rate": 1.0
+    },
+    "old_area_nn": {
+      "events": 128,
+      "mean_mec_radius_m": 28.181234262497313,
+      "p95_mec_radius_m": 50.43490517058457,
+      "max_mec_radius_m": 59.58893118595044,
+      "mec_mae20_m": 10.176662628165936,
+      "mec_success_le20": 0.2734375,
+      "no_signal_rate": 0.0,
+      "mean_diameter_m": 56.36233142636468,
+      "p95_diameter_m": 100.86981034116913,
+      "max_diameter_m": 119.17786237190083,
+      "certified_reception_rate": 0.3359375
+    },
+    "new_nn_plain_abs_radius20": {
+      "events": 1048576,
+      "mean_mec_radius_m": 24.23972,
+      "p95_mec_radius_m": 37.79959,
+      "max_mec_radius_m": 750.11425,
+      "mec_mae20_m": 5.15709,
+      "mec_success_le20": 0.31098,
+      "no_signal_rate": 0.0002794,
+      "diameter_bounds_from_mec_m": {
+        "mean": [
+          24.23972,
+          48.47944
+        ],
+        "p95": [
+          37.79959,
+          75.59918
+        ],
+        "max": [
+          750.11425,
+          1500.2285
+        ]
+      }
+    },
+    "new_nn_orthogonal_lambda_0.1": {
+      "events": 1048576,
+      "mean_mec_radius_m": 24.22452,
+      "p95_mec_radius_m": 37.89499,
+      "max_mec_radius_m": 750.11425,
+      "mec_mae20_m": 5.16951,
+      "mec_success_le20": 0.31161,
+      "no_signal_rate": 0.000309,
+      "diameter_bounds_from_mec_m": {
+        "mean": [
+          24.22452,
+          48.44904
+        ],
+        "p95": [
+          37.89499,
+          75.78998
+        ],
+        "max": [
+          750.11425,
+          1500.2285
+        ]
+      }
+    }
+  }
+}
