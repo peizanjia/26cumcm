@@ -12,3 +12,6 @@ question1/output/
 .vscode/
 Thumbs.db
 *.log
+*.nbc
+*.nbi
+question2/黑箱思路/results/smoke/
