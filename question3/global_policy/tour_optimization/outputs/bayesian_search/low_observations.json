@@ -1,0 +1,198 @@
+{
+  "structural": {
+    "objective": 241.60160425413724,
+    "delta": 0.0,
+    "variance": 0.0,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_local_01": {
+    "objective": 238.42540471191455,
+    "delta": -3.1761995422226454,
+    "variance": 6.497204416003709,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_00": {
+    "objective": 240.3204328372776,
+    "delta": -1.281171416859619,
+    "variance": 5.835304985020403,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_04": {
+    "objective": 241.68487742268772,
+    "delta": 0.0832731685505012,
+    "variance": 7.500645222141331,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_local_00": {
+    "objective": 242.16726264323003,
+    "delta": 0.5656583890927587,
+    "variance": 7.93921884824139,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_03": {
+    "objective": 245.01346321451464,
+    "delta": 3.4118589603774256,
+    "variance": 5.782609804170201,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_02": {
+    "objective": 245.6949823611231,
+    "delta": 4.093378106985875,
+    "variance": 4.810183074248371,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_05": {
+    "objective": 246.9143948957516,
+    "delta": 5.312790641614342,
+    "variance": 7.223930885520375,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_01": {
+    "objective": 247.4016350786401,
+    "delta": 5.800030824502877,
+    "variance": 7.172333478143868,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_06": {
+    "objective": 247.4094234799549,
+    "delta": 5.807819225817645,
+    "variance": 7.949532813648132,
+    "complete": true,
+    "count": 14
+  },
+  "pilot_proposal_07": {
+    "objective": 249.31538236998952,
+    "delta": 7.713778115852311,
+    "variance": 7.24903174478134,
+    "complete": true,
+    "count": 14
+  },
+  "initial_00": {
+    "objective": 244.03510548737896,
+    "delta": 2.433501233241754,
+    "variance": 12.518518756355137,
+    "complete": true,
+    "count": 14
+  },
+  "initial_01": {
+    "objective": 245.11582759330847,
+    "delta": 3.5142233391712563,
+    "variance": 9.107961938391052,
+    "complete": true,
+    "count": 14
+  },
+  "initial_02": {
+    "objective": 243.62260674915947,
+    "delta": 2.0210024950222447,
+    "variance": 5.48514789959082,
+    "complete": true,
+    "count": 14
+  },
+  "initial_03": {
+    "objective": 247.07146104527405,
+    "delta": 5.4698567911368405,
+    "variance": 11.24157980515753,
+    "complete": true,
+    "count": 14
+  },
+  "initial_04": {
+    "objective": 244.23523706540752,
+    "delta": 2.6336328112702825,
+    "variance": 12.58030965533895,
+    "complete": true,
+    "count": 14
+  },
+  "bo_00": {
+    "objective": 238.81079146766092,
+    "delta": -2.790812786476317,
+    "variance": 10.60401307689381,
+    "complete": true,
+    "count": 14
+  },
+  "bo_01": {
+    "objective": 243.82790584814558,
+    "delta": 2.22630159400838,
+    "variance": 9.053874949630448,
+    "complete": true,
+    "count": 14
+  },
+  "bo_02": {
+    "objective": 240.31260272594847,
+    "delta": -1.289001528188773,
+    "variance": 7.235866513696142,
+    "complete": true,
+    "count": 14
+  },
+  "bo_03": {
+    "objective": 240.31314169230117,
+    "delta": -1.2884625618360783,
+    "variance": 6.650602832658573,
+    "complete": true,
+    "count": 14
+  },
+  "bo_04": {
+    "objective": 245.37630878851058,
+    "delta": 3.774704534373368,
+    "variance": 9.339697607933061,
+    "complete": true,
+    "count": 14
+  },
+  "bo_05": {
+    "objective": 241.49855956650316,
+    "delta": -0.10304468763408588,
+    "variance": 14.685023376290347,
+    "complete": true,
+    "count": 14
+  },
+  "bo_06": {
+    "objective": 242.57959380222067,
+    "delta": 0.977989548083469,
+    "variance": 6.285674774155127,
+    "complete": true,
+    "count": 14
+  },
+  "bo_07": {
+    "objective": 238.93675142098382,
+    "delta": -2.6648528331534425,
+    "variance": 8.038316806019406,
+    "complete": true,
+    "count": 14
+  },
+  "bo_08": {
+    "objective": 239.20942049549322,
+    "delta": -2.3921837586440335,
+    "variance": 14.885674148571567,
+    "complete": true,
+    "count": 14
+  },
+  "bo_09": {
+    "objective": 238.96903865287155,
+    "delta": -2.6325656012656964,
+    "variance": 11.12119103252646,
+    "complete": true,
+    "count": 14
+  },
+  "bo_10": {
+    "objective": 234.47640802336147,
+    "delta": -7.125196230775765,
+    "variance": 3.1381268082914606,
+    "complete": true,
+    "count": 14
+  },
+  "bo_11": {
+    "objective": 233.70401255873557,
+    "delta": -7.89759169540162,
+    "variance": 5.132445562933478,
+    "complete": true,
+    "count": 14
+  }
+}

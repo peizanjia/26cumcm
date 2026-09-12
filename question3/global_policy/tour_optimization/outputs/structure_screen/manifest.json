@@ -1,0 +1,41 @@
+{
+  "specs": {
+    "previous": {
+      "engine": "previous"
+    },
+    "refine": {
+      "refine_coverage": true
+    },
+    "exact": {
+      "exact_route": true
+    },
+    "defer": {
+      "defer_scans": true
+    },
+    "coupled": {
+      "coupled_scan_weight": 0.7
+    },
+    "refine_exact": {
+      "refine_coverage": true,
+      "exact_route": true
+    }
+  },
+  "seeds": [
+    20273000,
+    20273001,
+    20273002,
+    20273003,
+    20273004,
+    20273005,
+    20273006,
+    20273007,
+    20273008,
+    20273009,
+    20273010,
+    20273011,
+    20273012,
+    20273013
+  ],
+  "evaluation": "local_synthetic_development",
+  "source_hash": "db25454505263ab9fd2da7bdaa22b1cad3eb1928dc24640a3a2c3c0252ec5661"
+}

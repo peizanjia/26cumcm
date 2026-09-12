@@ -1,0 +1,43 @@
+{
+  "structure_screen": {
+    "role": "development screening",
+    "seeds": "20273000..20273013"
+  },
+  "structure_validation": {
+    "role": "aborted six-variant launch",
+    "included_in_reported_comparisons": false,
+    "completed_rows": 37
+  },
+  "validation_100": {
+    "role": "stage-specific independent structural validation",
+    "seeds": "20273100..20273199",
+    "metadata_correction": "Old CLI manifest defaulted to local_synthetic_development; selected structural configuration was fixed before these runs. Original manifest preserved."
+  },
+  "parameter_search": {
+    "role": "pilot parameter development",
+    "seeds": "20273200..20273213",
+    "algorithm_correction": "LHS + two deterministic neighborhood proposals, not RBF or Bayesian optimization; see audit_correction.json"
+  },
+  "final_validation": {
+    "role": "intermediate independent check of pilot candidate",
+    "seeds": "20273300..20273399",
+    "metadata_correction": "Old manifest defaulted to development. Directory name is historical: this is not the final release validation after GP tuning."
+  },
+  "bayesian_search": {
+    "role": "parameter selection with increasing scenario count",
+    "warm_reused_runs": 140,
+    "new_runs": 546,
+    "seeds": "20273200..13, 20273400..13, 20273500..13, 20273600..41"
+  },
+  "boundary_screen": {
+    "role": "development boundary screening",
+    "warm_reused_runs": 14,
+    "new_runs": 56
+  },
+  "release_validation": {
+    "role": "final independent validation",
+    "seeds": "20273700..20273799",
+    "parameters_frozen_before_run": true,
+    "metadata": "local_synthetic_validation"
+  }
+}

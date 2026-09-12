@@ -1,0 +1,709 @@
+{
+  "algorithm": "Matern52_GP_expected_improvement_with_paired_noise_and_successive_promotion",
+  "all_specs": {
+    "structural": {
+      "refine_coverage": true,
+      "exact_route": true
+    },
+    "pilot_local_01": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.12,
+      "mapping_radius_ratio": 0.75,
+      "mapping_detection_probability": 0.7,
+      "revisit_penalty_s": 17.373836356662594,
+      "coupled_scan_weight": 0.6191888857106579,
+      "unknown_scan_gain": 0.12
+    },
+    "pilot_proposal_00": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.11779241259677767,
+      "mapping_radius_ratio": 0.5653720784753666,
+      "mapping_detection_probability": 0.564918978701479,
+      "revisit_penalty_s": 9.431110188815946,
+      "coupled_scan_weight": 0.3327709227936398,
+      "unknown_scan_gain": 0.11779241259677767
+    },
+    "pilot_proposal_04": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.1096552648230395,
+      "mapping_radius_ratio": 0.7219756165678077,
+      "mapping_detection_probability": 0.6607870176580453,
+      "revisit_penalty_s": 13.373836356662592,
+      "coupled_scan_weight": 0.47518888571065787,
+      "unknown_scan_gain": 0.1096552648230395
+    },
+    "pilot_local_00": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.10499241259677766,
+      "mapping_radius_ratio": 0.5173720784753666,
+      "mapping_detection_probability": 0.516918978701479,
+      "revisit_penalty_s": 5.431110188815946,
+      "coupled_scan_weight": 0.18877092279363977,
+      "unknown_scan_gain": 0.10499241259677766
+    },
+    "pilot_proposal_03": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.06662500372544697,
+      "mapping_radius_ratio": 0.6003869253470634,
+      "mapping_detection_probability": 0.4447088437526314,
+      "revisit_penalty_s": 23.326491462849585,
+      "coupled_scan_weight": 0.7503959642971538,
+      "unknown_scan_gain": 0.06662500372544697
+    },
+    "pilot_proposal_02": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.09225883217083602,
+      "mapping_radius_ratio": 0.6830621988491714,
+      "mapping_detection_probability": 0.6096932735299909,
+      "revisit_penalty_s": 16.770313876496136,
+      "coupled_scan_weight": 0.646785253332999,
+      "unknown_scan_gain": 0.09225883217083602
+    },
+    "pilot_proposal_05": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.07005634535763759,
+      "mapping_radius_ratio": 0.5416360536714881,
+      "mapping_detection_probability": 0.6849382388600245,
+      "revisit_penalty_s": 8.254955527528104,
+      "coupled_scan_weight": 0.3858096071228468,
+      "unknown_scan_gain": 0.07005634535763759
+    },
+    "pilot_proposal_01": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.059731565170023135,
+      "mapping_radius_ratio": 0.48631470171092184,
+      "mapping_detection_probability": 0.4899022462554846,
+      "revisit_penalty_s": 1.6584698910426205,
+      "coupled_scan_weight": 0.12272302731018764,
+      "unknown_scan_gain": 0.059731565170023135
+    },
+    "pilot_proposal_06": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.08362831789012913,
+      "mapping_radius_ratio": 0.6510668642711369,
+      "mapping_detection_probability": 0.5455329985678481,
+      "revisit_penalty_s": 19.39294600230386,
+      "coupled_scan_weight": 0.04389035834023173,
+      "unknown_scan_gain": 0.08362831789012913
+    },
+    "pilot_proposal_07": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.047407392650909624,
+      "mapping_radius_ratio": 0.4910234710071484,
+      "mapping_detection_probability": 0.4250156522804057,
+      "revisit_penalty_s": 3.9612254713847412,
+      "coupled_scan_weight": 0.805741564560079,
+      "unknown_scan_gain": 0.047407392650909624
+    },
+    "initial_00": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.16725538543377363,
+      "mapping_radius_ratio": 0.7642742796322539,
+      "mapping_detection_probability": 0.7563307866338624,
+      "coupled_scan_weight": 0.5832398712465916,
+      "initial_step": 803.0624704331087,
+      "early_geometry_stops": 4,
+      "revisit_penalty_s": 6.981215825462048,
+      "early_unknown_scan_gain": 0.16725538543377363
+    },
+    "initial_01": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.04879119494018413,
+      "mapping_radius_ratio": 0.6330298076345166,
+      "mapping_detection_probability": 0.4772896821653373,
+      "coupled_scan_weight": 0.257598735696423,
+      "initial_step": 317.0095492622937,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 15.861030839109425,
+      "early_unknown_scan_gain": 0.04879119494018413
+    },
+    "initial_02": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.14142598990213032,
+      "mapping_radius_ratio": 0.7573537213793465,
+      "mapping_detection_probability": 0.3614212553013137,
+      "coupled_scan_weight": 0.9765720573944533,
+      "initial_step": 705.1491704622406,
+      "early_geometry_stops": 9,
+      "revisit_penalty_s": 10.052704257899341,
+      "early_unknown_scan_gain": 0.14142598990213032
+    },
+    "initial_03": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.10258864524532413,
+      "mapping_radius_ratio": 0.4357682087432371,
+      "mapping_detection_probability": 0.6947934424749185,
+      "coupled_scan_weight": 0.02916137433357202,
+      "initial_step": 642.2541819970829,
+      "early_geometry_stops": 8,
+      "revisit_penalty_s": 1.7299120946170303,
+      "early_unknown_scan_gain": 0.10258864524532413
+    },
+    "initial_04": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.2116964964496587,
+      "mapping_radius_ratio": 0.5348355024578769,
+      "mapping_detection_probability": 0.5736697368056747,
+      "coupled_scan_weight": 0.7284288780551135,
+      "initial_step": 527.1711838399882,
+      "early_geometry_stops": 5,
+      "revisit_penalty_s": 23.4244973632606,
+      "early_unknown_scan_gain": 0.2116964964496587
+    },
+    "bo_00": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.12569089545838535,
+      "mapping_radius_ratio": 0.7397033673754239,
+      "mapping_detection_probability": 0.6984539670883158,
+      "coupled_scan_weight": 0.6424372171569535,
+      "initial_step": 530.2414488525242,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 18.91439001281558,
+      "early_unknown_scan_gain": 0.12569089545838535
+    },
+    "bo_01": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.10783697493351274,
+      "mapping_radius_ratio": 0.7685060686403807,
+      "mapping_detection_probability": 0.7009090155509201,
+      "coupled_scan_weight": 0.6729931545619544,
+      "initial_step": 528.8168500492965,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 15.983166570187487,
+      "early_unknown_scan_gain": 0.10783697493351274
+    },
+    "bo_02": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.11846904078988718,
+      "mapping_radius_ratio": 0.7332079254769679,
+      "mapping_detection_probability": 0.6813653280310334,
+      "coupled_scan_weight": 0.5878228762257764,
+      "initial_step": 551.9329300906267,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 17.8675622578401,
+      "early_unknown_scan_gain": 0.11846904078988718
+    },
+    "bo_03": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.1206490978316096,
+      "mapping_radius_ratio": 0.7739420848535157,
+      "mapping_detection_probability": 0.7001054320151496,
+      "coupled_scan_weight": 0.6557013994361391,
+      "initial_step": 524.0706103077496,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 19.904573819127393,
+      "early_unknown_scan_gain": 0.1206490978316096
+    },
+    "bo_04": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.13504520414429566,
+      "mapping_radius_ratio": 0.7561564445089586,
+      "mapping_detection_probability": 0.6986507922777156,
+      "coupled_scan_weight": 0.629086283858113,
+      "initial_step": 566.4507974439596,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 17.740642116275033,
+      "early_unknown_scan_gain": 0.13504520414429566
+    },
+    "bo_05": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.09770355330134894,
+      "mapping_radius_ratio": 0.7498721553900298,
+      "mapping_detection_probability": 0.7079586391574028,
+      "coupled_scan_weight": 0.5952042437161554,
+      "initial_step": 525.4163655997852,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 17.704074678336905,
+      "early_unknown_scan_gain": 0.09770355330134894
+    },
+    "bo_06": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.10994367627030333,
+      "mapping_radius_ratio": 0.737319137331873,
+      "mapping_detection_probability": 0.6752807447270899,
+      "coupled_scan_weight": 0.5861448185258046,
+      "initial_step": 581.3599565156438,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 19.05850565691661,
+      "early_unknown_scan_gain": 0.10994367627030333
+    },
+    "bo_07": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.12969644241746828,
+      "mapping_radius_ratio": 0.7314245376116808,
+      "mapping_detection_probability": 0.7026600442112938,
+      "coupled_scan_weight": 0.598108856983906,
+      "initial_step": 503.65567935702063,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 20.25717656709342,
+      "early_unknown_scan_gain": 0.12969644241746828
+    },
+    "bo_08": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.12575359026108007,
+      "mapping_radius_ratio": 0.7031767851542629,
+      "mapping_detection_probability": 0.7285834495516537,
+      "coupled_scan_weight": 0.6814334403939016,
+      "initial_step": 477.9767966749863,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 18.479648122061825,
+      "early_unknown_scan_gain": 0.12575359026108007
+    },
+    "bo_09": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.15146492062829148,
+      "mapping_radius_ratio": 0.7503669256369658,
+      "mapping_detection_probability": 0.7789719553347378,
+      "coupled_scan_weight": 0.667700637447511,
+      "initial_step": 458.19212490257837,
+      "early_geometry_stops": 6,
+      "revisit_penalty_s": 20.43969423586023,
+      "early_unknown_scan_gain": 0.15146492062829148
+    },
+    "bo_10": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.15755897756665943,
+      "mapping_radius_ratio": 0.7446831409819423,
+      "mapping_detection_probability": 0.7923972487915307,
+      "coupled_scan_weight": 0.5782440844923258,
+      "initial_step": 311.08892876654863,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 20.991391222923994,
+      "early_unknown_scan_gain": 0.15755897756665943
+    },
+    "bo_11": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.1784213722713957,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 300.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.1784213722713957
+    }
+  },
+  "low": {
+    "structural": {
+      "objective": 241.60160425413724,
+      "delta": 0.0,
+      "variance": 0.0,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_local_01": {
+      "objective": 238.42540471191455,
+      "delta": -3.1761995422226454,
+      "variance": 6.497204416003709,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_00": {
+      "objective": 240.3204328372776,
+      "delta": -1.281171416859619,
+      "variance": 5.835304985020403,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_04": {
+      "objective": 241.68487742268772,
+      "delta": 0.0832731685505012,
+      "variance": 7.500645222141331,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_local_00": {
+      "objective": 242.16726264323003,
+      "delta": 0.5656583890927587,
+      "variance": 7.93921884824139,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_03": {
+      "objective": 245.01346321451464,
+      "delta": 3.4118589603774256,
+      "variance": 5.782609804170201,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_02": {
+      "objective": 245.6949823611231,
+      "delta": 4.093378106985875,
+      "variance": 4.810183074248371,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_05": {
+      "objective": 246.9143948957516,
+      "delta": 5.312790641614342,
+      "variance": 7.223930885520375,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_01": {
+      "objective": 247.4016350786401,
+      "delta": 5.800030824502877,
+      "variance": 7.172333478143868,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_06": {
+      "objective": 247.4094234799549,
+      "delta": 5.807819225817645,
+      "variance": 7.949532813648132,
+      "complete": true,
+      "count": 14
+    },
+    "pilot_proposal_07": {
+      "objective": 249.31538236998952,
+      "delta": 7.713778115852311,
+      "variance": 7.24903174478134,
+      "complete": true,
+      "count": 14
+    },
+    "initial_00": {
+      "objective": 244.03510548737896,
+      "delta": 2.433501233241754,
+      "variance": 12.518518756355137,
+      "complete": true,
+      "count": 14
+    },
+    "initial_01": {
+      "objective": 245.11582759330847,
+      "delta": 3.5142233391712563,
+      "variance": 9.107961938391052,
+      "complete": true,
+      "count": 14
+    },
+    "initial_02": {
+      "objective": 243.62260674915947,
+      "delta": 2.0210024950222447,
+      "variance": 5.48514789959082,
+      "complete": true,
+      "count": 14
+    },
+    "initial_03": {
+      "objective": 247.07146104527405,
+      "delta": 5.4698567911368405,
+      "variance": 11.24157980515753,
+      "complete": true,
+      "count": 14
+    },
+    "initial_04": {
+      "objective": 244.23523706540752,
+      "delta": 2.6336328112702825,
+      "variance": 12.58030965533895,
+      "complete": true,
+      "count": 14
+    },
+    "bo_00": {
+      "objective": 238.81079146766092,
+      "delta": -2.790812786476317,
+      "variance": 10.60401307689381,
+      "complete": true,
+      "count": 14
+    },
+    "bo_01": {
+      "objective": 243.82790584814558,
+      "delta": 2.22630159400838,
+      "variance": 9.053874949630448,
+      "complete": true,
+      "count": 14
+    },
+    "bo_02": {
+      "objective": 240.31260272594847,
+      "delta": -1.289001528188773,
+      "variance": 7.235866513696142,
+      "complete": true,
+      "count": 14
+    },
+    "bo_03": {
+      "objective": 240.31314169230117,
+      "delta": -1.2884625618360783,
+      "variance": 6.650602832658573,
+      "complete": true,
+      "count": 14
+    },
+    "bo_04": {
+      "objective": 245.37630878851058,
+      "delta": 3.774704534373368,
+      "variance": 9.339697607933061,
+      "complete": true,
+      "count": 14
+    },
+    "bo_05": {
+      "objective": 241.49855956650316,
+      "delta": -0.10304468763408588,
+      "variance": 14.685023376290347,
+      "complete": true,
+      "count": 14
+    },
+    "bo_06": {
+      "objective": 242.57959380222067,
+      "delta": 0.977989548083469,
+      "variance": 6.285674774155127,
+      "complete": true,
+      "count": 14
+    },
+    "bo_07": {
+      "objective": 238.93675142098382,
+      "delta": -2.6648528331534425,
+      "variance": 8.038316806019406,
+      "complete": true,
+      "count": 14
+    },
+    "bo_08": {
+      "objective": 239.20942049549322,
+      "delta": -2.3921837586440335,
+      "variance": 14.885674148571567,
+      "complete": true,
+      "count": 14
+    },
+    "bo_09": {
+      "objective": 238.96903865287155,
+      "delta": -2.6325656012656964,
+      "variance": 11.12119103252646,
+      "complete": true,
+      "count": 14
+    },
+    "bo_10": {
+      "objective": 234.47640802336147,
+      "delta": -7.125196230775765,
+      "variance": 3.1381268082914606,
+      "complete": true,
+      "count": 14
+    },
+    "bo_11": {
+      "objective": 233.70401255873557,
+      "delta": -7.89759169540162,
+      "variance": 5.132445562933478,
+      "complete": true,
+      "count": 14
+    }
+  },
+  "medium": {
+    "structural": {
+      "objective": 236.80340258084323,
+      "delta": 0.0,
+      "variance": 0.0,
+      "complete": true,
+      "count": 42
+    },
+    "bo_11": {
+      "objective": 230.47337644209588,
+      "delta": -6.33002613874736,
+      "variance": 2.29938690768626,
+      "complete": true,
+      "count": 42
+    },
+    "bo_10": {
+      "objective": 231.0721746399958,
+      "delta": -5.731227940847448,
+      "variance": 2.9725374444297414,
+      "complete": true,
+      "count": 42
+    },
+    "pilot_local_01": {
+      "objective": 233.12233061006185,
+      "delta": -3.681071970781401,
+      "variance": 1.7904952366478322,
+      "complete": true,
+      "count": 42
+    },
+    "bo_00": {
+      "objective": 234.3811851808137,
+      "delta": -2.4222174000295316,
+      "variance": 3.7703469348842953,
+      "complete": true,
+      "count": 42
+    },
+    "bo_07": {
+      "objective": 234.31583188295926,
+      "delta": -2.487570697883957,
+      "variance": 3.024576437069992,
+      "complete": true,
+      "count": 42
+    }
+  },
+  "high": {
+    "structural": {
+      "objective": 237.8805127134134,
+      "delta": 0.0,
+      "variance": 0.0,
+      "complete": true,
+      "count": 84
+    },
+    "bo_11": {
+      "objective": 231.2757345384165,
+      "delta": -6.6047781749968735,
+      "variance": 1.1052396947791703,
+      "complete": true,
+      "count": 84
+    },
+    "bo_10": {
+      "objective": 232.02995726979918,
+      "delta": -5.850555443614224,
+      "variance": 1.3348320196654075,
+      "complete": true,
+      "count": 84
+    }
+  },
+  "seed_blocks": [
+    [
+      20273200,
+      20273201,
+      20273202,
+      20273203,
+      20273204,
+      20273205,
+      20273206,
+      20273207,
+      20273208,
+      20273209,
+      20273210,
+      20273211,
+      20273212,
+      20273213
+    ],
+    [
+      20273400,
+      20273401,
+      20273402,
+      20273403,
+      20273404,
+      20273405,
+      20273406,
+      20273407,
+      20273408,
+      20273409,
+      20273410,
+      20273411,
+      20273412,
+      20273413
+    ],
+    [
+      20273500,
+      20273501,
+      20273502,
+      20273503,
+      20273504,
+      20273505,
+      20273506,
+      20273507,
+      20273508,
+      20273509,
+      20273510,
+      20273511,
+      20273512,
+      20273513
+    ]
+  ],
+  "confirmation_seeds": [
+    20273600,
+    20273601,
+    20273602,
+    20273603,
+    20273604,
+    20273605,
+    20273606,
+    20273607,
+    20273608,
+    20273609,
+    20273610,
+    20273611,
+    20273612,
+    20273613,
+    20273614,
+    20273615,
+    20273616,
+    20273617,
+    20273618,
+    20273619,
+    20273620,
+    20273621,
+    20273622,
+    20273623,
+    20273624,
+    20273625,
+    20273626,
+    20273627,
+    20273628,
+    20273629,
+    20273630,
+    20273631,
+    20273632,
+    20273633,
+    20273634,
+    20273635,
+    20273636,
+    20273637,
+    20273638,
+    20273639,
+    20273640,
+    20273641
+  ],
+  "promoted": [
+    "structural",
+    "bo_11",
+    "bo_10",
+    "pilot_local_01",
+    "bo_00",
+    "bo_07"
+  ],
+  "finalists": [
+    "structural",
+    "bo_11",
+    "bo_10"
+  ],
+  "best_name": "bo_11",
+  "best_fields": {
+    "refine_coverage": true,
+    "exact_route": true,
+    "unknown_scan_gain": 0.1784213722713957,
+    "mapping_radius_ratio": 0.738641420424932,
+    "mapping_detection_probability": 0.7962537773941049,
+    "coupled_scan_weight": 0.5772631289469552,
+    "initial_step": 300.0,
+    "early_geometry_stops": 7,
+    "revisit_penalty_s": 21.98713938265748,
+    "early_unknown_scan_gain": 0.1784213722713957
+  },
+  "limitation": "Best tested selection candidate; not a proven global optimum. Final test seeds remain unused."
+}

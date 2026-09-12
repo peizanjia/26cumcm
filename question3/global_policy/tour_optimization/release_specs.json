@@ -1,0 +1,21 @@
+{
+  "previous": {
+    "engine": "previous"
+  },
+  "structural": {
+    "refine_coverage": true,
+    "exact_route": true
+  },
+  "optimized": {
+    "refine_coverage": true,
+    "exact_route": true,
+    "unknown_scan_gain": 0.1784213722713957,
+    "mapping_radius_ratio": 0.738641420424932,
+    "mapping_detection_probability": 0.7962537773941049,
+    "coupled_scan_weight": 0.5772631289469552,
+    "initial_step": 300.0,
+    "early_geometry_stops": 7,
+    "revisit_penalty_s": 21.98713938265748,
+    "early_unknown_scan_gain": 0.1784213722713957
+  }
+}

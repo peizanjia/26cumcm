@@ -1,0 +1,86 @@
+{
+  "previous": {
+    "count": 14,
+    "complete": 14,
+    "objective": 271.319061198668,
+    "mean_s_per_source": 271.319061198668,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 172,
+    "mean_wall_s": 18.335526864283434
+  },
+  "refine": {
+    "count": 14,
+    "complete": 14,
+    "objective": 262.75475683302886,
+    "mean_s_per_source": 262.75475683302886,
+    "paired_delta_s": -8.56430436563913,
+    "paired_ci95": [
+      -18.993830061634455,
+      1.8652213303561958
+    ],
+    "faster": 9,
+    "true_cleared": 172,
+    "mean_wall_s": 17.768318421426688
+  },
+  "exact": {
+    "count": 14,
+    "complete": 14,
+    "objective": 271.46990014888445,
+    "mean_s_per_source": 271.46990014888445,
+    "paired_delta_s": 0.15083895021644317,
+    "paired_ci95": [
+      -2.6834908544761316,
+      2.985168754909018
+    ],
+    "faster": 3,
+    "true_cleared": 172,
+    "mean_wall_s": 18.41083474999427
+  },
+  "defer": {
+    "count": 14,
+    "complete": 14,
+    "objective": 270.89187816057273,
+    "mean_s_per_source": 270.89187816057273,
+    "paired_delta_s": -0.42718303809523867,
+    "paired_ci95": [
+      -1.3532908737140996,
+      0.49892479752362223
+    ],
+    "faster": 1,
+    "true_cleared": 172,
+    "mean_wall_s": 18.716705935714085
+  },
+  "coupled": {
+    "count": 14,
+    "complete": 14,
+    "objective": 271.48333552426976,
+    "mean_s_per_source": 271.48333552426976,
+    "paired_delta_s": 0.16427432560176872,
+    "paired_ci95": [
+      -4.669020286878387,
+      4.997568938081924
+    ],
+    "faster": 6,
+    "true_cleared": 172,
+    "mean_wall_s": 18.2581876357165
+  },
+  "refine_exact": {
+    "count": 14,
+    "complete": 14,
+    "objective": 257.71874820307073,
+    "mean_s_per_source": 257.71874820307073,
+    "paired_delta_s": -13.60031299559727,
+    "paired_ci95": [
+      -23.461287882892194,
+      -3.739338108302345
+    ],
+    "faster": 11,
+    "true_cleared": 172,
+    "mean_wall_s": 18.503701349999965
+  }
+}

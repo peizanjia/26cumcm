@@ -1,0 +1,40 @@
+{
+  "low_groups": 28,
+  "low_scenes_per_group": 14,
+  "medium_groups": 6,
+  "medium_scenes_per_group": 42,
+  "finalists": 3,
+  "finalist_scenes": 84,
+  "comparisons": {
+    "structural": {
+      "mean_delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "faster": 0,
+      "complete": 84
+    },
+    "bo_11": {
+      "mean_delta": -6.6047781749968735,
+      "ci95": [
+        -8.695779164022383,
+        -4.513777185971364
+      ],
+      "faster": 66,
+      "complete": 84
+    },
+    "bo_10": {
+      "mean_delta": -5.850555443614224,
+      "ci95": [
+        -8.148498745982137,
+        -3.552612141246312
+      ],
+      "faster": 61,
+      "complete": 84
+    }
+  },
+  "warm_reused_scene_results": 140,
+  "new_scene_runs": 546,
+  "snapshot_hash_verified": "2f0024c36bda29f1672a17da84e7dd77116880c6c3a4f70cd581f016e1329796"
+}

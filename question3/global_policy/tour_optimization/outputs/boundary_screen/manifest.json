@@ -1,0 +1,90 @@
+{
+  "specs": {
+    "incumbent": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.1784213722713957,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 300.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.1784213722713957
+    },
+    "step100_gain0.18": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.1784213722713957,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 100.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.1784213722713957
+    },
+    "step100_gain0.24": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.24,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 100.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.24
+    },
+    "step200_gain0.18": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.1784213722713957,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 200.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.1784213722713957
+    },
+    "step200_gain0.24": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "unknown_scan_gain": 0.24,
+      "mapping_radius_ratio": 0.738641420424932,
+      "mapping_detection_probability": 0.7962537773941049,
+      "coupled_scan_weight": 0.5772631289469552,
+      "initial_step": 200.0,
+      "early_geometry_stops": 7,
+      "revisit_penalty_s": 21.98713938265748,
+      "early_unknown_scan_gain": 0.24
+    }
+  },
+  "seeds": [
+    20273200,
+    20273201,
+    20273202,
+    20273203,
+    20273204,
+    20273205,
+    20273206,
+    20273207,
+    20273208,
+    20273209,
+    20273210,
+    20273211,
+    20273212,
+    20273213
+  ],
+  "evaluation": "local_synthetic_development",
+  "source_hash": "75645a149b545e6f35f6cdb1d80a8f110b7d9cd8ff3d835fcdcaaf8aece773c3",
+  "environment": {
+    "python": "3.12.5",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "numba": "0.67.0"
+    }
+  }
+}

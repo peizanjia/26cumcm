@@ -1,0 +1,16 @@
+{
+  "bo_03": {
+    "count": 14,
+    "complete": 14,
+    "objective": 240.31314169230117,
+    "mean_s_per_source": 240.31314169230117,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 184,
+    "mean_wall_s": 20.115206164285024
+  }
+}

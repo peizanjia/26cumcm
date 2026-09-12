@@ -1,0 +1,30 @@
+{
+  "previous": {
+    "count": 100,
+    "complete": 100,
+    "objective": 253.75833501194,
+    "mean_s_per_source": 253.75833501194,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 1292,
+    "mean_wall_s": 17.678066089000932
+  },
+  "refine_exact": {
+    "count": 100,
+    "complete": 100,
+    "objective": 243.78242808499036,
+    "mean_s_per_source": 243.78242808499036,
+    "paired_delta_s": -9.975906926949673,
+    "paired_ci95": [
+      -12.483567510654302,
+      -7.468246343245044
+    ],
+    "faster": 82,
+    "true_cleared": 1292,
+    "mean_wall_s": 18.712956330000015
+  }
+}

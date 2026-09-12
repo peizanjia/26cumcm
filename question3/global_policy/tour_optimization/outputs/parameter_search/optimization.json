@@ -1,0 +1,210 @@
+{
+  "algorithm": "Latin hypercube + RBF-inspired exploitation neighborhood",
+  "bounds": {
+    "early_unknown_scan_gain": [
+      0.04,
+      0.12
+    ],
+    "mapping_radius_ratio": [
+      0.45,
+      0.75
+    ],
+    "mapping_detection_probability": [
+      0.4,
+      0.7
+    ],
+    "revisit_penalty_s": [
+      0.0,
+      25.0
+    ],
+    "coupled_scan_weight": [
+      0.0,
+      0.9
+    ]
+  },
+  "development_seeds": [
+    20273200,
+    20273201,
+    20273202,
+    20273203,
+    20273204,
+    20273205,
+    20273206,
+    20273207,
+    20273208,
+    20273209,
+    20273210,
+    20273211,
+    20273212,
+    20273213
+  ],
+  "proposals": 10,
+  "ranking": [
+    {
+      "name": "local_01",
+      "score": 238.42540471191455,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.12,
+        "mapping_radius_ratio": 0.75,
+        "mapping_detection_probability": 0.7,
+        "revisit_penalty_s": 17.373836356662594,
+        "coupled_scan_weight": 0.6191888857106579,
+        "unknown_scan_gain": 0.12
+      }
+    },
+    {
+      "name": "proposal_00",
+      "score": 240.3204328372776,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.11779241259677767,
+        "mapping_radius_ratio": 0.5653720784753666,
+        "mapping_detection_probability": 0.564918978701479,
+        "revisit_penalty_s": 9.431110188815946,
+        "coupled_scan_weight": 0.3327709227936398,
+        "unknown_scan_gain": 0.11779241259677767
+      }
+    },
+    {
+      "name": "proposal_04",
+      "score": 241.68487742268772,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.1096552648230395,
+        "mapping_radius_ratio": 0.7219756165678077,
+        "mapping_detection_probability": 0.6607870176580453,
+        "revisit_penalty_s": 13.373836356662592,
+        "coupled_scan_weight": 0.47518888571065787,
+        "unknown_scan_gain": 0.1096552648230395
+      }
+    },
+    {
+      "name": "local_00",
+      "score": 242.16726264323003,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.10499241259677766,
+        "mapping_radius_ratio": 0.5173720784753666,
+        "mapping_detection_probability": 0.516918978701479,
+        "revisit_penalty_s": 5.431110188815946,
+        "coupled_scan_weight": 0.18877092279363977,
+        "unknown_scan_gain": 0.10499241259677766
+      }
+    },
+    {
+      "name": "proposal_03",
+      "score": 245.01346321451464,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.06662500372544697,
+        "mapping_radius_ratio": 0.6003869253470634,
+        "mapping_detection_probability": 0.4447088437526314,
+        "revisit_penalty_s": 23.326491462849585,
+        "coupled_scan_weight": 0.7503959642971538,
+        "unknown_scan_gain": 0.06662500372544697
+      }
+    },
+    {
+      "name": "proposal_02",
+      "score": 245.6949823611231,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.09225883217083602,
+        "mapping_radius_ratio": 0.6830621988491714,
+        "mapping_detection_probability": 0.6096932735299909,
+        "revisit_penalty_s": 16.770313876496136,
+        "coupled_scan_weight": 0.646785253332999,
+        "unknown_scan_gain": 0.09225883217083602
+      }
+    },
+    {
+      "name": "proposal_05",
+      "score": 246.9143948957516,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.07005634535763759,
+        "mapping_radius_ratio": 0.5416360536714881,
+        "mapping_detection_probability": 0.6849382388600245,
+        "revisit_penalty_s": 8.254955527528104,
+        "coupled_scan_weight": 0.3858096071228468,
+        "unknown_scan_gain": 0.07005634535763759
+      }
+    },
+    {
+      "name": "proposal_01",
+      "score": 247.4016350786401,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.059731565170023135,
+        "mapping_radius_ratio": 0.48631470171092184,
+        "mapping_detection_probability": 0.4899022462554846,
+        "revisit_penalty_s": 1.6584698910426205,
+        "coupled_scan_weight": 0.12272302731018764,
+        "unknown_scan_gain": 0.059731565170023135
+      }
+    },
+    {
+      "name": "proposal_06",
+      "score": 247.4094234799549,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.08362831789012913,
+        "mapping_radius_ratio": 0.6510668642711369,
+        "mapping_detection_probability": 0.5455329985678481,
+        "revisit_penalty_s": 19.39294600230386,
+        "coupled_scan_weight": 0.04389035834023173,
+        "unknown_scan_gain": 0.08362831789012913
+      }
+    },
+    {
+      "name": "proposal_07",
+      "score": 249.31538236998952,
+      "fields": {
+        "refine_coverage": true,
+        "exact_route": true,
+        "early_geometry_mapping": true,
+        "early_unknown_scan_gain": 0.047407392650909624,
+        "mapping_radius_ratio": 0.4910234710071484,
+        "mapping_detection_probability": 0.4250156522804057,
+        "revisit_penalty_s": 3.9612254713847412,
+        "coupled_scan_weight": 0.805741564560079,
+        "unknown_scan_gain": 0.047407392650909624
+      }
+    }
+  ],
+  "best": {
+    "name": "local_01",
+    "score": 238.42540471191455,
+    "fields": {
+      "refine_coverage": true,
+      "exact_route": true,
+      "early_geometry_mapping": true,
+      "early_unknown_scan_gain": 0.12,
+      "mapping_radius_ratio": 0.75,
+      "mapping_detection_probability": 0.7,
+      "revisit_penalty_s": 17.373836356662594,
+      "coupled_scan_weight": 0.6191888857106579,
+      "unknown_scan_gain": 0.12
+    }
+  },
+  "objective": "mean whole-scene seconds/source; incomplete=penalty"
+}

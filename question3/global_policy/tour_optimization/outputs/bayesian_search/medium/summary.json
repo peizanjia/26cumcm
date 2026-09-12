@@ -1,0 +1,86 @@
+{
+  "structural": {
+    "count": 28,
+    "complete": 28,
+    "objective": 234.4043017441963,
+    "mean_s_per_source": 234.4043017441963,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 379,
+    "mean_wall_s": 22.566034307143646
+  },
+  "bo_11": {
+    "count": 28,
+    "complete": 28,
+    "objective": 228.85805838377604,
+    "mean_s_per_source": 228.85805838377604,
+    "paired_delta_s": -5.546243360420232,
+    "paired_ci95": [
+      -9.61572546293511,
+      -1.4767612579053537
+    ],
+    "faster": 19,
+    "true_cleared": 379,
+    "mean_wall_s": 23.8116431964289
+  },
+  "bo_10": {
+    "count": 28,
+    "complete": 28,
+    "objective": 229.37005794831302,
+    "mean_s_per_source": 229.37005794831302,
+    "paired_delta_s": -5.034243795883289,
+    "paired_ci95": [
+      -10.04395867954941,
+      -0.024528912217167687
+    ],
+    "faster": 16,
+    "true_cleared": 379,
+    "mean_wall_s": 23.98790777499848
+  },
+  "pilot_local_01": {
+    "count": 28,
+    "complete": 28,
+    "objective": 230.47079355913547,
+    "mean_s_per_source": 230.47079355913547,
+    "paired_delta_s": -3.9335081850607785,
+    "paired_ci95": [
+      -7.182358773504335,
+      -0.6846575966172224
+    ],
+    "faster": 19,
+    "true_cleared": 379,
+    "mean_wall_s": 22.773011764285393
+  },
+  "bo_00": {
+    "count": 28,
+    "complete": 28,
+    "objective": 232.16638203739015,
+    "mean_s_per_source": 232.16638203739015,
+    "paired_delta_s": -2.2379197068061387,
+    "paired_ci95": [
+      -7.277000133736865,
+      2.801160720124588
+    ],
+    "faster": 17,
+    "true_cleared": 379,
+    "mean_wall_s": 25.910087328572054
+  },
+  "bo_07": {
+    "count": 28,
+    "complete": 28,
+    "objective": 232.00537211394706,
+    "mean_s_per_source": 232.00537211394706,
+    "paired_delta_s": -2.3989296302492145,
+    "paired_ci95": [
+      -6.965480984952113,
+      2.167621724453684
+    ],
+    "faster": 19,
+    "true_cleared": 379,
+    "mean_wall_s": 26.51448579285664
+  }
+}

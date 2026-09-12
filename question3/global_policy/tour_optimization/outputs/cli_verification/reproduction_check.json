@@ -1,0 +1,9 @@
+{
+  "parameters": true,
+  "virtual_time_s": true,
+  "average_time_s": true,
+  "distance_m": true,
+  "measures": true,
+  "cleared": true,
+  "complete": true
+}

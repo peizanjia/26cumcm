@@ -1,0 +1,97 @@
+{
+  "structure_screen": {
+    "saved_scene_results": 84,
+    "complete": 84,
+    "new_scene_runs": 84,
+    "included_in_completed_comparisons": true
+  },
+  "structure_validation": {
+    "saved_scene_results": 37,
+    "complete": 37,
+    "new_scene_runs": 37,
+    "included_in_completed_comparisons": false,
+    "note": "误启动的六组批次已取消；37条完成子结果保留，不作为完整比较。"
+  },
+  "validation_100": {
+    "saved_scene_results": 200,
+    "complete": 200,
+    "new_scene_runs": 200,
+    "included_in_completed_comparisons": true
+  },
+  "parameter_search": {
+    "saved_scene_results": 140,
+    "complete": 140,
+    "new_scene_runs": 140,
+    "included_in_completed_comparisons": true
+  },
+  "final_validation": {
+    "saved_scene_results": 200,
+    "complete": 200,
+    "new_scene_runs": 200,
+    "included_in_completed_comparisons": true
+  },
+  "boundary_screen": {
+    "saved_scene_results": 70,
+    "complete": 70,
+    "warm_reused_scene_results": 14,
+    "new_scene_runs": 56,
+    "included_in_completed_comparisons": true
+  },
+  "bayesian_search": {
+    "low_groups": 28,
+    "low_scenes_per_group": 14,
+    "medium_groups": 6,
+    "medium_scenes_per_group": 42,
+    "finalists": 3,
+    "finalist_scenes": 84,
+    "comparisons": {
+      "structural": {
+        "mean_delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "faster": 0,
+        "complete": 84
+      },
+      "bo_11": {
+        "mean_delta": -6.6047781749968735,
+        "ci95": [
+          -8.695779164022383,
+          -4.513777185971364
+        ],
+        "faster": 66,
+        "complete": 84
+      },
+      "bo_10": {
+        "mean_delta": -5.850555443614224,
+        "ci95": [
+          -8.148498745982137,
+          -3.552612141246312
+        ],
+        "faster": 61,
+        "complete": 84
+      }
+    },
+    "warm_reused_scene_results": 140,
+    "new_scene_runs": 546,
+    "snapshot_hash_verified": "2f0024c36bda29f1672a17da84e7dd77116880c6c3a4f70cd581f016e1329796"
+  },
+  "release_validation": {
+    "saved_scene_results": 300,
+    "complete": 300,
+    "new_scene_runs": 300,
+    "groups": 3,
+    "scenes_per_group": 100,
+    "seed_start": 20273700,
+    "seed_end": 20273799,
+    "evaluation": "local_synthetic_validation",
+    "included_in_completed_comparisons": true
+  },
+  "totals": {
+    "new_runs_in_completed_comparisons": 1526,
+    "completed_subruns_of_cancelled_job_excluded": 37,
+    "separate_cli_reproduction_excluded": 1,
+    "note": "运行数包含同场不同参数，并非独立世界数；warm start和边界对照复用结果不重复计入新增运行。测试中的模拟另计。"
+  }
+}

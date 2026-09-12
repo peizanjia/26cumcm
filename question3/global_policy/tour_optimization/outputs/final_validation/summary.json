@@ -1,0 +1,30 @@
+{
+  "previous": {
+    "count": 100,
+    "complete": 100,
+    "objective": 251.35235669499514,
+    "mean_s_per_source": 251.35235669499514,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 1314,
+    "mean_wall_s": 21.225077741999414
+  },
+  "optimized": {
+    "count": 100,
+    "complete": 100,
+    "objective": 241.79295028512618,
+    "mean_s_per_source": 241.79295028512618,
+    "paired_delta_s": -9.559406409869009,
+    "paired_ci95": [
+      -12.45933852891634,
+      -6.659474290821677
+    ],
+    "faster": 73,
+    "true_cleared": 1314,
+    "mean_wall_s": 22.85985235699991
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "local_00": {
+    "count": 14,
+    "complete": 14,
+    "objective": 242.16726264323003,
+    "mean_s_per_source": 242.16726264323003,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0,
+    "true_cleared": 184,
+    "mean_wall_s": 23.70451217857044
+  },
+  "local_01": {
+    "count": 14,
+    "complete": 14,
+    "objective": 238.42540471191455,
+    "mean_s_per_source": 238.42540471191455,
+    "paired_delta_s": -3.7418579313154043,
+    "paired_ci95": [
+      -8.466461943142633,
+      0.982746080511824
+    ],
+    "faster": 7,
+    "true_cleared": 184,
+    "mean_wall_s": 22.739109407145797
+  }
+}

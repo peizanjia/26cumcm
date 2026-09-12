@@ -1,0 +1,1 @@
+{"previous":{"engine":"previous"},"optimized":{"refine_coverage":true,"exact_route":true,"early_geometry_mapping":true,"early_unknown_scan_gain":0.12,"unknown_scan_gain":0.12,"mapping_radius_ratio":0.75,"mapping_detection_probability":0.7,"revisit_penalty_s":17.373836356662594,"coupled_scan_weight":0.6191888857106579}}

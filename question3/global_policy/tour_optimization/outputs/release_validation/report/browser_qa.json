@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "cases": 9,
+  "variants": 3,
+  "maxCandidates": 8,
+  "finalStopChannelRows": 20,
+  "truthDefaultHidden": true,
+  "initialSeed": "20273722",
+  "channelCoverageCirclesAt35": 2,
+  "initialCoverageEmpty": true
+}

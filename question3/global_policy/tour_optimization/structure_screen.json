@@ -1,0 +1,8 @@
+{
+  "previous": {"engine": "previous"},
+  "refine": {"refine_coverage": true},
+  "exact": {"exact_route": true},
+  "defer": {"defer_scans": true},
+  "coupled": {"coupled_scan_weight": 0.7},
+  "refine_exact": {"refine_coverage": true, "exact_route": true}
+}
