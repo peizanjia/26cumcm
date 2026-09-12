@@ -1,0 +1,157 @@
+{
+  "objective": "scene_equal_mean(total_virtual_seconds / actual_source_count)",
+  "physical_fixed": {
+    "speed_m_s": 5,
+    "measure_s": 5,
+    "switch_s": 1,
+    "clear_success_s": 5,
+    "clear_failure_s": 3,
+    "receive_radius_m": [
+      1000,
+      1500
+    ],
+    "clear_radius_m": 20,
+    "bearing_error_deg": 1.005,
+    "emission_halfplane_deg": 180
+  },
+  "tested_grid": {
+    "unknown_credit_cap_s": [
+      60,
+      150,
+      250
+    ],
+    "forecast_weight": [
+      0.35,
+      1.0
+    ]
+  },
+  "selected": {
+    "name": "u3_service1_front8",
+    "unknown_credit_cap_s": 60,
+    "forecast_weight": 1.0,
+    "unknown_scan_min_net_s": 3.0,
+    "scan_min_net_s": 5.0,
+    "service_candidates_per_source": 1,
+    "frontier_candidates": 8,
+    "shared_candidates": 4,
+    "waypoint_candidates": 4
+  },
+  "recommended_ranges": {
+    "unknown_credit_cap_s": [
+      20,
+      250
+    ],
+    "unknown_credit_weight": [
+      0.25,
+      1.0
+    ],
+    "forecast_weight": [
+      0.0,
+      1.5
+    ],
+    "cross_source_weight": [
+      0.0,
+      1.5
+    ],
+    "scan_min_net_s": [
+      0,
+      8
+    ],
+    "service_candidates_per_source": [
+      2,
+      6
+    ],
+    "information_samples": [
+      3,
+      9
+    ],
+    "frontier_candidates": [
+      6,
+      30
+    ],
+    "shared_candidates": [
+      2,
+      16
+    ],
+    "waypoint_candidates": [
+      0,
+      16
+    ],
+    "refine_step_m": [
+      25,
+      150
+    ],
+    "revisit_penalty_s": [
+      0,
+      80
+    ],
+    "revisit_radius_m": [
+      50,
+      250
+    ],
+    "coverage_spacing": [
+      150,
+      300
+    ],
+    "coverage_directions": [
+      16,
+      48
+    ],
+    "forecast_passes": [
+      1,
+      4
+    ],
+    "candidate_limit": [
+      10,
+      40
+    ]
+  },
+  "development": {
+    "seed_start": 20285000,
+    "count": 8,
+    "configurations": 7,
+    "all_completed": true,
+    "selected": "cap60_f100",
+    "current_round": {
+      "seeds": [
+        20288000,
+        20288001,
+        20288002,
+        20288003,
+        20288004,
+        20288005,
+        20288006,
+        20288007,
+        20288008,
+        20288009
+      ],
+      "source_count": 132,
+      "all_completed": true,
+      "mean_per_source_s": 476.4579070142154,
+      "p90_per_source_s": 560.2411513366884
+    }
+  },
+  "validation": {
+    "seed_start": 20288000,
+    "count": 100,
+    "all_completed": true,
+    "new_minus_old_mean_s_per_source": -10.20514702746793,
+    "bootstrap95_s_per_source": [
+      -18.652073070059775,
+      -2.094804420629381
+    ],
+    "replay_previous_100_seed_set": {
+      "seeds": "20288000-20288099",
+      "source_count": 1234,
+      "all_completed": true,
+      "mean_per_source_s": 526.3383631130299,
+      "independent": false,
+      "reason": "used to inspect stability after tuning"
+    }
+  },
+  "next_search_order": [
+    "unknown_scan_min_net_s × scan_min_net_s",
+    "coverage_spacing × coverage_directions",
+    "unknown_credit_cap_s × unknown_credit_weight"
+  ]
+}

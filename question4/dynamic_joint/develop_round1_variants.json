@@ -1,0 +1,59 @@
+{
+  "old_joint": {
+    "policy": "old_joint"
+  },
+  "cap60_f035": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 60,
+      "forecast_weight": 0.35,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限60秒 / 续策权重0.35"
+  },
+  "cap60_f100": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 60,
+      "forecast_weight": 1,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限60秒 / 续策权重1"
+  },
+  "cap150_f035": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 150,
+      "forecast_weight": 0.35,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限150秒 / 续策权重0.35"
+  },
+  "cap150_f100": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 150,
+      "forecast_weight": 1,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限150秒 / 续策权重1"
+  },
+  "cap250_f035": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 250,
+      "forecast_weight": 0.35,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限250秒 / 续策权重0.35"
+  },
+  "cap250_f100": {
+    "policy": "dynamic",
+    "parameters": {
+      "unknown_credit_cap_s": 250,
+      "forecast_weight": 1,
+      "unknown_credit_weight": 0.65
+    },
+    "label": "未知收益上限250秒 / 续策权重1"
+  }
+}
