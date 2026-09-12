@@ -63,3 +63,7 @@
 ## 2026-09-13 参数优化目标更新
 
 用户将验收目标收紧为平均每源低于500秒。已实现未知/已知分离停测门槛并筛选候选数量；当前开发组132源476.4579秒/源，全新性不足的原100场重放526.3384秒/源，不能宣称正式达标。相关参数空间、冻结配置、调参摘要和诚实边界见 `dynamic_joint/PARAMETER_SPACE.md`、`dynamic_joint/outputs/frozen_parameters.json`、`dynamic_joint/outputs/tuning_summary.json`。提交时只包含源码、配置和摘要，不包含大体积历史报告。
+
+## 2026-09-13 提交与push完成
+
+提交 `5122ba0` 已成功推送至 `origin/main`。包含dynamic_joint源码、full_mission/zigzag_study运行依赖、参数空间、冻结配置、调参摘要和既有验证摘要；未提交PDF附件、84MB报告、压缩历史及其他独立实验目录。正式边界仍是：u3开发组476.4579秒/源，原100场复核526.3384秒/源，尚未证明100场独立均值低于500。
