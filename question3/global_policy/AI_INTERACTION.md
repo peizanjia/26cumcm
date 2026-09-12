@@ -1,5 +1,7 @@
 # 第三问 · 探索、定位与沿途清除交错策略
 
+2026-09-12最新：[adaptive_mpc](adaptive_mpc/AI_INTERACTION.md)六项改动与多组消融已完成。当前推荐入口为run --engine tour：清除与覆盖共路、每步重排、每停点评估扫频。100新场景tour250.9197 vs combined274.9757s/源，差−24.0561，95%区间[−28.4261,−19.6860]；88/100更快，4组均1310/1310源。global/lean303.9165退步，sweep274.1310无稳定收益，均保留对照。目标<200尚未达到。[六项分析](adaptive_mpc/SIX_DIRECTIONS.md)、[结果](adaptive_mpc/README.md)。根comparison1000场是独立历史参照；旧84.87%属于固定外环，不能套用于现策略。无官方连接。
+
 最新追问（2026-09-12）：已完成[跨区连接、后验积分、连续试探与样本量审计](route_study/FOLLOWUP_ANALYSIS.md)。300场记录属于旧单目标；现有多源关联损失尚无直接量化。更新事件/负证据对包围圆的作用已核对，统计区间已复算。当前仅分析和记录，未改策略、未新增模拟或官方测试；具体更正与后续计划见route_study交接。
 
 ## 用户需求（2026-09-11）
@@ -75,3 +77,9 @@ python -m question3.global_policy.check_http
 新增独立[route_study](route_study/AI_INTERACTION.md)：根据用户要求试验其它局部与总体路线、按节省秒数评估补测价值，并计算离线乐观下界。原dynamic基线保留，实验进行中。
 
 route_study本地完成：17方案20场全清，5方案新30场全清；最近邻小幅改善，但独立区间跨零，未覆盖dynamic默认。MST/Christofides/退火/DP、块内先扫后清、全局图等均实跑；88冻结公共图原2-opt均为静态最短。保留原点扫描及无源覆盖条件下100场乐观下界均值154.43s/源，非可达成绩。57测试通过，交互图route_study/outputs/comparison.html，参数说明route_study/PARAMETERS.md。没有官方测试或连续调参。
+
+2026-09-12新增跨源耦合分析：已核对 `joint_rollout` 的单频道续策边界，确认高价值停点对其它频道的共享信息尚未进入单步期望；已有100场开发消融显示跨区终点+局部期望的平均改进约2.44%，压力几何约8–12%，不足以单独填补到200 s/源仍需约25.76%的差距。分析与联合动作/VOI/注意力建议见 [joint_rollout/COUPLING_ANALYSIS.md](global_policy/joint_rollout/COUPLING_ANALYSIS.md)。本轮未修改策略、未新增模拟、未连接官方服务；复现实验因当前 Python 环境缺少 numpy 未能运行。
+
+2026-09-12新增纲领性路线审计：[PRINCIPLES_AUDIT.md](global_policy/PRINCIPLES_AUDIT.md)。结论：原点20频扫描是完成性要求下的强基线，但不构成固定第一动作的全局最优定理；外围扫掠是覆盖证明骨架，闭合固定半径外环并非必要。六点环在最坏1000m接收半径下的理论最小半径约1122.96m，1500m有约98m余量；降低半径、开放终点、停点兼任服务、减少低价值频道扫描及利用负证据，均比更换静态TSP更可能帮助达到200 s/源。joint开发269.39 s/源到目标仍需25.76%下降，主要瓶颈是移动84.87%。本轮未修改策略、未新增模拟、未连接官方服务。
+
+补充 20 场本地配对复核（seed20272000–20272019）：baseline/terminal/expectation/combined 分别为 277.02/272.62/272.13/269.67 s/源，combined 比 baseline 快 7.35 s/源，16/20 场更快；263/263 源清除。该小批次仅作方向复核，不能替代最终独立验证。输出保存在 `question3/global_policy/joint_rollout/outputs/current_analysis`，未连接官方服务。

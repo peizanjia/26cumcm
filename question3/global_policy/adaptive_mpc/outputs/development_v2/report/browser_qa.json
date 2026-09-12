@@ -1,0 +1,9 @@
+{
+  "errors": [],
+  "cases": 6,
+  "variants": 2,
+  "maxCandidates": 8,
+  "finalStopChannelRows": 20,
+  "truthDefaultHidden": true,
+  "initialSeed": "20272303"
+}

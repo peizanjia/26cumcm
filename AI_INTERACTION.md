@@ -1,8 +1,10 @@
 # AI 交互总记录与交接索引
 
+2026-09-12 本设备最新：已实施并分别分析六项优化，默认改为清除/覆盖共路、每步重排的 tour。100个新种子20272500–20272599、四组400次本地合成全部完成；tour250.9197 vs combined274.9757s/源，改善8.75%，88/100更快，各1310/1310源。配对差−24.0561s/源，95%区间[−28.4261,−19.6860]。**尚未达到200s/源**。原14坏案例重跑13个改善，单列不混入独立统计。见[结果与入口](question3/global_policy/adaptive_mpc/README.md)、[六项分析](question3/global_policy/adaptive_mpc/SIX_DIRECTIONS.md)、[交接记录](question3/global_policy/adaptive_mpc/AI_INTERACTION.md)。原comparison.html保留；以下旧PID是历史快照，非当前进程。
+
 当前第三问新增实施：[跨区终点与连续期望滚动规划](question3/global_policy/joint_rollout/AI_INTERACTION.md)。用户要求实际修改、大样本验证和坏表现多案例HTML；进行中，全部仅本地。
 
-2026-09-12最新状态：用户明确选择“背景继续计算，结束等待”。joint_rollout四组1000场独立验证继续后台运行（PID38860），自动后处理PID37700将在完成后生成统计和差案例HTML。当前约1240/4000次、0失败，非已完成成绩；预计本地12:30–12:40，准确快照见outputs/validation/background_status.json。100场开发、16压力测试、学习状态导出已完成，详情见方案记录。禁止官方正式测试，未新增官方连接。
+2026-09-12另一设备历史快照（已被用户带回的comparison.html完成结果取代）：用户明确选择“背景继续计算，结束等待”。当时joint_rollout四组1000场独立验证后台运行（PID38860），自动后处理PID37700；约1240/4000次、0失败。原预计本地12:30–12:40及outputs/validation/background_status.json仅记录当时状态。100场开发、16压力测试、学习状态导出已完成，详情见方案记录。禁止官方正式测试，未新增官方连接。
 
 更新日期：2026-09-11。此文件为跨工具入口，不依赖某个聊天产品。
 
@@ -94,3 +96,9 @@
 第17项完成：17方案20场筛选、5方案新30场验证均清除全部源；MST、Christofides、退火、精确DP及静态分块、全局图等已实现。原2-opt在88固定公共图全部等于精确解；内圈方案明显更慢，小幅改善方案未证明稳定，dynamic默认保留。当前扫描/覆盖规则下100场乐观下界154.43s/源；57测试通过。交互图question3/global_policy/route_study/outputs/comparison.html，参数和算法讲解见route_study/README.md、PARAMETERS.md。无官方测试、未连续调参。
 
 18. 第三问四项追问核验完成：[分区衔接、概率积分、连续测点和样本量](question3/global_policy/route_study/FOLLOWUP_ANALYSIS.md)。更正300场为旧单目标记录，不能推断跨区损失；包围圆更新与概率后验机制按代码核对，配对区间/功效复算保存。提出跨区终端代价与连续SAA方案，尚未实现或训练；本轮无新增模拟、无官方连接，仍禁正式次数。
+
+19. 第三问联合动作模型与环境续接：已创建根目录 `.venv`（Python 3.12.5），安装 requirements、pytest、numba；20场四组配对 80/80 完成，combined 269.6675 s/源，相对 baseline −7.3501 s/源。新增 [联合动作模型](question3/global_policy/joint_rollout/JOINT_ACTION_MODEL.md)，将经停点、频道集合和下一入口统一放入秒数目标，用 VOI、Fisher 正交指标和共同随机 rollout 计算多频道收益；未修改策略代码、未连接官方服务。
+
+20. 2026-09-12：独立开始第四问[半平面搜索与联合信念规划](question4/halfplane_search/AI_INTERACTION.md)。第三问六项优化由另一进程继续。本任务只读核对第三问代码，分析定向源覆盖证书、联合后验和适用论文；进行中，仅本地分析，不连接官方服务。
+
+第20项本轮分析完成：[第四问详细设计](question4/halfplane_search/README.md)和[定向源专题文献](文献检索/第四问_定向源搜索与定位_专题检索.md)已保存。证明半平面局部凸包覆盖、45点全域发现构造及首次示向度后122点光学兜底；23600位置几何核验、10000凸组合、100000光学覆盖样本均无违反，均非模拟器成绩。完整第四问策略尚未实现；本进程未改第三问代码、未连接官方服务。

@@ -1,0 +1,33 @@
+{
+  "combined": {
+    "paired_n": 10,
+    "paired_delta_s_per_source": -24.06500224813853,
+    "ci95": [
+      -38.630432746259956,
+      -9.499571750017102
+    ],
+    "faster": 9,
+    "mean_components_delta_s_per_source": {
+      "movement": -18.627816164444,
+      "measure": -4.4182900432900425,
+      "switch": -0.8531818181818183,
+      "clear": -0.1657142857142857
+    }
+  },
+  "sweep_geometry6": {
+    "paired_n": 10,
+    "paired_delta_s_per_source": -22.144321318484856,
+    "ci95": [
+      -32.932832975630106,
+      -11.355809661339608
+    ],
+    "faster": 9,
+    "mean_components_delta_s_per_source": {
+      "movement": -14.613325748712066,
+      "measure": -6.265151515151516,
+      "switch": -1.3925324675324675,
+      "clear": 0.12668831168831168
+    }
+  },
+  "evaluation": "Local development reused for architecture selection; confidence intervals exploratory; independent holdout required."
+}

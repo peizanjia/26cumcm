@@ -12,11 +12,11 @@ from .runner import Planner
 
 class DynamicTests(unittest.TestCase):
     def test_optimizer_objective_penalizes_incomplete_cases(self):
-        from .evaluate import evaluate_parameters
-        with patch('question3.global_policy.dynamic.evaluate.run_local',return_value=({'complete':False,'average_time_s':None},None)):
-            score,rows=evaluate_parameters(DynamicParameters(),[123])
+        from . import evaluate
+        with patch.object(evaluate,'run_local',return_value=({'complete':False,'average_time_s':None},None)):
+            score,rows=evaluate.evaluate_parameters(DynamicParameters(),[123])
             self.assertEqual(score,1100000);self.assertFalse(rows[0]['complete'])
-        with self.assertRaises(ValueError):evaluate_parameters(DynamicParameters(),[])
+        with self.assertRaises(ValueError):evaluate.evaluate_parameters(DynamicParameters(),[])
 
     def test_shared_origin_does_not_assign_opposite_bearing_to_same_region(self):
         w=World(DynamicParameters());t=w.targets[1]

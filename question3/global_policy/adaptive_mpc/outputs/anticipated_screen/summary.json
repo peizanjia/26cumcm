@@ -1,0 +1,89 @@
+{
+  "combined": {
+    "count": 20,
+    "complete": 20,
+    "failures": 0,
+    "true_cleared": 263,
+    "mean_s_per_source": 268.9169248759399,
+    "timing_conditional_on_completion": false,
+    "p90": 313.6311899454546,
+    "p95": 334.3935940736364,
+    "worst": 367.3720682,
+    "mean_distance_m": 12554.601388390434,
+    "mean_measures": 149.75,
+    "mean_wall_s": 16.608494965000137,
+    "long_reversals": 16,
+    "failure_upper95_if_zero": 0.13910834066826516,
+    "mean_components_s": {
+      "movement": 2510.920277678087,
+      "measure": 748.75,
+      "switch": 142.95,
+      "clear": 71.3
+    },
+    "paired_n": 20,
+    "paired_delta_s": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ],
+    "faster": 0
+  },
+  "anticipated": {
+    "count": 20,
+    "complete": 20,
+    "failures": 0,
+    "true_cleared": 263,
+    "mean_s_per_source": 291.68913882163315,
+    "timing_conditional_on_completion": false,
+    "p90": 372.82345412954544,
+    "p95": 387.1523420031818,
+    "worst": 406.84976470000004,
+    "mean_distance_m": 13972.631158936481,
+    "mean_measures": 148.25,
+    "mean_wall_s": 30.7031082350004,
+    "long_reversals": 9,
+    "failure_upper95_if_zero": 0.13910834066826516,
+    "mean_components_s": {
+      "movement": 2794.5262317872957,
+      "measure": 741.25,
+      "switch": 144.75,
+      "clear": 75.2
+    },
+    "paired_n": 20,
+    "paired_delta_s": 22.772213945693256,
+    "paired_ci95": [
+      4.750664535188452,
+      40.793763356198056
+    ],
+    "faster": 7
+  },
+  "anticipated_frequent": {
+    "count": 20,
+    "complete": 19,
+    "failures": 1,
+    "true_cleared": 257,
+    "mean_s_per_source": 296.79941034611767,
+    "timing_conditional_on_completion": true,
+    "p90": 374.9836394345454,
+    "p95": 422.19784562818165,
+    "worst": 490.95391918181815,
+    "mean_distance_m": 13606.112402908137,
+    "mean_measures": 153.3,
+    "mean_wall_s": 27.904082445001404,
+    "long_reversals": 4,
+    "failure_upper95_if_zero": null,
+    "mean_components_s": {
+      "movement": 2721.2224805816268,
+      "measure": 766.5,
+      "switch": 149.05,
+      "clear": 72.95
+    },
+    "paired_n": 19,
+    "paired_delta_s": 28.606884621444124,
+    "paired_ci95": [
+      4.347091409802413,
+      52.86667783308583
+    ],
+    "faster": 8
+  }
+}

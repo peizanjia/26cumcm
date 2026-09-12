@@ -1,0 +1,2588 @@
+{
+  "parameters": {
+    "initial_step": 550.0,
+    "initial_lateral": 70.0,
+    "density_sigma_deg": 30.0,
+    "heading_candidates": 72,
+    "ring_radius": 1400.0,
+    "ring_nodes": 6,
+    "max_known_scans": 5,
+    "known_score_min": 0.025,
+    "rear_scan_weight": 0.35,
+    "unknown_gain_min": 0.08,
+    "service_radius": 60.0,
+    "probe_service_radius": 300.0,
+    "probe_detour_max": 100.0,
+    "trial_probability_min": 0.4,
+    "max_speculative_clears": 2,
+    "max_detour": 220.0,
+    "route_detour_budget": 420.0,
+    "route_batch": 4,
+    "information_weight": 1.0,
+    "proximity_weight": 1.0,
+    "cleanup_weight": 1.0,
+    "coverage_weight": 1.0,
+    "count_bound_stop": false,
+    "samples": 1024,
+    "circle_sides": 32,
+    "coverage_cell": 60.0,
+    "max_commands": 4000,
+    "model_seed": 12345,
+    "sector_count": 8,
+    "nearby_distance": 500.0,
+    "frontier_spacing": 240.0,
+    "frontier_closure_bonus": 0.35,
+    "rollout_samples": 12,
+    "probe_lateral": 70.0,
+    "probe_fraction_near": 0.5,
+    "probe_fraction_far": 0.8,
+    "rollout_probe_limit": 3,
+    "action_margin_s": 1.0,
+    "route_method": "insertion_2opt",
+    "global_mode": "sector",
+    "scan_mode": "heuristic",
+    "inner_radius": 800.0,
+    "inner_nodes": 8,
+    "inner_probability": 0.65,
+    "voi_samples": 6,
+    "voi_candidates": 6,
+    "voi_gain_threshold_s": 1.0,
+    "voi_uncertainty_weight": 0.0,
+    "scan_each_probe": false,
+    "route_scope": "local",
+    "annealing_steps": 300,
+    "annealing_temperature": 200.0,
+    "open_if_no_frontier": false,
+    "linked_terminal": true,
+    "continuous_service": true,
+    "search_scenarios": 384,
+    "validation_scenarios": 2048,
+    "refine_iterations": 24,
+    "refine_finalists": 6,
+    "next_entry_limit": 6,
+    "scan_scenarios": 24,
+    "scan_candidates": 8,
+    "scan_max_known": 5,
+    "scan_min_net_s": 1.0,
+    "early_scan_min_net_s": 0.0,
+    "unknown_scan_gain": 0.08,
+    "early_unknown_scan_gain": 0.08,
+    "scan_risk_weight": 0.0,
+    "early_stops": 8,
+    "revisit_radius": 120.0,
+    "revisit_penalty_s": 15.0,
+    "frontier_candidates": 3,
+    "joint_samples": 32,
+    "joint_validation_samples": 128,
+    "joint_finalists": 6,
+    "side_scan_channels": 2,
+    "replan_shrink_fraction": 0.3,
+    "target_switch_margin_s": 2.0,
+    "max_waypoint_step": 450.0,
+    "stop_scans": true,
+    "early_mapping": true,
+    "anticipate_coverage": false,
+    "angular_bias_s": 0.0,
+    "early_geometry_mapping": true,
+    "early_geometry_stops": 6,
+    "unlock_service": true,
+    "value_scans": true,
+    "initial_map_probe": true
+  },
+  "position": [
+    -570.0,
+    1470.0
+  ],
+  "virtual_time_s": 3170.350088,
+  "complete": true,
+  "targets": [
+    {
+      "channel": 1,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 2,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 3,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 4,
+      "status": "cleared",
+      "polygon": [
+        [
+          -1410.1162586145897,
+          -466.6823300529899
+        ],
+        [
+          -1406.6783199654599,
+          -465.7794416702369
+        ],
+        [
+          -1403.66378788798,
+          -457.80802606666435
+        ],
+        [
+          -1406.6760824806584,
+          -458.46839318791643
+        ]
+      ],
+      "center": [
+        -1406.890023251285,
+        -462.24517805982714
+      ],
+      "radius": 5.486065295807816,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "direction",
+          "bearing": 193.37
+        },
+        {
+          "position": [
+            -1040.828535879941,
+            -369.6981692580261
+          ],
+          "result": "direction",
+          "bearing": 193.71
+        },
+        {
+          "position": [
+            -1378.2159243003366,
+            -390.51549387051443
+          ],
+          "result": "direction",
+          "bearing": 248.28
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 5,
+      "status": "cleared",
+      "polygon": [
+        [
+          -1135.9676975612044,
+          -341.1821999814647
+        ],
+        [
+          -1143.2966524506837,
+          -338.9854993929324
+        ],
+        [
+          -1150.086272143825,
+          -340.99861000375597
+        ]
+      ],
+      "center": [
+        -1143.0269848525147,
+        -341.09040499261033
+      ],
+      "radius": 7.059884091203881,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 197.52
+        },
+        {
+          "position": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -188.01540025628074,
+            -171.31972501992863
+          ],
+          "result": "direction",
+          "bearing": 189.88
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "direction",
+          "bearing": 178.25
+        },
+        {
+          "position": [
+            -1040.828535879941,
+            -369.6981692580261
+          ],
+          "result": "direction",
+          "bearing": 164.32
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 6,
+      "status": "cleared",
+      "polygon": [
+        [
+          623.3455657828544,
+          530.0398441225918
+        ],
+        [
+          606.03333561837,
+          515.3190018137619
+        ],
+        [
+          599.4430927460176,
+          474.51681696032216
+        ],
+        [
+          614.7650892799846,
+          486.64564972653045
+        ]
+      ],
+      "center": [
+        611.394329264436,
+        502.27833054145697
+      ],
+      "radius": 30.224719860318164,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 39.37
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 79.82
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 7,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 8,
+      "status": "cleared",
+      "polygon": [
+        [
+          -586.4361472318368,
+          250.95698574581786
+        ],
+        [
+          -589.3134937287433,
+          245.24719525186205
+        ],
+        [
+          -575.7059667356344,
+          239.58432164573
+        ]
+      ],
+      "center": [
+        -581.4836464042319,
+        244.88137296842754
+      ],
+      "radius": 7.8383885504749005,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 156.4
+        },
+        {
+          "position": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "result": "direction",
+          "bearing": 163.52
+        },
+        {
+          "position": [
+            -188.01540025628074,
+            -171.31972501992863
+          ],
+          "result": "direction",
+          "bearing": 134.34
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "direction",
+          "bearing": 62.25
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 9,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 10,
+      "status": "cleared",
+      "polygon": [
+        [
+          854.5068841156647,
+          -153.05729819362932
+        ],
+        [
+          828.1034220866859,
+          -148.32797109722344
+        ],
+        [
+          870.4072371800959,
+          -187.63222297482216
+        ],
+        [
+          902.4110335506754,
+          -194.5312274868939
+        ]
+      ],
+      "center": [
+        865.2572278186807,
+        -171.42959929205867
+      ],
+      "radius": 43.75032006309452,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 348.84
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 318.11
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 11,
+      "status": "cleared",
+      "polygon": [
+        [
+          -213.91308935703972,
+          444.7765204515672
+        ],
+        [
+          -195.5301635140128,
+          406.554017019186
+        ],
+        [
+          -174.66975602376584,
+          398.38101264331493
+        ],
+        [
+          -190.5845465276342,
+          434.6789413819034
+        ]
+      ],
+      "center": [
+        -194.29142269040278,
+        421.5787665474411
+      ],
+      "radius": 30.383311027157827,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 114.68
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 157.6
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 12,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 13,
+      "status": "cleared",
+      "polygon": [
+        [
+          242.84727333627265,
+          5.62261364889703
+        ],
+        [
+          219.63393520210585,
+          3.993271852727413
+        ],
+        [
+          216.3151743193676,
+          2.8222724341607686
+        ]
+      ],
+      "center": [
+        229.5812238278201,
+        4.2224430415289
+      ],
+      "radius": 13.339735652944968,
+      "misses": 1,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 1.18
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 200.44
+        },
+        {
+          "position": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "result": "direction",
+          "bearing": 185.02
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "radius": 20.0,
+          "reason": "clear_miss"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 14,
+      "status": "cleared",
+      "polygon": [
+        [
+          1701.3054913784483,
+          16.93992370611094
+        ],
+        [
+          1633.0928468189318,
+          22.865771375883995
+        ],
+        [
+          1559.4018503724735,
+          -6.825070275813374
+        ],
+        [
+          1616.5150266035591,
+          -13.812391870368316
+        ]
+      ],
+      "center": [
+        1630.353670875461,
+        5.057426715148782
+      ],
+      "radius": 71.9399372214653,
+      "misses": 1,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 354.03
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "direction",
+          "bearing": 20.94
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.960467266879,
+            -2.7200710524307965
+          ],
+          "radius": 20.0,
+          "reason": "clear_miss"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 15,
+      "status": "cleared",
+      "polygon": [
+        [
+          -775.0796939727754,
+          -1258.0194173144037
+        ],
+        [
+          -777.6795202217716,
+          -1249.3289527326435
+        ],
+        [
+          -807.1895640219691,
+          -1226.6482538799069
+        ],
+        [
+          -806.7187821553388,
+          -1231.8871157010803
+        ]
+      ],
+      "center": [
+        -791.1346289973723,
+        -1242.3338355971553
+      ],
+      "radius": 22.445454160085582,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "direction",
+          "bearing": 276.14
+        },
+        {
+          "position": [
+            -1040.828535879941,
+            -369.6981692580261
+          ],
+          "result": "direction",
+          "bearing": 285.65
+        },
+        {
+          "position": [
+            -891.7224938567134,
+            -1161.6783088095945
+          ],
+          "result": "direction",
+          "bearing": 321.45
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 16,
+      "status": "cleared",
+      "polygon": [
+        [
+          -271.0989068713294,
+          -1563.0482239669795
+        ],
+        [
+          -281.59523692807517,
+          -1556.54402731385
+        ],
+        [
+          -320.2498172410992,
+          -1556.2505490566264
+        ],
+        [
+          -312.7508564481093,
+          -1561.269718127924
+        ]
+      ],
+      "center": [
+        -295.6743620562143,
+        -1559.649386511803
+      ],
+      "radius": 24.809375114883434,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "direction",
+          "bearing": 327.21
+        },
+        {
+          "position": [
+            -454.09729760237985,
+            -1555.234335067182
+          ],
+          "result": "direction",
+          "bearing": 358.56
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 17,
+      "status": "absent",
+      "polygon": null,
+      "center": null,
+      "radius": null,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            -1080.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            870.721978,
+            -284.3010989
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            617.1070525,
+            500.8176908
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            600.0,
+            840.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -96.7925017,
+            593.2941347
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -840.0,
+            360.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -1080.0,
+            600.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -570.0,
+            1470.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -796.7594289,
+            -1237.3153831
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            -1080.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            870.721978,
+            -284.3010989
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            1600.9604673,
+            -2.7200711
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            617.1070525,
+            500.8176908
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            600.0,
+            840.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -96.7925017,
+            593.2941347
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -840.0,
+            360.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -1080.0,
+            600.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            -570.0,
+            1470.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": true,
+      "absence_certified": true
+    },
+    {
+      "channel": 18,
+      "status": "cleared",
+      "polygon": [
+        [
+          -115.07509786650994,
+          619.983786448961
+        ],
+        [
+          -107.4679397735282,
+          578.9991184708923
+        ],
+        [
+          -84.10082720773123,
+          562.3960447731982
+        ],
+        [
+          -89.82510278561466,
+          600.675215752595
+        ]
+      ],
+      "center": [
+        -99.58796253712057,
+        591.1899156110796
+      ],
+      "radius": 32.69462277713901,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 99.51
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "direction",
+          "bearing": 143.6
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 19,
+      "status": "cleared",
+      "polygon": [
+        [
+          -995.7530704337237,
+          -926.8921254836023
+        ],
+        [
+          -995.0681749140683,
+          -935.3583640552995
+        ],
+        [
+          -986.8891746099898,
+          -947.4228156721363
+        ],
+        [
+          -985.7506475739638,
+          -940.5862658274857
+        ]
+      ],
+      "center": [
+        -991.3211225218568,
+        -937.1574705778693
+      ],
+      "radius": 11.18121067675111,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "result": "no_signal",
+          "bearing": null
+        },
+        {
+          "position": [
+            -886.4689951776643,
+            -344.4265403318942
+          ],
+          "result": "direction",
+          "bearing": 259.54
+        },
+        {
+          "position": [
+            -1040.828535879941,
+            -369.6981692580261
+          ],
+          "result": "direction",
+          "bearing": 275.63
+        },
+        {
+          "position": [
+            -1066.1125821403398,
+            -830.5641616145933
+          ],
+          "result": "direction",
+          "bearing": 305.14
+        }
+      ],
+      "exclusions": [
+        {
+          "center": [
+            0.0,
+            0.0
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        },
+        {
+          "center": [
+            541.8061819581241,
+            117.66928737763419
+          ],
+          "radius": 1000.0,
+          "reason": "no_signal"
+        }
+      ],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    },
+    {
+      "channel": 20,
+      "status": "cleared",
+      "polygon": [
+        [
+          -197.692903420343,
+          -180.42354022869165
+        ],
+        [
+          -163.8895797863404,
+          -149.57308876572142
+        ],
+        [
+          -185.68232035507157,
+          -157.88839054902022
+        ],
+        [
+          -226.4834388972397,
+          -192.58217791070297
+        ]
+      ],
+      "center": [
+        -195.18650934179004,
+        -171.0776333382122
+      ],
+      "radius": 37.972927683667216,
+      "misses": 0,
+      "observations": [
+        {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "result": "direction",
+          "bearing": 221.38
+        },
+        {
+          "position": [
+            242.84727333627268,
+            5.622613648897032
+          ],
+          "result": "direction",
+          "bearing": 201.89
+        }
+      ],
+      "exclusions": [],
+      "particle_resets": 0,
+      "coverage_complete": false,
+      "absence_certified": false
+    }
+  ],
+  "coverage": {
+    "cell_size": 60.0,
+    "cell_count": 2940,
+    "fraction_by_channel": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 1.0,
+      "4": 0.5489795918367347,
+      "5": 0.49387755102040815,
+      "6": 0.37551020408163266,
+      "7": 1.0,
+      "8": 0.4857142857142857,
+      "9": 1.0,
+      "10": 0.37551020408163266,
+      "11": 0.37551020408163266,
+      "12": 1.0,
+      "13": 0.3782312925170068,
+      "14": 0.4629251700680272,
+      "15": 0.5989795918367347,
+      "16": 0.6299319727891156,
+      "17": 1.0,
+      "18": 0.37551020408163266,
+      "19": 0.573469387755102,
+      "20": 0.3197278911564626
+    }
+  }
+}

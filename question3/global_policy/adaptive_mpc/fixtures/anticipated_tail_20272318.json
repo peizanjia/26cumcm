@@ -1,0 +1,134 @@
+{
+  "origin": "public checkpoint from preserved anticipated_screen/anticipated_frequent/20272318.json.gz; first failed candidate",
+  "coverage_cell": 60.0,
+  "position": [
+    -1598.2684279584491,
+    -735.2799388385885
+  ],
+  "unknown": {
+    "2": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "3": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "5": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "7": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "9": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "10": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "15": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000",
+    "18": "fe00ffe003fff8003ffffc00ffffff003ffffffc00fffffffc00ffffffff003ffffffff003ffffffffc00fffffffffc00fffffffffe003fffffffffc00ffffffffff800ffffffffff800ffffffffffe003ffffffffffc003ffffffffffc001ffffffffffc000ffffffffffe0001ffffffffff80003fffffffffe00003fffffffff800001fffffffff800001fffffffff800003fffffffff800003fffffffffc00003fffffffffc00007fffffffffc00007fffffffffc00003fffffffffe00001ffffffffff00003ffffffffff00007ffffffffff00007fffffffffe0000ffffffffffe0000ffffffffffe0001ffffffffffc0003ffffffffff8000ffffffffffc0003fffffffffe0000ffffffffff0000ffffffffff0000ffffffffff0000fffffffffc0003ffffffffe0003ffffffffc0003ffffffff0000ffffffffc0003fffffffc0003fffffff0000ffffffe0000ffffff80003ffffe00003fffc00000fff800003fe00000fc0000000000000000"
+  },
+  "known": [
+    {
+      "channel": 6,
+      "center": [
+        657.5406483126908,
+        -427.13038443115977
+      ],
+      "radius": 29.007868228053812
+    },
+    {
+      "channel": 11,
+      "center": [
+        -1598.2684279584491,
+        -735.2799388385885
+      ],
+      "radius": 80.65002222709369
+    },
+    {
+      "channel": 13,
+      "center": [
+        -14.512916755620806,
+        -686.9981411208015
+      ],
+      "radius": 69.28607272044694
+    },
+    {
+      "channel": 14,
+      "center": [
+        28.88774421436469,
+        -1131.381066117949
+      ],
+      "radius": 16.135757616173642
+    },
+    {
+      "channel": 19,
+      "center": [
+        177.4581137387835,
+        -1222.5393595659843
+      ],
+      "radius": 571.9882551636784
+    },
+    {
+      "channel": 20,
+      "center": [
+        682.8048319597879,
+        -925.4934995038893
+      ],
+      "radius": 735.7377381876595
+    }
+  ],
+  "residual": {
+    "6": 10.127802109887472,
+    "11": 20.901160333445915,
+    "13": 18.531406250470653,
+    "14": 5.0,
+    "19": 112.57874869156043,
+    "20": 109.6596027037121
+  },
+  "start": [
+    657.1120266072977,
+    -427.10983641415226
+  ],
+  "removed": 6,
+  "y": [
+    657.5406483126908,
+    -427.13038443115977
+  ],
+  "unknown_channels": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    10,
+    15,
+    18
+  ],
+  "stations": [
+    [
+      -1598.268428,
+      -735.2799388
+    ],
+    [
+      983.869116,
+      217.5774971
+    ],
+    [
+      600.0,
+      840.0
+    ],
+    [
+      840.0,
+      -840.0
+    ],
+    [
+      600.0,
+      -1080.0
+    ],
+    [
+      120.0,
+      1080.0
+    ],
+    [
+      -828.1363636,
+      437.8636364
+    ],
+    [
+      -840.0,
+      840.0
+    ],
+    [
+      1080.0,
+      120.0
+    ]
+  ],
+  "early": false
+}

@@ -1,0 +1,11 @@
+{
+  "count": 10,
+  "complete": 10,
+  "mean_s_per_source": 251.18023500924247,
+  "mean_components_s": {
+    "movement": 2150.2561096551294,
+    "measure": 732.0,
+    "switch": 139.7,
+    "clear": 67.8
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "sector_4": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 312.6003320366018,
+    "mean_components_s": {
+      "movement": 2752.9361748274378,
+      "measure": 873.5,
+      "switch": 169.7,
+      "clear": 68.4
+    }
+  },
+  "sector_5": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 305.61895024887446,
+    "mean_components_s": {
+      "movement": 2637.8267108043483,
+      "measure": 878.0,
+      "switch": 170.2,
+      "clear": 69.0
+    }
+  },
+  "sector_6": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 287.73904973032467,
+    "mean_components_s": {
+      "movement": 2503.4566006779014,
+      "measure": 817.0,
+      "switch": 158.2,
+      "clear": 68.7
+    }
+  }
+}

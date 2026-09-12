@@ -1,0 +1,45 @@
+{
+  "control_source": "../early_geometry_screen/geometry_6",
+  "control_reused_reason": "Same deterministic sector_count=8 algorithm and relevant parameters previously completed on the same development seeds. New recorded angular_bias_s=0 belongs to the other global planner and is unused by sweep_planner.",
+  "constraints": "sector_count integer in [4,16], all runs preserve per-channel whole-cell coverage and r20 certification; synthetic development only; unchanged physical constants.",
+  "variants": {
+    "sector_4": {
+      "mean_s_per_source": 312.6003320366018,
+      "paired_delta": 39.27577570887445,
+      "ci95": [
+        14.672793183167318,
+        63.87875823458158
+      ],
+      "faster": 1,
+      "complete": 10,
+      "same_other_relevant_parameters": true
+    },
+    "sector_5": {
+      "mean_s_per_source": 305.61895024887446,
+      "paired_delta": 32.29439392114718,
+      "ci95": [
+        13.294365318981185,
+        51.29442252331318
+      ],
+      "faster": 0,
+      "complete": 10,
+      "same_other_relevant_parameters": true
+    },
+    "sector_6": {
+      "mean_s_per_source": 287.73904973032467,
+      "paired_delta": 14.414493402597392,
+      "ci95": [
+        2.8935442453890268,
+        25.935442559805757
+      ],
+      "faster": 1,
+      "complete": 10,
+      "same_other_relevant_parameters": true
+    },
+    "sector_8": {
+      "mean_s_per_source": 273.32455632772724,
+      "complete": 10,
+      "reused_control": true
+    }
+  }
+}

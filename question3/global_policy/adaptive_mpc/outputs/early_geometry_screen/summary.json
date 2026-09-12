@@ -1,0 +1,35 @@
+{
+  "geometry_off": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 284.2332397782251,
+    "mean_components_s": {
+      "movement": 2453.9884038848513,
+      "measure": 816.5,
+      "switch": 158.9,
+      "clear": 66.6
+    }
+  },
+  "geometry_6": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 273.32455632772724,
+    "mean_components_s": {
+      "movement": 2335.4439295583093,
+      "measure": 812.5,
+      "switch": 157.4,
+      "clear": 66.0
+    }
+  },
+  "geometry_3": {
+    "count": 10,
+    "complete": 10,
+    "mean_s_per_source": 275.19876076677485,
+    "mean_components_s": {
+      "movement": 2359.348129057777,
+      "measure": 810.5,
+      "switch": 157.1,
+      "clear": 66.9
+    }
+  }
+}

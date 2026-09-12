@@ -1,0 +1,178 @@
+{
+  "geometry_6": {
+    "paired_n": 10,
+    "delta_s_per_source": -10.908683450497833,
+    "ci95": [
+      -21.709574848535755,
+      -0.10779205245991008
+    ],
+    "faster": 8,
+    "extra_geometry_scans": 51,
+    "mean_components_delta_s_per_source": {
+      "movement": -10.14463575233695,
+      "measure": -0.5415584415584417,
+      "switch": -0.1728138528138528,
+      "clear": -0.049675324675324664
+    },
+    "cases": [
+      {
+        "seed": 20272300,
+        "geometric_scans": 6,
+        "negative_net_scans": 6,
+        "predicted_net_sum_s": -46.27390344691658,
+        "delta": -4.8044378571428865
+      },
+      {
+        "seed": 20272301,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -19.97861064102646,
+        "delta": -21.06890608333333
+      },
+      {
+        "seed": 20272302,
+        "geometric_scans": 3,
+        "negative_net_scans": 3,
+        "predicted_net_sum_s": -9.924977093179447,
+        "delta": -24.276170999999977
+      },
+      {
+        "seed": 20272303,
+        "geometric_scans": 5,
+        "negative_net_scans": 5,
+        "predicted_net_sum_s": -17.477583395764512,
+        "delta": -35.261349199999984
+      },
+      {
+        "seed": 20272304,
+        "geometric_scans": 5,
+        "negative_net_scans": 5,
+        "predicted_net_sum_s": -15.30053537602106,
+        "delta": 16.398816214285716
+      },
+      {
+        "seed": 20272305,
+        "geometric_scans": 10,
+        "negative_net_scans": 9,
+        "predicted_net_sum_s": -28.03379297121721,
+        "delta": -8.531533533333345
+      },
+      {
+        "seed": 20272306,
+        "geometric_scans": 3,
+        "negative_net_scans": 3,
+        "predicted_net_sum_s": -17.851698022719745,
+        "delta": -3.0233035999999913
+      },
+      {
+        "seed": 20272307,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -16.53297372855713,
+        "delta": -23.582710899999995
+      },
+      {
+        "seed": 20272308,
+        "geometric_scans": 7,
+        "negative_net_scans": 7,
+        "predicted_net_sum_s": -45.520454814090016,
+        "delta": 0.9112437272727334
+      },
+      {
+        "seed": 20272309,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -24.47870024436704,
+        "delta": -5.848482272727267
+      }
+    ]
+  },
+  "geometry_3": {
+    "paired_n": 10,
+    "delta_s_per_source": -9.034479011450221,
+    "ci95": [
+      -19.48555731236319,
+      1.4165992894627468
+    ],
+    "faster": 8,
+    "extra_geometry_scans": 30,
+    "mean_components_delta_s_per_source": {
+      "movement": -8.20577772122766,
+      "measure": -0.6664502164502164,
+      "switch": -0.18770562770562774,
+      "clear": 0.025454545454545452
+    },
+    "cases": [
+      {
+        "seed": 20272300,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -36.32794210127565,
+        "delta": -5.187224571428601
+      },
+      {
+        "seed": 20272301,
+        "geometric_scans": 1,
+        "negative_net_scans": 1,
+        "predicted_net_sum_s": -2.7975687900747928,
+        "delta": -3.2498909166666863
+      },
+      {
+        "seed": 20272302,
+        "geometric_scans": 3,
+        "negative_net_scans": 3,
+        "predicted_net_sum_s": -9.924977093179447,
+        "delta": -24.276170999999977
+      },
+      {
+        "seed": 20272303,
+        "geometric_scans": 2,
+        "negative_net_scans": 2,
+        "predicted_net_sum_s": -2.2451386157664395,
+        "delta": -34.73864839999999
+      },
+      {
+        "seed": 20272304,
+        "geometric_scans": 3,
+        "negative_net_scans": 3,
+        "predicted_net_sum_s": -11.4891697713289,
+        "delta": 16.11777428571429
+      },
+      {
+        "seed": 20272305,
+        "geometric_scans": 5,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -2.484316837550777,
+        "delta": -6.732206866666672
+      },
+      {
+        "seed": 20272306,
+        "geometric_scans": 1,
+        "negative_net_scans": 1,
+        "predicted_net_sum_s": -8.963936186267961,
+        "delta": -3.9289581999999825
+      },
+      {
+        "seed": 20272307,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -16.53297372855713,
+        "delta": -23.582710899999995
+      },
+      {
+        "seed": 20272308,
+        "geometric_scans": 4,
+        "negative_net_scans": 4,
+        "predicted_net_sum_s": -27.275839500014413,
+        "delta": 0.40583309090908415
+      },
+      {
+        "seed": 20272309,
+        "geometric_scans": 3,
+        "negative_net_scans": 3,
+        "predicted_net_sum_s": -21.896501258513492,
+        "delta": -5.17258663636369
+      }
+    ]
+  }
+}
