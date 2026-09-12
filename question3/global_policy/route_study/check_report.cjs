@@ -1,0 +1,21 @@
+const {chromium}=require('C:/Users/YOGA/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const {pathToFileURL}=require('node:url');const path=require('node:path');
+(async()=>{
+ const folder=path.resolve('question3/global_policy/route_study/outputs');
+ const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});
+ const page=await browser.newPage({viewport:{width:1440,height:1150}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto(pathToFileURL(path.join(folder,'comparison.html')).href);
+ await page.locator('#baseline').check();await page.locator('#truth').check();
+ await page.locator('#variant').selectOption('global_guided');await page.locator('#algorithm').selectOption('nearest');
+ await page.screenshot({path:path.join(folder,'comparison.png'),fullPage:true});
+ const variants=await page.locator('#variant option').evaluateAll(options=>options.map(o=>o.value));
+ for(const value of variants)await page.locator('#variant').selectOption(value);
+ const algorithms=await page.locator('#algorithm option').evaluateAll(options=>options.map(o=>o.value));
+ for(const value of algorithms)await page.locator('#algorithm').selectOption(value);
+ await page.locator('#seed').selectOption('20263001');
+ const text=await page.locator('body').innerText();
+ if(errors.length||text.includes('undefined')||text.includes('NaN'))throw Error(JSON.stringify({errors,invalidText:true}));
+ if(await page.locator('#holdout tr').count()!==5)throw Error('Missing held-out results');
+ console.log(JSON.stringify({errors,variantCount:variants.length,algorithmCount:algorithms.length,staticProblems:await page.locator('#problem option').count()}));
+ await browser.close();
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,34 @@
+{
+  "initial_step": [
+    250.0,
+    800.0
+  ],
+  "initial_lateral": [
+    0.0,
+    150.0
+  ],
+  "known_score_min": [
+    0.005,
+    0.08
+  ],
+  "unknown_gain_min": [
+    0.03,
+    0.2
+  ],
+  "service_radius": [
+    30.0,
+    100.0
+  ],
+  "trial_probability_min": [
+    0.2,
+    0.8
+  ],
+  "max_detour": [
+    80.0,
+    400.0
+  ],
+  "ring_radius": [
+    1250.0,
+    1550.0
+  ]
+}

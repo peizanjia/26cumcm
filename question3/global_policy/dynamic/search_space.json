@@ -1,0 +1,20 @@
+{
+  "note": "Proposed future optimization bounds; no parameter training performed in this revision. Preserve physical constants and coverage certification.",
+  "objective": "Mean per-case total virtual completion time divided by source count, with incomplete-case penalty; use fixed training seeds and separate held-out evaluation seeds.",
+  "parameters": {
+    "nearby_distance": [250, 750],
+    "sector_count": [6, 12],
+    "frontier_closure_bonus": [0.0, 1.0],
+    "probe_lateral": [20, 150],
+    "probe_fraction_near": [0.2, 0.65],
+    "probe_fraction_far": [0.65, 0.95],
+    "action_margin_s": [0, 5],
+    "known_score_min": [0.005, 0.08],
+    "rear_scan_weight": [0.1, 0.7],
+    "unknown_gain_min": [0.02, 0.15],
+    "rollout_probe_limit": [1, 4],
+    "max_speculative_clears": [0, 3]
+  },
+  "integer_parameters": ["sector_count", "rollout_probe_limit", "max_speculative_clears"],
+  "constraints": ["probe_fraction_near < probe_fraction_far"]
+}
