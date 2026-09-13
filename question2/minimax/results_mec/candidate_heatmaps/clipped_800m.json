@@ -1,0 +1,20 @@
+{
+  "name": "clipped_800m",
+  "station_m": [
+    1000.0,
+    0.0
+  ],
+  "bearing_deg": 0,
+  "policy_point_m": [
+    1594.515860379177,
+    -535.304485087539
+  ],
+  "policy_worst_radius_m": 20.591907199010446,
+  "valid_grid_points": 2506,
+  "grid_min_radius_m": 20.629394189443232,
+  "grid_min_point_m": [
+    1600.0,
+    -550.0
+  ],
+  "grid_le20_count": 0
+}

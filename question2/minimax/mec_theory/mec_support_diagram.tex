@@ -1,0 +1,36 @@
+% Requires tikz and amsmath; vector graphics with no external image dependency.
+\begin{tikzpicture}[x=1cm,y=1cm,line cap=round,line join=round,
+ every node/.style={font=\small},
+ mec/.style={draw=blue!65!black,line width=1.1pt},
+ poly/.style={draw=black!65,fill=blue!8,line width=.7pt},
+ support/.style={circle,fill=red!75!black,inner sep=1.7pt}]
+ \path[use as bounding box] (-2.65,-2.8) rectangle (9.1,2.15);
+ \begin{scope}
+  \fill[blue!3] (0,0) circle (1.8);
+  \draw[poly] (-1.8,0)--(-.65,-.9)--(1.05,-.7)--(1.8,0)--(.45,1.15)--cycle;
+  \draw[mec] (0,0) circle (1.8);
+  \draw[densely dashed,black!60] (-1.8,0)--(1.8,0);
+  \node[support,label=left:{$v_i$}] at (-1.8,0) {};
+  \node[support,label=right:{$v_j$}] at (1.8,0) {};
+  \fill (0,0) circle (1.3pt);
+  \node[below=3pt] at (0,0) {$c^*$};
+  \node[above=3pt] at (0,0) {$D$};
+  \node at (0,-2.65) {(a) 两点支撑：$R^*=D/2$};
+ \end{scope}
+ \begin{scope}[shift={(6.45,0)}]
+  \fill[blue!3] (0,0) circle ({sqrt(3)});
+  \draw[poly] (-1.5,{-sqrt(3)/2})--(1.5,{-sqrt(3)/2})--(0,{sqrt(3)})--cycle;
+  \draw[mec] (0,0) circle ({sqrt(3)});
+  \draw[orange!85!black,dashed,line width=.9pt] (0,{-sqrt(3)/2}) circle (1.5);
+  \draw[densely dotted,black!60] (0,0)--(0,{sqrt(3)});
+  \node[right=3pt] at (0,.9) {$R^*$};
+  \node[support,label=left:{$v_1$}] at (-1.5,{-sqrt(3)/2}) {};
+  \node[support,label=right:{$v_2$}] at (1.5,{-sqrt(3)/2}) {};
+  \node[support,label=above:{$v_3$}] at (0,{sqrt(3)}) {};
+  \fill (0,0) circle (1.3pt);
+  \node[left=4pt] at (0,0) {$c^*$};
+  \fill[orange!85!black] (0,{-sqrt(3)/2}) circle (1.3pt);
+  \node[below=2pt] at (0,{-sqrt(3)/2}) {$m$};
+  \node at (0,-2.65) {(b) 三点支撑：$R^*=D/\sqrt{3}>D/2$};
+ \end{scope}
+\end{tikzpicture}

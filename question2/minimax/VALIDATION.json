@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-13",
+  "python": "3.9.6",
+  "numpy": "2.0.2",
+  "matplotlib": "3.9.4",
+  "unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "appendix_definition_ast_matches": 29,
+  "full_paired_experiment": {
+    "config": {
+      "global_trials": 48,
+      "edge_outward_trials": 16,
+      "seed": 20660911,
+      "circle_sides": 96,
+      "angle_step_deg": 2.0,
+      "safe_angle_step_deg": 0.05,
+      "safe_guard_m": 0.0,
+      "synthetic_prior": "S1,G uniform-area in arena; rho uniform[1000,1500]; condition 5<d1<=rho; errors uniform[-1,1] deg; policy neglects the 5 m distinction",
+      "boundary_stress": "S1 radius uniform[1500,1775], outward bearing offset within +/-70 deg, target sampled on the clipped ray",
+      "circle_geometry": "circumscribed regular polygons (conservative)"
+    },
+    "rows": 192,
+    "all_detected": true,
+    "all_posteriors_contain_truth": true,
+    "csv_summary_means_consistent": true,
+    "elapsed_s": 232.542885334
+  },
+  "standalone_appendix_example": {
+    "station_m": [
+      1700,
+      0
+    ],
+    "bearing_deg": 0,
+    "selected_m": [
+      1776.9576844149408,
+      98.50134420143903
+    ],
+    "worst_mec_radius_m": 2.75235371399236,
+    "candidate_le20_count": 318
+  },
+  "convergence_audit_matches_previous": true,
+  "safe_region_audit_matches_previous": true,
+  "difference_from_previous_snapshot": {
+    "global_mean_mec_radius_m_before": 23.19906954423732,
+    "global_mean_mec_radius_m_after": 23.22213863062557,
+    "changed_trial_records": [
+      {
+        "trial": 2,
+        "policy": "minimax_mec",
+        "fields": [
+          "q_x_m",
+          "q_y_m",
+          "move_m",
+          "safe_margin_m",
+          "conditional_worst_mec_radius_m",
+          "conditional_worst_diameter_m",
+          "conditional_worst_area_m2",
+          "conservative_worst_mec_radius_m",
+          "area_m2",
+          "diameter_m",
+          "mec_radius_m"
+        ]
+      },
+      {
+        "trial": 8,
+        "policy": "minimax_mec",
+        "fields": [
+          "q_x_m",
+          "q_y_m",
+          "move_m",
+          "safe_margin_m",
+          "conditional_worst_mec_radius_m",
+          "conditional_worst_diameter_m",
+          "conditional_worst_area_m2",
+          "conservative_worst_mec_radius_m",
+          "area_m2",
+          "diameter_m",
+          "mec_radius_m"
+        ]
+      },
+      {
+        "trial": 35,
+        "policy": "minimax_mec",
+        "fields": [
+          "q_x_m",
+          "q_y_m",
+          "move_m",
+          "safe_margin_m",
+          "conditional_worst_mec_radius_m",
+          "conditional_worst_diameter_m",
+          "conditional_worst_area_m2",
+          "conservative_worst_mec_radius_m",
+          "area_m2",
+          "diameter_m",
+          "mec_radius_m"
+        ]
+      }
+    ],
+    "note": "Prior generating code was not preserved; no causal claim. Current results were regenerated with delivery code. Runtime columns excluded."
+  },
+  "official_simulator_used": false,
+  "not_rerun": [
+    "Full candidate heatmap grid evaluation; existing NPZ/CSV preserved.",
+    "LaTeX compilation; deliver source fragments."
+  ]
+}

@@ -1,0 +1,140 @@
+% Add mec_preamble.tex in the preamble; keep the diagram in the same directory.
+\subsection{最小覆盖圆指标及其求法}
+\label{sec:q2-mec-rigorous}
+
+设非空凸多边形为 $P=\operatorname{conv}\{v_1,\ldots,v_n\}\subset\mathbb R^2$，
+以 $B(c,R)=\{x:\|x-c\|_2\le R\}$ 表示闭圆盘。定义
+\begin{equation}
+ R_{\mathrm{MEC}}(P)
+ =\min_{c\in\mathbb R^2}\max_{x\in P}\|x-c\|_2
+ =\min_{c\in\mathbb R^2}\max_{1\le i\le n}\|v_i-c\|_2.
+ \label{eq:q2-mec-rigorous}
+\end{equation}
+第二个等号成立，是因为对任意凸组合 $x=\sum_i\alpha_i v_i$，有
+\[
+ \|x-c\|_2\le\sum_i\alpha_i\|v_i-c\|_2\le\max_i\|v_i-c\|_2,
+ \qquad \alpha_i\ge0,\quad\sum_i\alpha_i=1,
+\]
+而各顶点本身属于 $P$。因此，覆盖全部顶点与覆盖整个定位区域等价。
+该指标也是选择清除位置时的最坏距离误差；当 $R_{\mathrm{MEC}}(P)\le20\,\mathrm m$ 时，
+移动到最优圆心即可使所有相容目标位置均处于光学精确定位的距离范围内。
+
+\begin{mecproposition}[最小覆盖圆的支撑结构与最优性证书]
+\label{prop:q2-mec-support}
+若顶点集中至少有两个不同的点，则最小覆盖圆 $B(c^*,R^*)$ 存在且唯一。
+对于任意覆盖全部顶点的圆 $B(c,R)$，它是最小覆盖圆的充要条件是
+\begin{equation}
+ c\in\operatorname{conv}\{v_i:\|v_i-c\|_2=R\}.
+ \label{eq:q2-mec-hull-certificate}
+\end{equation}
+特别地，最小覆盖圆必可由以下两类支撑点之一确定：
+\begin{enumerate}
+ \item 两个边界顶点：二者为圆的直径端点；
+ \item 三个不共线边界顶点：圆为三点的外接圆。若该支撑集不可再约为两点，
+ 则三点构成锐角三角形。
+\end{enumerate}
+\end{mecproposition}
+
+\begin{proof}
+令 $f(c)=\max_i\|v_i-c\|_2$。由于 $f$ 连续，且
+$f(c)\ge\|c\|_2-\max_i\|v_i\|_2\to+\infty$（当 $\|c\|_2\to\infty$），
+故 $f$ 能够取得最小值。顶点集中存在两个不同点，故 $R^*>0$。
+
+先证式~\eqref{eq:q2-mec-hull-certificate}的必要性。
+记 $A^*=\{v_i:\|v_i-c^*\|_2=R^*\}$。
+若 $c^*\notin K:=\operatorname{conv}A^*$，取 $c^*$ 在紧凸集 $K$ 上的最近点 $p$，
+令 $d=p-c^*\ne0$。由最近点性质，
+$(v-p)^{\mathsf T}(c^*-p)\le0$ 对所有 $v\in K$ 成立，因而
+\[
+ (v-c^*)^{\mathsf T}d\ge\|d\|_2^2,\qquad v\in A^*.
+\]
+于是当 $0<t<2$ 时，所有原边界顶点均满足
+\[
+ \|v-(c^*+td)\|_2^2
+ =R^{*2}-2t(v-c^*)^{\mathsf T}d+t^2\|d\|_2^2
+ \le R^{*2}-(2t-t^2)\|d\|_2^2<R^{*2}.
+\]
+其余顶点到 $c^*$ 的距离严格小于 $R^*$；由于顶点个数有限，取充分小的 $t>0$，
+这些距离仍小于 $R^*$。因此 $f(c^*+td)<R^*$，与最优性矛盾。
+故 $c^*\in\operatorname{conv}A^*$。
+
+再证充分性及唯一性。若某覆盖圆 $B(c,R)$ 的圆心是边界顶点的凸组合，
+即 $c=\sum_{i\in I}\lambda_i v_i$，其中
+$\lambda_i>0$、$\sum_{i\in I}\lambda_i=1$、$\|v_i-c\|_2=R$，
+则对任意 $z\in\mathbb R^2$，有
+\begin{align}
+ \max_j\|v_j-z\|_2^2
+ &\ge\sum_{i\in I}\lambda_i\|v_i-z\|_2^2 \notag\\
+ &=R^2+\|z-c\|_2^2.
+ \label{eq:q2-mec-certificate-identity}
+\end{align}
+其中交叉项因 $\sum_{i\in I}\lambda_i(v_i-c)=0$ 而消失。
+当 $z=c$ 时最大距离为 $R$，当 $z\ne c$ 时最大距离严格大于 $R$，
+故该圆是唯一的最小覆盖圆。
+
+最后证明支撑点数不超过三。由 $c^*\in\operatorname{conv}A^*$，
+选取表示 $c^*$ 的正权凸组合中点数最少的一组。
+若其点数 $k>3$，则向量 $(v_i^{\mathsf T},1)^{\mathsf T}\in\mathbb R^3$
+线性相关，存在不全为零的实数 $a_i$，使
+$\sum_i a_i v_i=0$、$\sum_i a_i=0$。
+这些 $a_i$ 中同时存在正数和负数。令
+\[
+ t_0=\min_{a_i>0}\frac{\lambda_i}{a_i},\qquad
+ \lambda_i'=\lambda_i-t_0a_i.
+\]
+新权重仍非负、和为一、表示同一圆心，且至少一个权重变为零，与最少点数矛盾。
+同理，若三个支撑点共线，也可作上述约化。因此 $k\le3$，且三点情形不共线。
+
+因 $R^*>0$，不可能仅用一个边界顶点表示圆心。
+若 $k=2$，圆心在线段内部且到两端等距，必为其中点，两点即直径端点。
+若 $k=3$，圆心到三点等距，故为其外心；最少点数表示的三个权重均为正，
+故外心位于三角形内部，三角形为锐角三角形。
+\end{proof}
+
+\begin{meccorollary}[有限枚举算法的正确性与直径圆判定]
+\label{cor:q2-mec-enumeration}
+枚举全部顶点对的直径圆及全部非共线顶点三元组的外接圆，
+仅保留覆盖所有顶点的候选圆，则其中半径最小者恰为 $P$ 的最小覆盖圆。
+此外，令 $D=\operatorname{diam}(P)$，取任意一对满足 $\|v_a-v_b\|_2=D$ 的顶点，
+则 $R_{\mathrm{MEC}}(P)\ge D/2$，且等号成立当且仅当以 $v_av_b$ 为直径的圆盘
+覆盖全部顶点。
+\end{meccorollary}
+
+\begin{proof}
+命题~\ref{prop:q2-mec-support}保证候选集合包含真正的最小覆盖圆；
+保留的每个圆又均为可行覆盖圆，故取最小半径必然得到最优值。
+对于任意覆盖圆 $B(c,R)$，由三角不等式，
+$D\le\|v_a-c\|_2+\|v_b-c\|_2\le2R$。
+若直径圆覆盖全部顶点，则它达到该下界，因而最优。
+反之，若 $R_{\mathrm{MEC}}(P)=D/2$，上述两个不等式均取等号，
+故 $c^*$ 必为 $v_av_b$ 的中点，最小覆盖圆即该直径圆。
+\end{proof}
+
+据此，完整两点、三点枚举具有严格的几何依据。
+还可增加一个提前返回步骤：先计算全局直径及其端点，若对应直径圆覆盖全部顶点，
+便直接返回；否则继续枚举，允许支撑点改变。不能把“直径圆未覆盖的顶点”简单忽略，
+也不能据上述命题将三点枚举限制为固定某一对全局直径端点。
+候选圆数为 $O(n^3)$，逐个检查全部 $n$ 个顶点时，直接枚举的最坏时间复杂度为 $O(n^4)$。
+若输入仅含一个不同的点，则直接返回以该点为圆心、半径为零的退化圆。
+
+\begin{figure}[htbp]
+ \centering
+ \resizebox{.96\linewidth}{!}{\input{mec_support_diagram.tex}}
+ \caption{最小覆盖圆的两类支撑结构。蓝色实线表示最小覆盖圆，红点表示支撑顶点。
+ 左图中两个支撑顶点为直径端点，其余顶点均位于圆盘内部。
+ 右图为边长 $D$ 的正三角形，三个顶点共同支撑最小覆盖圆；
+ 橙色虚线圆以 $v_1v_2$ 为直径，圆心为 $m$，不能覆盖 $v_3$。
+ 此时 $R^*=D/\sqrt3>D/2$，说明区域直径的一半不能普遍替代最小覆盖圆半径。}
+ \label{fig:q2-mec-support}
+\end{figure}
+
+最后，上述正确性结论针对精确几何运算。实际程序对圆心计算及顶点覆盖检查使用浮点容差，
+因此应将数值实现与精确命题区分。对含圆弧的定位区域，若使用外接多边形 $P^+$ 近似
+真实区域 $P_{\mathrm{exact}}$，则由集合包含关系有
+\[
+ P_{\mathrm{exact}}\subseteq P^+
+ \quad\Longrightarrow\quad
+ R_{\mathrm{MEC}}(P_{\mathrm{exact}})\le R_{\mathrm{MEC}}(P^+).
+\]
+因此，外包多边形的精确最小覆盖圆半径是原区域半径的保守上界；
+该结论本身不意味着浮点容差或未来示向度采样也自动具有严格上界保证。
