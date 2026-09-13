@@ -1,0 +1,20 @@
+{
+  "name": "center",
+  "station_m": [
+    0.0,
+    0.0
+  ],
+  "bearing_deg": 0,
+  "policy_point_m": [
+    838.6705679403542,
+    -544.6390350128161
+  ],
+  "policy_worst_radius_m": 55.84156998669442,
+  "valid_grid_points": 1933,
+  "grid_min_radius_m": 55.96794346374335,
+  "grid_min_point_m": [
+    850.0,
+    -525.0
+  ],
+  "grid_le20_count": 0
+}

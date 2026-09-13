@@ -1,0 +1,50 @@
+{
+  "grid_step_m": 25.0,
+  "circle_sides": 96,
+  "bearing_step_deg": 2.0,
+  "safe_angle_step_deg": 0.05,
+  "metric": "worst second-bearing MEC radius, metres",
+  "notes": "Direct grid scores; no interpolated input values. Numerical angular sampling; 5 m special return omitted.",
+  "cases": [
+    {
+      "name": "center",
+      "station_m": [
+        0.0,
+        0.0
+      ],
+      "bearing_deg": 0,
+      "policy_point_m": [
+        838.6705679403542,
+        -544.6390350128161
+      ],
+      "policy_worst_radius_m": 55.84156998669442,
+      "valid_grid_points": 1933,
+      "grid_min_radius_m": 55.96794346374335,
+      "grid_min_point_m": [
+        850.0,
+        -525.0
+      ],
+      "grid_le20_count": 0
+    },
+    {
+      "name": "clipped_800m",
+      "station_m": [
+        1000.0,
+        0.0
+      ],
+      "bearing_deg": 0,
+      "policy_point_m": [
+        1594.515860379177,
+        -535.304485087539
+      ],
+      "policy_worst_radius_m": 20.591907199010446,
+      "valid_grid_points": 2506,
+      "grid_min_radius_m": 20.629394189443232,
+      "grid_min_point_m": [
+        1600.0,
+        -550.0
+      ],
+      "grid_le20_count": 0
+    }
+  ]
+}

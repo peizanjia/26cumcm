@@ -1,0 +1,264 @@
+{
+  "config": {
+    "global_trials": 48,
+    "edge_outward_trials": 16,
+    "seed": 20660911,
+    "circle_sides": 96,
+    "angle_step_deg": 2.0,
+    "safe_angle_step_deg": 0.05,
+    "safe_guard_m": 0.0,
+    "synthetic_prior": "S1,G uniform-area in arena; rho uniform[1000,1500]; condition 5<d1<=rho; errors uniform[-1,1] deg; policy neglects the 5 m distinction",
+    "boundary_stress": "S1 radius uniform[1500,1775], outward bearing offset within +/-70 deg, target sampled on the clipped ray",
+    "circle_geometry": "circumscribed regular polygons (conservative)"
+  },
+  "summary": [
+    {
+      "scenario": "edge_outward_stress",
+      "policy": "analytic_far_range",
+      "trials": 16,
+      "mean_area_m2": 271.3283988274452,
+      "area_ci95_low_m2": 190.63914133959648,
+      "area_ci95_high_m2": 352.01765631529395,
+      "p95_area_m2": 502.8455615763669,
+      "mean_diameter_m": 69.48530115183242,
+      "p95_diameter_m": 85.46339069555394,
+      "max_diameter_m": 86.96370966624926,
+      "mean_mec_radius_m": 34.74314182852346,
+      "p95_mec_radius_m": 42.73169534777707,
+      "max_mec_radius_m": 43.48185483312464,
+      "mec_success_le20": 0.125,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 43.502822762688524,
+      "p95_conditional_worst_mec_radius_m": 43.551778829463004,
+      "conservative_mean_worst_mec_radius_m": 43.502822762688524,
+      "conservative_max_worst_mec_radius_m": 43.55177883109113,
+      "mean_move_m": 1000.0000000000001,
+      "mean_decision_time_ms": 0.0,
+      "containment_rate": 1.0
+    },
+    {
+      "scenario": "edge_outward_stress",
+      "policy": "fixed_750_375",
+      "trials": 16,
+      "mean_area_m2": 189.25526336797702,
+      "area_ci95_low_m2": 137.50545963995074,
+      "area_ci95_high_m2": 241.0050670960033,
+      "p95_area_m2": 333.55814886285225,
+      "mean_diameter_m": 50.650604757926004,
+      "p95_diameter_m": 62.58937854536214,
+      "max_diameter_m": 62.65765593143501,
+      "mean_mec_radius_m": 25.32567830688739,
+      "p95_mec_radius_m": 31.29468927268115,
+      "max_mec_radius_m": 31.32882796571752,
+      "mec_success_le20": 0.125,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 31.619423863674967,
+      "p95_conditional_worst_mec_radius_m": 31.619423876080845,
+      "conservative_mean_worst_mec_radius_m": 31.619423863674967,
+      "conservative_max_worst_mec_radius_m": 31.61942387617929,
+      "mean_move_m": 838.5254915624212,
+      "mean_decision_time_ms": 0.0,
+      "containment_rate": 1.0
+    },
+    {
+      "scenario": "edge_outward_stress",
+      "policy": "minimax_mec",
+      "trials": 16,
+      "mean_area_m2": 37.97881917250197,
+      "area_ci95_low_m2": 23.298913397451148,
+      "area_ci95_high_m2": 52.6587249475528,
+      "p95_area_m2": 88.34572978119832,
+      "mean_diameter_m": 10.705880918499924,
+      "p95_diameter_m": 17.709140446867153,
+      "max_diameter_m": 21.4383451542616,
+      "mean_mec_radius_m": 5.35296656214418,
+      "p95_mec_radius_m": 8.854570223433598,
+      "max_mec_radius_m": 10.719172577130823,
+      "mec_success_le20": 1.0,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 6.687712918652165,
+      "p95_conditional_worst_mec_radius_m": 11.45714928359602,
+      "conservative_mean_worst_mec_radius_m": 6.687712918652165,
+      "conservative_max_worst_mec_radius_m": 12.180801806540694,
+      "mean_move_m": 260.93749999974057,
+      "mean_decision_time_ms": 3076.843864437501,
+      "containment_rate": 1.0
+    },
+    {
+      "scenario": "global_random",
+      "policy": "analytic_far_range",
+      "trials": 48,
+      "mean_area_m2": 567.8298015763885,
+      "area_ci95_low_m2": 486.6416382837658,
+      "area_ci95_high_m2": 649.0179648690112,
+      "p95_area_m2": 1175.9189375814165,
+      "mean_diameter_m": 52.268248955989996,
+      "p95_diameter_m": 84.9961288830238,
+      "max_diameter_m": 111.29286302969638,
+      "mean_mec_radius_m": 26.134124477995034,
+      "p95_mec_radius_m": 42.49806444151192,
+      "max_mec_radius_m": 55.64643151484826,
+      "mec_success_le20": 0.3541666666666667,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 54.46064352295546,
+      "p95_conditional_worst_mec_radius_m": 59.02460880106543,
+      "conservative_mean_worst_mec_radius_m": 54.46064352295546,
+      "conservative_max_worst_mec_radius_m": 59.03244920654892,
+      "mean_move_m": 1000.0,
+      "mean_decision_time_ms": 0.0,
+      "containment_rate": 1.0
+    },
+    {
+      "scenario": "global_random",
+      "policy": "fixed_750_375",
+      "trials": 48,
+      "mean_area_m2": 622.1084127718945,
+      "area_ci95_low_m2": 461.3792211766415,
+      "area_ci95_high_m2": 782.8376043671474,
+      "p95_area_m2": 1906.0236823475734,
+      "mean_diameter_m": 51.571503672456195,
+      "p95_diameter_m": 118.49830690487897,
+      "max_diameter_m": 150.72200664831195,
+      "mean_mec_radius_m": 25.786642577444443,
+      "p95_mec_radius_m": 59.2491534524395,
+      "max_mec_radius_m": 75.36100332415606,
+      "mec_success_le20": 0.5416666666666666,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 66.08715698564681,
+      "p95_conditional_worst_mec_radius_m": 76.70107236178733,
+      "conservative_mean_worst_mec_radius_m": 66.08715698564681,
+      "conservative_max_worst_mec_radius_m": 76.70635521069048,
+      "mean_move_m": 838.5254915624209,
+      "mean_decision_time_ms": 0.0,
+      "containment_rate": 1.0
+    },
+    {
+      "scenario": "global_random",
+      "policy": "minimax_mec",
+      "trials": 48,
+      "mean_area_m2": 640.8191230508014,
+      "area_ci95_low_m2": 535.8088696827945,
+      "area_ci95_high_m2": 745.8293764188084,
+      "p95_area_m2": 1439.368359076108,
+      "mean_diameter_m": 46.39341255149665,
+      "p95_diameter_m": 83.1856880259422,
+      "max_diameter_m": 104.6042074320735,
+      "mean_mec_radius_m": 23.19906954423732,
+      "p95_mec_radius_m": 41.59284401297118,
+      "max_mec_radius_m": 52.30210371603675,
+      "mec_success_le20": 0.375,
+      "no_signal_rate": 0.0,
+      "certified_reception_rate": 1.0,
+      "mean_conditional_worst_mec_radius_m": 47.51062827852425,
+      "p95_conditional_worst_mec_radius_m": 55.83716760329735,
+      "conservative_mean_worst_mec_radius_m": 47.51062827852425,
+      "conservative_max_worst_mec_radius_m": 55.840156030492196,
+      "mean_move_m": 969.2708333288592,
+      "mean_decision_time_ms": 2936.756277854167,
+      "containment_rate": 1.0
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "scenario": "edge_outward_stress",
+      "baseline": "analytic_far_range",
+      "trials": 16,
+      "observed_radius_improvement_m": 29.390175266379288,
+      "observed_radius_improvement_ci95_m": [
+        24.638279880460964,
+        34.14207065229761
+      ],
+      "robust_radius_improvement_m": 36.81510984403636,
+      "robust_radius_improvement_ci95_m": [
+        35.398241961587544,
+        38.23197772648517
+      ]
+    },
+    {
+      "scenario": "edge_outward_stress",
+      "baseline": "fixed_750_375",
+      "trials": 16,
+      "observed_radius_improvement_m": 19.97271174474321,
+      "observed_radius_improvement_ci95_m": [
+        16.533502093534942,
+        23.41192139595148
+      ],
+      "robust_radius_improvement_m": 24.931710945022807,
+      "robust_radius_improvement_ci95_m": [
+        23.48442921380749,
+        26.378992676238123
+      ]
+    },
+    {
+      "scenario": "global_random",
+      "baseline": "analytic_far_range",
+      "trials": 48,
+      "observed_radius_improvement_m": 2.9350549337577134,
+      "observed_radius_improvement_ci95_m": [
+        1.2049260194769464,
+        4.66518384803848
+      ],
+      "robust_radius_improvement_m": 6.950015244431211,
+      "robust_radius_improvement_ci95_m": [
+        4.786940632915707,
+        9.113089855946715
+      ]
+    },
+    {
+      "scenario": "global_random",
+      "baseline": "fixed_750_375",
+      "trials": 48,
+      "observed_radius_improvement_m": 2.587573033207119,
+      "observed_radius_improvement_ci95_m": [
+        0.46086920514552876,
+        4.71427686126871
+      ],
+      "robust_radius_improvement_m": 18.576528707122574,
+      "robust_radius_improvement_ci95_m": [
+        17.05522686006495,
+        20.0978305541802
+      ]
+    }
+  ],
+  "representative": {
+    "center": {
+      "point_m": [
+        838.6705679403542,
+        -544.6390350128161
+      ],
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338883,
+      "worst_area_m2": 2167.502124266415,
+      "candidates": 205,
+      "near_optimal_candidates": 33
+    },
+    "outward edge": {
+      "point_m": [
+        1776.9576844149408,
+        98.50134420143903
+      ],
+      "worst_mec_radius_m": 2.75235371399236,
+      "worst_diameter_m": 5.504707414894876,
+      "worst_area_m2": 12.267292549531703,
+      "candidates": 418,
+      "near_optimal_candidates": 3
+    },
+    "near tangent": {
+      "point_m": [
+        1307.8509429598487,
+        420.5283784329122
+      ],
+      "worst_mec_radius_m": 14.502076891028823,
+      "worst_diameter_m": 29.004153782057557,
+      "worst_area_m2": 293.68885016301647,
+      "candidates": 367,
+      "near_optimal_candidates": 26
+    }
+  },
+  "elapsed_s": 202.588512667
+}

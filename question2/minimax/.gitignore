@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+*.aux
+*.log
+*.out
+*.xdv
+*.fls
+*.fdb_latexmk
+reproduced/

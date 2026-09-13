@@ -1,0 +1,393 @@
+{
+  "audit": [
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266408,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694058,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1922.6928219297806,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.502124266408,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694058,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1932.9849010035869,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2181.642560957429,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694058,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 64,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647114,
+      "worst_area_m2": 1934.4476092739533,
+      "arena_radial_excess_m": 2.1707936467065814
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694513,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1922.6928219297843,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2167.5021242664116,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694513,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1932.9849010035796,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.84156998669442,
+      "worst_diameter_m": 111.68313997338863,
+      "worst_area_m2": 2181.64256095744,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580023,
+      "worst_area_m2": 12.267292548694513,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 128,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.969297638277254,
+      "worst_diameter_m": 117.93859526647113,
+      "worst_area_m2": 1934.4476092739424,
+      "arena_radial_excess_m": 0.5422896743436656
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 2.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.82409638632103,
+      "worst_diameter_m": 111.64819277264206,
+      "worst_area_m2": 2181.3646642301974,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 2.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092900985,
+      "worst_diameter_m": 5.504707418580019,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.9474483042381,
+      "worst_diameter_m": 117.8948965977912,
+      "worst_area_m2": 1943.0685094646396,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 1.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.82409638632103,
+      "worst_diameter_m": 111.64819277264206,
+      "worst_area_m2": 2181.3646642301974,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 1.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092900985,
+      "worst_diameter_m": 5.504707418580019,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.9474483042381,
+      "worst_diameter_m": 117.8948965977912,
+      "worst_area_m2": 1943.0685094646396,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 0.5,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.82409638632103,
+      "worst_diameter_m": 111.64819277264206,
+      "worst_area_m2": 2181.3646642301974,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 0.5,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092900985,
+      "worst_diameter_m": 5.504707418580019,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 256,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.9474483042381,
+      "worst_diameter_m": 117.8948965977912,
+      "worst_area_m2": 1943.0685094646396,
+      "arena_radial_excess_m": 0.13554689597179426
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 2.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.822487344658065,
+      "worst_diameter_m": 111.64497468931613,
+      "worst_area_m2": 2180.8760150243997,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 2.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580022,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 2.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.94543634598486,
+      "worst_diameter_m": 117.89087269196952,
+      "worst_area_m2": 1942.8166877104159,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 1.0,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.822487344658065,
+      "worst_diameter_m": 111.64497468931613,
+      "worst_area_m2": 2180.8760150243997,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 1.0,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580022,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 1.0,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.94543634598486,
+      "worst_diameter_m": 117.89087269196952,
+      "worst_area_m2": 1942.8166877104159,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 0.5,
+      "point": "center_minimax",
+      "worst_mec_radius_m": 55.822487344658065,
+      "worst_diameter_m": 111.64497468931613,
+      "worst_area_m2": 2180.8760150243997,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 0.5,
+      "point": "edge_outward",
+      "worst_mec_radius_m": 2.7523537092901007,
+      "worst_diameter_m": 5.504707418580022,
+      "worst_area_m2": 12.267292548694286,
+      "arena_radial_excess_m": 0.03388512919615394
+    },
+    {
+      "circle_sides": 512,
+      "angle_step_deg": 0.5,
+      "point": "analytic_far_range",
+      "worst_mec_radius_m": 58.94543634598486,
+      "worst_diameter_m": 117.89087269196952,
+      "worst_area_m2": 1942.8166877104159,
+      "arena_radial_excess_m": 0.03388512919615394
+    }
+  ],
+  "safe_margin_audit": [
+    {
+      "angle_step_deg": 0.2,
+      "point": "recovered_outward",
+      "margin_m": 193.7742251701451,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.2,
+      "point": "near_boundary",
+      "margin_m": 3.2257271153032434,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.1,
+      "point": "recovered_outward",
+      "margin_m": 193.7742251701451,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.1,
+      "point": "near_boundary",
+      "margin_m": 3.2257271153032434,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.05,
+      "point": "recovered_outward",
+      "margin_m": 193.7742251701451,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.05,
+      "point": "near_boundary",
+      "margin_m": 3.2257271153032434,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.025,
+      "point": "recovered_outward",
+      "margin_m": 193.7742251701451,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.025,
+      "point": "near_boundary",
+      "margin_m": 3.2257271153032434,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.0125,
+      "point": "recovered_outward",
+      "margin_m": 193.7742251701451,
+      "safe": true
+    },
+    {
+      "angle_step_deg": 0.0125,
+      "point": "near_boundary",
+      "margin_m": 3.2257271153032434,
+      "safe": true
+    }
+  ],
+  "max_center_mec_spread_m": 0.019082642036352127,
+  "max_edge_mec_spread_m": 2.220446049250313e-15,
+  "interpretation": "MEC radius is audited over circle polygon and future-bearing resolutions; state-aware safe margins are audited separately down to 0.0125 degree."
+}

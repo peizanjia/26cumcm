@@ -1,0 +1,41 @@
+{
+  "config": {
+    "grid_step_m": 10.0,
+    "angle_step_deg": 0.025,
+    "guard_m": 0.0
+  },
+  "cases": [
+    {
+      "scenario": "center",
+      "complete_area_km2": 1.2107,
+      "legacy_area_km2": 1.2107,
+      "recovered_area_km2": 0.0,
+      "legacy_fraction_percent": 100.0,
+      "min_recovered_margin_m": null
+    },
+    {
+      "scenario": "outward edge",
+      "complete_area_km2": 2.9386,
+      "legacy_area_km2": 1.2107,
+      "recovered_area_km2": 1.7279,
+      "legacy_fraction_percent": 41.19989110460764,
+      "min_recovered_margin_m": 0.0
+    },
+    {
+      "scenario": "near tangent",
+      "complete_area_km2": 1.9184,
+      "legacy_area_km2": 1.2106,
+      "recovered_area_km2": 0.7078,
+      "legacy_fraction_percent": 63.104670558799,
+      "min_recovered_margin_m": 0.023073042425721724
+    },
+    {
+      "scenario": "inward edge",
+      "complete_area_km2": 1.2107,
+      "legacy_area_km2": 1.2106,
+      "recovered_area_km2": 0.0001,
+      "legacy_fraction_percent": 99.99174031551995,
+      "min_recovered_margin_m": -4.899902705801651e-11
+    }
+  ]
+}
