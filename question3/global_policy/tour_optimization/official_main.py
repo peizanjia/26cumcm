@@ -234,7 +234,12 @@ def main(argv=None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
     if not args.robot_id:
-        parser.error("請提供 --robot-id 或設定 JAMMER_ROBOT_ID")
+        try:
+            args.robot_id = input("robot_id: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            parser.error("robot_id is required")
+        if not args.robot_id:
+            parser.error("robot_id cannot be empty")
     if args.launch_simulator and not args.simulator_exe:
         parser.error("--launch-simulator 需要 --simulator-exe")
     if urlsplit(args.base_url).port == 2026:

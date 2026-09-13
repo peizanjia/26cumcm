@@ -103,3 +103,4 @@ route_study已完成：经典图算法及静态分块/全局关联共17方案20�
 用户已要求实际实施上述改进，新增[joint_rollout方案](global_policy/joint_rollout/AI_INTERACTION.md)，含大样本配对测试和差表现诊断HTML；进行中，仅本地。
 
 joint_rollout已完成100场开发四组消融、24+24状态精度审计、16人工压力测试和12个开发差案例HTML；65项联合测试通过，几何加速后8项专项复核通过。用户要求后台继续并结束等待：1000场四组验证仍运行（约1240/4000，0失败），后处理已启动自动等待。最终结果不可用开发均值替代，后续核对global_policy/joint_rollout/outputs/validation/summary.json与outputs/report/comparison.html。详见方案记录。
+2026-09-13运行修复：用户直接执行 `python question3/main.py` 时出现相对导入错误。已为入口加入直接执行的绝对导入回退；省略 robot_id 时改为交互输入。PowerShell profile 的 ExecutionPolicy 报错属于 shell 启动脚本权限问题。

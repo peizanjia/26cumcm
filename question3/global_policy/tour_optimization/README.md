@@ -134,3 +134,12 @@
 ```
 
 本轮没有证明200不可达。继续优化应优先补全未知源发现后的路线分支价值，以及联合生成同时服务多个源的观测位置；当前最终100场已看过，未来继续调参后需要另外保留新种子。
+## 直接文件执行与 PowerShell
+
+脚本同时支持模块和直接文件方式：
+
+```powershell
+& .\.venv\Scripts\python.exe .\question3\main.py --robot-id YOUR_LOGIN_ID
+```
+
+如果省略 `--robot-id`，程序会提示输入当前模拟器登录显示的标识。PowerShell profile 的执行策略错误与 Python 无关；可以使用 `powershell -NoProfile`，或直接调用上面的 Python 可执行文件，无需激活虚拟环境。
