@@ -251,7 +251,8 @@ def main(argv=None) -> int:
     if args.launch_simulator and not args.simulator_exe:
         parser.error("--launch-simulator 需要 --simulator-exe")
     if urlsplit(args.base_url).port == 2026:
-        print("[practice] 使用官方/練習接口；請確認模擬器當前登入與測試模式。", flush=True)
+        mode_label = "正式" if args.test_type == "formal" else "練習"
+        print(f"[{args.test_type}] 使用官方{mode_label}接口；請確認模擬器當前登入與測試模式。", flush=True)
     params = load_parameters(args.params)
     args.output.mkdir(parents=True, exist_ok=True)
     simulator_process = launch_simulator(args.simulator_exe) if args.launch_simulator else None
