@@ -1,0 +1,40 @@
+{
+  "evaluation": "local_synthetic_http_only",
+  "date": "2026-09-13",
+  "tests": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m pytest question4/test_official_main.py question4/tuned_joint/test_planner.py question4/free_joint question4/dynamic_joint question4/full_mission question4/zigzag_study/test_study.py -q",
+    "passed": 121,
+    "seconds": 17.31,
+    "new_runner_tests": 20
+  },
+  "cases": [
+    {
+      "seed": 20296075,
+      "complete": true,
+      "detected": 16,
+      "cleared": 16,
+      "actual_sources": 16,
+      "all_true_sources_cleared": true,
+      "exact_action_and_bearing_match_frozen_benchmark": true,
+      "command_count": 187
+    },
+    {
+      "seed": 20296040,
+      "complete": true,
+      "detected": 10,
+      "cleared": 10,
+      "actual_sources": 10,
+      "all_true_sources_cleared": true,
+      "exact_action_and_bearing_match_frozen_benchmark": true,
+      "command_count": 361
+    }
+  ],
+  "final_count_file_verified": true,
+  "frozen_policy_unchanged": true,
+  "official_tests_started": 0,
+  "notes": [
+    "20296075 was run before the final output-only count clarification; it verifies identical policy actions.",
+    "20296040 and the final 121-test suite use the final end-of-run count output.",
+    "Synthetic simulator truth is read only by after-run test assertions. Source type counts remain unavailable in the official runner."
+  ]
+}
