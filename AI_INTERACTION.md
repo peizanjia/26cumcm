@@ -150,3 +150,4 @@
 
 2026-09-13：用户要求审计参数及Bayes调优、整理最好算法和流程图、继续优化后push。新增[联合补盲与Bayes方案](question4/tuned_joint/AI_INTERACTION.md)，保留483.34基准，先检验未来扫描费与成组替站，再GP+EI；开发/确认/最终独立种子预登记。进行中，无新成绩。
 2026-09-13第三问运行修复：新增入口现在支持 `python question3/main.py` 直接执行，并在缺少 robot_id 时提示输入；PowerShell profile 权限错误可用 `-NoProfile` 或直接调用 venv Python 绕过。
+2026-09-13演练/正式核对：附件确认问题3演练与正式共享同一套四接口协议；差异是入口、演练不限次数而正式问题3仅3次、正式不显示真值、正式日志加密上传且中止/启动会影响正式机会。主程序新增`--test-type practice|formal`，正式模式必须`--formal-confirmed`，运行策略和HTTP请求不变。

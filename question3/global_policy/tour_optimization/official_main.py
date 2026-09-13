@@ -184,7 +184,8 @@ def run_one(args, run_number: int, params: Parameters) -> dict:
                 print(f"[stop] /exit 未完成：{exc}", flush=True)
         raise
     summary.update(
-        evaluation="official_practice",
+        evaluation=f"official_{args.test_type}",
+        test_type=args.test_type,
         run_number=run_number,
         robot_id=args.robot_id,
         base_url=args.base_url,
@@ -198,7 +199,8 @@ def run_one(args, run_number: int, params: Parameters) -> dict:
     )
     (output / "run_configuration.json").write_text(
         json.dumps({"parameters": params.__dict__, "robot_id": args.robot_id,
-                    "base_url": args.base_url, "run_number": run_number},
+                    "base_url": args.base_url, "test_type": args.test_type,
+                    "run_number": run_number},
                    ensure_ascii=False, indent=2), encoding="utf-8"
     )
     print(json.dumps({k: summary.get(k) for k in (
@@ -217,6 +219,10 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--params", type=Path, default=DEFAULT_PARAMS)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--once", action="store_true", help="完成一局後退出，不等待下一局")
+    parser.add_argument("--test-type", choices=("practice", "formal"), default="practice",
+                        help="test module; formal requires --formal-confirmed")
+    parser.add_argument("--formal-confirmed", action="store_true",
+                        help="confirm the simulator is set to Q3 formal test")
     parser.add_argument("--wait-enter-s", type=float, default=0.0,
                         help="等待手動開始的秒數；0表示無限等待")
     parser.add_argument("--enter-poll-s", type=float, default=1.0)
@@ -240,6 +246,8 @@ def main(argv=None) -> int:
             parser.error("robot_id is required")
         if not args.robot_id:
             parser.error("robot_id cannot be empty")
+    if args.test_type == "formal" and not args.formal_confirmed:
+        parser.error("formal test requires --formal-confirmed after selecting Q3 formal in the simulator")
     if args.launch_simulator and not args.simulator_exe:
         parser.error("--launch-simulator 需要 --simulator-exe")
     if urlsplit(args.base_url).port == 2026:

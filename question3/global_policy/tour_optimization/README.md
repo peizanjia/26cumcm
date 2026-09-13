@@ -6,7 +6,9 @@
 
 ## 官方练习测试主程序
 
-[official_main.py](official_main.py) 使用本目录的 `best_parameters.json`，通过附件规定的 `/enter`、`/measure`、`/clear`、`/exit` 四个接口运行最终 `tour` 策略。脚本启动后会持续轮询 `/enter`；你在模拟器界面手动点击一次“开始测试”并完成倒计时后，接口返回 `accepted=true`，脚本自动执行一局并保存完整公开命令、响应、决策和地图。结束后脚本不会退出，会继续等待下一次手动开始。按 Ctrl+C 可停止；活动测试中按下时会尽量先发送 `/exit`。
+[official_main.py](official_main.py) 使用本目录的 `best_parameters.json`，通过附件规定的 `/enter`、`/measure`、`/clear`、`/exit` 四个接口运行最终 `tour` 策略。演练和正式测试使用同一套策略和 HTTP 客户端；正式测试时加 `--test-type formal --formal-confirmed`。确认只防止误把一次正式机会当成演练，接口动作本身不变。正式测试有问题3独立的3次机会，启动成功即消耗一次；正式界面不显示案例真值，结束后日志进入加密上传队列。
+
+脚本启动后会持续轮询 `/enter`；你在模拟器界面手动点击一次“开始测试”并完成倒计时后，接口返回 `accepted=true`，脚本自动执行一局并保存完整公开命令、响应、决策和地图。结束后脚本不会退出，会继续等待下一次手动开始。按 Ctrl+C 可停止；活动测试中按下时会尽量先发送 `/exit`。
 
 模拟器的开始按钮属于 GUI 流程，附件没有提供可调用的开始测试 HTTP 接口，因此脚本不模拟鼠标点击，也不读取模拟器隐藏状态。可以用 `--launch-simulator` 自动启动已经解压的 `jammers-simulator.exe`，测试开始仍由界面点击完成。
 
