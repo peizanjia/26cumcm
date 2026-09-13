@@ -1,0 +1,5608 @@
+{
+  "scope": "offline reconstruction of real public responses",
+  "grouped": {
+    "old_joint": {
+      "mean_bootstrap95_s": [
+        478.53824995111404,
+        515.5317526878729
+      ],
+      "movement_reasons": {
+        "forward_lateral": 361,
+        "short_probe": 278,
+        "certified_mec_clear": 917,
+        "search_route_stop": 2320,
+        "onward_service_probe": 79,
+        "positive_anchor_probe": 136,
+        "probabilistic_optical_try": 452,
+        "posterior_center": 44,
+        "center_lateral": 44,
+        "optical_finite_cover": 255,
+        "mec_center": 25
+      },
+      "elastic_updates": 0,
+      "mean_elastic_updates": 0.0,
+      "side_scan_count": 2659,
+      "side_scan_halves": 1517,
+      "side_scan_no_signal": 379,
+      "source_count_groups": {
+        "10": {
+          "count": 13,
+          "mean_per_source_s": 639.6104972060493,
+          "mean_search_after_last_clear_s": 599.7756647612291
+        },
+        "11": {
+          "count": 11,
+          "mean_per_source_s": 587.3428936777666,
+          "mean_search_after_last_clear_s": 366.11628226770245
+        },
+        "12": {
+          "count": 19,
+          "mean_per_source_s": 541.7791466052108,
+          "mean_search_after_last_clear_s": 616.7274183618636
+        },
+        "13": {
+          "count": 12,
+          "mean_per_source_s": 505.6428145600835,
+          "mean_search_after_last_clear_s": 541.095425619505
+        },
+        "14": {
+          "count": 16,
+          "mean_per_source_s": 460.43385059494204,
+          "mean_search_after_last_clear_s": 262.5813783451774
+        },
+        "15": {
+          "count": 16,
+          "mean_per_source_s": 414.4826539110679,
+          "mean_search_after_last_clear_s": 283.07372275649385
+        },
+        "16": {
+          "count": 13,
+          "mean_per_source_s": 353.3088120854537,
+          "mean_search_after_last_clear_s": 0.0
+        }
+      }
+    },
+    "previous_dynamic": {
+      "mean_bootstrap95_s": [
+        475.3099640471486,
+        509.4353136000843
+      ],
+      "movement_reasons": {
+        "valuable_intermediate_stop": 204,
+        "multisource_refined_point": 749,
+        "certified_mec_clear": 535,
+        "probabilistic_optical_try": 889,
+        "dynamic_coverage_completion": 2264,
+        "multiple_source_shared_point": 160,
+        "forward_lateral": 100,
+        "posterior_center": 37,
+        "positive_anchor_probe": 34,
+        "short_probe": 84,
+        "onward_service_probe": 26,
+        "center_lateral": 36,
+        "mec_center": 30,
+        "optical_finite_cover": 239,
+        "dynamic_direction_frontier": 25
+      },
+      "elastic_updates": 0,
+      "mean_elastic_updates": 0.0,
+      "side_scan_count": 1709,
+      "side_scan_halves": 1288,
+      "side_scan_no_signal": 220,
+      "source_count_groups": {
+        "10": {
+          "count": 13,
+          "mean_per_source_s": 617.0763626014439,
+          "mean_search_after_last_clear_s": 527.5663403815756
+        },
+        "11": {
+          "count": 11,
+          "mean_per_source_s": 570.4933363703927,
+          "mean_search_after_last_clear_s": 807.5687506986072
+        },
+        "12": {
+          "count": 19,
+          "mean_per_source_s": 539.1819585926204,
+          "mean_search_after_last_clear_s": 553.5531602234767
+        },
+        "13": {
+          "count": 12,
+          "mean_per_source_s": 502.37977739276334,
+          "mean_search_after_last_clear_s": 504.2899864754939
+        },
+        "14": {
+          "count": 16,
+          "mean_per_source_s": 451.03771147314484,
+          "mean_search_after_last_clear_s": 285.8018052557187
+        },
+        "15": {
+          "count": 16,
+          "mean_per_source_s": 429.56761938361626,
+          "mean_search_after_last_clear_s": 331.4611453828728
+        },
+        "16": {
+          "count": 13,
+          "mean_per_source_s": 351.72908162706347,
+          "mean_search_after_last_clear_s": 0.0
+        }
+      }
+    },
+    "free_joint": {
+      "mean_bootstrap95_s": [
+        466.7010549537099,
+        500.3461878367229
+      ],
+      "movement_reasons": {
+        "multisource_refined_point": 1078,
+        "near_positive_anchor": 213,
+        "probabilistic_optical_try": 809,
+        "dynamic_coverage_completion": 2290,
+        "posterior_center": 51,
+        "valuable_intermediate_stop": 175,
+        "certified_mec_clear": 621,
+        "short_probe": 84,
+        "multiple_source_shared_point": 121,
+        "forward_lateral": 39,
+        "mec_center": 21,
+        "onward_service_probe": 16,
+        "dynamic_direction_frontier": 13,
+        "center_lateral": 24,
+        "positive_anchor_probe": 44,
+        "optical_finite_cover": 20
+      },
+      "elastic_updates": 5113,
+      "mean_elastic_updates": 51.13,
+      "side_scan_count": 1795,
+      "side_scan_halves": 1365,
+      "side_scan_no_signal": 189,
+      "source_count_groups": {
+        "10": {
+          "count": 13,
+          "mean_per_source_s": 610.107198052332,
+          "mean_search_after_last_clear_s": 638.9128795864058
+        },
+        "11": {
+          "count": 11,
+          "mean_per_source_s": 568.2290241867098,
+          "mean_search_after_last_clear_s": 527.3823631392019
+        },
+        "12": {
+          "count": 19,
+          "mean_per_source_s": 526.563041454703,
+          "mean_search_after_last_clear_s": 464.53521249751793
+        },
+        "13": {
+          "count": 12,
+          "mean_per_source_s": 491.49402597862604,
+          "mean_search_after_last_clear_s": 421.56627391369216
+        },
+        "14": {
+          "count": 16,
+          "mean_per_source_s": 448.15959783586527,
+          "mean_search_after_last_clear_s": 267.24116500838824
+        },
+        "15": {
+          "count": 16,
+          "mean_per_source_s": 418.84205901788454,
+          "mean_search_after_last_clear_s": 377.43564588884357
+        },
+        "16": {
+          "count": 13,
+          "mean_per_source_s": 336.7044649535962,
+          "mean_search_after_last_clear_s": 0.0
+        }
+      }
+    }
+  },
+  "details": [
+    {
+      "seed": 20293000,
+      "strategy": "free_joint",
+      "elastic_updates": 38,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "near_positive_anchor": 4,
+        "probabilistic_optical_try": 11,
+        "dynamic_coverage_completion": 24,
+        "posterior_center": 1,
+        "valuable_intermediate_stop": 3,
+        "certified_mec_clear": 1
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293001,
+      "strategy": "free_joint",
+      "elastic_updates": 56,
+      "movement_reasons": {
+        "short_probe": 2,
+        "near_positive_anchor": 8,
+        "probabilistic_optical_try": 8,
+        "multisource_refined_point": 6,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 7,
+        "multiple_source_shared_point": 1,
+        "forward_lateral": 1,
+        "mec_center": 1,
+        "posterior_center": 2
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293002,
+      "strategy": "free_joint",
+      "elastic_updates": 39,
+      "movement_reasons": {
+        "multisource_refined_point": 14,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "near_positive_anchor": 2,
+        "certified_mec_clear": 3,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293003,
+      "strategy": "free_joint",
+      "elastic_updates": 37,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 5,
+        "multiple_source_shared_point": 2,
+        "near_positive_anchor": 2,
+        "probabilistic_optical_try": 8,
+        "short_probe": 1
+      },
+      "side_scan_count": 8,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293004,
+      "strategy": "free_joint",
+      "elastic_updates": 60,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 16,
+        "certified_mec_clear": 8,
+        "forward_lateral": 2,
+        "multiple_source_shared_point": 1,
+        "near_positive_anchor": 1
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293005,
+      "strategy": "free_joint",
+      "elastic_updates": 56,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 6,
+        "multisource_refined_point": 6,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "forward_lateral": 2
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293006,
+      "strategy": "free_joint",
+      "elastic_updates": 33,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 1,
+        "valuable_intermediate_stop": 3,
+        "probabilistic_optical_try": 9,
+        "posterior_center": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293007,
+      "strategy": "free_joint",
+      "elastic_updates": 64,
+      "movement_reasons": {
+        "short_probe": 1,
+        "certified_mec_clear": 10,
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 3,
+        "probabilistic_optical_try": 6,
+        "near_positive_anchor": 2,
+        "posterior_center": 2,
+        "valuable_intermediate_stop": 2,
+        "mec_center": 1,
+        "center_lateral": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293008,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 17,
+        "mec_center": 1,
+        "posterior_center": 3,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 2,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293009,
+      "strategy": "free_joint",
+      "elastic_updates": 64,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 6,
+        "forward_lateral": 1,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 3,
+        "probabilistic_optical_try": 7,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293010,
+      "strategy": "free_joint",
+      "elastic_updates": 55,
+      "movement_reasons": {
+        "multisource_refined_point": 20,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 13,
+        "near_positive_anchor": 4,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 2,
+        "center_lateral": 1
+      },
+      "side_scan_count": 6,
+      "side_scan_halves": 5,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293011,
+      "strategy": "free_joint",
+      "elastic_updates": 33,
+      "movement_reasons": {
+        "near_positive_anchor": 6,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 7,
+        "valuable_intermediate_stop": 3,
+        "dynamic_coverage_completion": 24,
+        "multisource_refined_point": 3,
+        "positive_anchor_probe": 1,
+        "short_probe": 1,
+        "certified_mec_clear": 5
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293012,
+      "strategy": "free_joint",
+      "elastic_updates": 49,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 8,
+        "multisource_refined_point": 9,
+        "forward_lateral": 1,
+        "dynamic_coverage_completion": 16,
+        "short_probe": 2,
+        "probabilistic_optical_try": 8
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293013,
+      "strategy": "free_joint",
+      "elastic_updates": 44,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "near_positive_anchor": 5,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "onward_service_probe": 1,
+        "probabilistic_optical_try": 5,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293014,
+      "strategy": "free_joint",
+      "elastic_updates": 45,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "certified_mec_clear": 6,
+        "near_positive_anchor": 1,
+        "probabilistic_optical_try": 9,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293015,
+      "strategy": "free_joint",
+      "elastic_updates": 41,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "near_positive_anchor": 1,
+        "short_probe": 2,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293016,
+      "strategy": "free_joint",
+      "elastic_updates": 43,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 3,
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 22,
+        "short_probe": 1,
+        "probabilistic_optical_try": 13,
+        "certified_mec_clear": 4,
+        "onward_service_probe": 1,
+        "dynamic_direction_frontier": 1,
+        "near_positive_anchor": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293017,
+      "strategy": "free_joint",
+      "elastic_updates": 36,
+      "movement_reasons": {
+        "short_probe": 4,
+        "multisource_refined_point": 6,
+        "certified_mec_clear": 3,
+        "near_positive_anchor": 2,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 10,
+        "forward_lateral": 1,
+        "mec_center": 1,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293018,
+      "strategy": "free_joint",
+      "elastic_updates": 52,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "probabilistic_optical_try": 9,
+        "mec_center": 1,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 3,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293019,
+      "strategy": "free_joint",
+      "elastic_updates": 49,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 13,
+        "dynamic_coverage_completion": 21,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 15,
+        "valuable_intermediate_stop": 3,
+        "multiple_source_shared_point": 2,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293020,
+      "strategy": "free_joint",
+      "elastic_updates": 54,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 13,
+        "dynamic_coverage_completion": 23,
+        "center_lateral": 1,
+        "valuable_intermediate_stop": 3,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 22,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293021,
+      "strategy": "free_joint",
+      "elastic_updates": 72,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 8,
+        "multisource_refined_point": 19,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 2,
+        "short_probe": 2,
+        "probabilistic_optical_try": 6,
+        "near_positive_anchor": 3,
+        "valuable_intermediate_stop": 2,
+        "center_lateral": 1,
+        "dynamic_direction_frontier": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293022,
+      "strategy": "free_joint",
+      "elastic_updates": 47,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 6,
+        "multisource_refined_point": 11,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 2
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293023,
+      "strategy": "free_joint",
+      "elastic_updates": 56,
+      "movement_reasons": {
+        "multisource_refined_point": 17,
+        "multiple_source_shared_point": 1,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 4,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 3,
+        "optical_finite_cover": 3,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293024,
+      "strategy": "free_joint",
+      "elastic_updates": 34,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "multiple_source_shared_point": 3,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 23,
+        "near_positive_anchor": 3,
+        "valuable_intermediate_stop": 3,
+        "certified_mec_clear": 7,
+        "forward_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293025,
+      "strategy": "free_joint",
+      "elastic_updates": 59,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 12,
+        "mec_center": 1,
+        "dynamic_coverage_completion": 20,
+        "multiple_source_shared_point": 2,
+        "valuable_intermediate_stop": 3,
+        "near_positive_anchor": 6,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293026,
+      "strategy": "free_joint",
+      "elastic_updates": 50,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 22,
+        "probabilistic_optical_try": 14,
+        "multiple_source_shared_point": 2,
+        "certified_mec_clear": 4,
+        "near_positive_anchor": 1,
+        "dynamic_direction_frontier": 1,
+        "short_probe": 2,
+        "forward_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293027,
+      "strategy": "free_joint",
+      "elastic_updates": 33,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 1,
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 6,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 5,
+        "posterior_center": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 8,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293028,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "short_probe": 1,
+        "multisource_refined_point": 15,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 3,
+        "certified_mec_clear": 6,
+        "valuable_intermediate_stop": 1,
+        "probabilistic_optical_try": 5,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293029,
+      "strategy": "free_joint",
+      "elastic_updates": 59,
+      "movement_reasons": {
+        "multisource_refined_point": 21,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 10,
+        "dynamic_coverage_completion": 11,
+        "near_positive_anchor": 3,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293030,
+      "strategy": "free_joint",
+      "elastic_updates": 32,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "short_probe": 1,
+        "valuable_intermediate_stop": 1,
+        "onward_service_probe": 2,
+        "mec_center": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293031,
+      "strategy": "free_joint",
+      "elastic_updates": 53,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "probabilistic_optical_try": 6,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 5,
+        "near_positive_anchor": 2,
+        "certified_mec_clear": 7,
+        "multiple_source_shared_point": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293032,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "valuable_intermediate_stop": 2,
+        "multiple_source_shared_point": 3,
+        "dynamic_coverage_completion": 14,
+        "near_positive_anchor": 2,
+        "probabilistic_optical_try": 12,
+        "certified_mec_clear": 8,
+        "posterior_center": 1,
+        "forward_lateral": 1,
+        "mec_center": 2,
+        "center_lateral": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293033,
+      "strategy": "free_joint",
+      "elastic_updates": 52,
+      "movement_reasons": {
+        "near_positive_anchor": 4,
+        "valuable_intermediate_stop": 3,
+        "multisource_refined_point": 13,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 13,
+        "multiple_source_shared_point": 3,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293034,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 3,
+        "dynamic_direction_frontier": 1,
+        "near_positive_anchor": 1,
+        "valuable_intermediate_stop": 1,
+        "probabilistic_optical_try": 6,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293035,
+      "strategy": "free_joint",
+      "elastic_updates": 63,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 2,
+        "multisource_refined_point": 3,
+        "multiple_source_shared_point": 2,
+        "certified_mec_clear": 3,
+        "dynamic_direction_frontier": 1
+      },
+      "side_scan_count": 8,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293036,
+      "strategy": "free_joint",
+      "elastic_updates": 70,
+      "movement_reasons": {
+        "multisource_refined_point": 16,
+        "certified_mec_clear": 5,
+        "valuable_intermediate_stop": 2,
+        "optical_finite_cover": 2,
+        "dynamic_coverage_completion": 23,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 8,
+        "center_lateral": 1,
+        "near_positive_anchor": 3,
+        "short_probe": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293037,
+      "strategy": "free_joint",
+      "elastic_updates": 46,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "multiple_source_shared_point": 3,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 4,
+        "mec_center": 2,
+        "posterior_center": 2
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293038,
+      "strategy": "free_joint",
+      "elastic_updates": 45,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "near_positive_anchor": 2,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 7,
+        "mec_center": 1,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 5,
+        "multisource_refined_point": 9
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293039,
+      "strategy": "free_joint",
+      "elastic_updates": 59,
+      "movement_reasons": {
+        "multisource_refined_point": 14,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 2,
+        "certified_mec_clear": 5,
+        "mec_center": 1,
+        "posterior_center": 1,
+        "multiple_source_shared_point": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293040,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 23,
+        "near_positive_anchor": 4,
+        "valuable_intermediate_stop": 5,
+        "short_probe": 3,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293041,
+      "strategy": "free_joint",
+      "elastic_updates": 41,
+      "movement_reasons": {
+        "short_probe": 1,
+        "probabilistic_optical_try": 11,
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 2,
+        "center_lateral": 1,
+        "certified_mec_clear": 4,
+        "positive_anchor_probe": 1,
+        "valuable_intermediate_stop": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293042,
+      "strategy": "free_joint",
+      "elastic_updates": 47,
+      "movement_reasons": {
+        "multisource_refined_point": 36,
+        "dynamic_coverage_completion": 23,
+        "certified_mec_clear": 8,
+        "near_positive_anchor": 2,
+        "positive_anchor_probe": 1,
+        "optical_finite_cover": 1,
+        "multiple_source_shared_point": 1,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 4,
+        "short_probe": 2,
+        "valuable_intermediate_stop": 2
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293043,
+      "strategy": "free_joint",
+      "elastic_updates": 48,
+      "movement_reasons": {
+        "multisource_refined_point": 17,
+        "probabilistic_optical_try": 5,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 5,
+        "short_probe": 2,
+        "near_positive_anchor": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293044,
+      "strategy": "free_joint",
+      "elastic_updates": 68,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "certified_mec_clear": 11,
+        "near_positive_anchor": 7,
+        "dynamic_coverage_completion": 22,
+        "probabilistic_optical_try": 5,
+        "forward_lateral": 1,
+        "valuable_intermediate_stop": 4,
+        "short_probe": 1,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293045,
+      "strategy": "free_joint",
+      "elastic_updates": 63,
+      "movement_reasons": {
+        "multiple_source_shared_point": 5,
+        "near_positive_anchor": 1,
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 4,
+        "short_probe": 2,
+        "probabilistic_optical_try": 9,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 8
+    },
+    {
+      "seed": 20293046,
+      "strategy": "free_joint",
+      "elastic_updates": 64,
+      "movement_reasons": {
+        "positive_anchor_probe": 2,
+        "multiple_source_shared_point": 2,
+        "multisource_refined_point": 11,
+        "dynamic_coverage_completion": 21,
+        "near_positive_anchor": 2,
+        "probabilistic_optical_try": 10,
+        "certified_mec_clear": 7,
+        "posterior_center": 2,
+        "center_lateral": 1,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293047,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "multisource_refined_point": 16,
+        "dynamic_coverage_completion": 23,
+        "near_positive_anchor": 3,
+        "probabilistic_optical_try": 13,
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 4,
+        "posterior_center": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293048,
+      "strategy": "free_joint",
+      "elastic_updates": 43,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "certified_mec_clear": 5,
+        "short_probe": 1,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 9,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293049,
+      "strategy": "free_joint",
+      "elastic_updates": 57,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "near_positive_anchor": 4,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 8,
+        "short_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293050,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 12,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 3,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "near_positive_anchor": 4
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293051,
+      "strategy": "free_joint",
+      "elastic_updates": 57,
+      "movement_reasons": {
+        "short_probe": 1,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "certified_mec_clear": 9,
+        "multisource_refined_point": 19,
+        "probabilistic_optical_try": 5,
+        "near_positive_anchor": 1,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293052,
+      "strategy": "free_joint",
+      "elastic_updates": 38,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 5,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 5,
+        "certified_mec_clear": 4,
+        "mec_center": 1,
+        "posterior_center": 3,
+        "short_probe": 2
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293053,
+      "strategy": "free_joint",
+      "elastic_updates": 63,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 10,
+        "multiple_source_shared_point": 2,
+        "near_positive_anchor": 5,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 4,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293054,
+      "strategy": "free_joint",
+      "elastic_updates": 41,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "valuable_intermediate_stop": 2,
+        "dynamic_coverage_completion": 22,
+        "forward_lateral": 2,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 11,
+        "near_positive_anchor": 2
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 22,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293055,
+      "strategy": "free_joint",
+      "elastic_updates": 65,
+      "movement_reasons": {
+        "multisource_refined_point": 26,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 7,
+        "near_positive_anchor": 3,
+        "probabilistic_optical_try": 7,
+        "center_lateral": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293056,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "short_probe": 1,
+        "multisource_refined_point": 11,
+        "probabilistic_optical_try": 12,
+        "certified_mec_clear": 3,
+        "dynamic_coverage_completion": 22,
+        "valuable_intermediate_stop": 2,
+        "multiple_source_shared_point": 2,
+        "dynamic_direction_frontier": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293057,
+      "strategy": "free_joint",
+      "elastic_updates": 58,
+      "movement_reasons": {
+        "near_positive_anchor": 4,
+        "multisource_refined_point": 4,
+        "valuable_intermediate_stop": 2,
+        "dynamic_coverage_completion": 23,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 11,
+        "mec_center": 1,
+        "short_probe": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293058,
+      "strategy": "free_joint",
+      "elastic_updates": 44,
+      "movement_reasons": {
+        "multisource_refined_point": 20,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 7,
+        "mec_center": 1,
+        "multiple_source_shared_point": 4,
+        "dynamic_coverage_completion": 23,
+        "near_positive_anchor": 3,
+        "onward_service_probe": 1,
+        "optical_finite_cover": 10
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293059,
+      "strategy": "free_joint",
+      "elastic_updates": 74,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 21,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 4,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 7,
+        "dynamic_direction_frontier": 1,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 2,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 7,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293060,
+      "strategy": "free_joint",
+      "elastic_updates": 53,
+      "movement_reasons": {
+        "multisource_refined_point": 21,
+        "valuable_intermediate_stop": 1,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 1,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 7,
+        "posterior_center": 1,
+        "short_probe": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293061,
+      "strategy": "free_joint",
+      "elastic_updates": 42,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "near_positive_anchor": 1,
+        "certified_mec_clear": 5,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 9,
+        "posterior_center": 2
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293062,
+      "strategy": "free_joint",
+      "elastic_updates": 54,
+      "movement_reasons": {
+        "multisource_refined_point": 2,
+        "probabilistic_optical_try": 6,
+        "near_positive_anchor": 4,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 8,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 2
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293063,
+      "strategy": "free_joint",
+      "elastic_updates": 71,
+      "movement_reasons": {
+        "near_positive_anchor": 3,
+        "certified_mec_clear": 3,
+        "multiple_source_shared_point": 1,
+        "multisource_refined_point": 12,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 7,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 7,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293064,
+      "strategy": "free_joint",
+      "elastic_updates": 43,
+      "movement_reasons": {
+        "near_positive_anchor": 3,
+        "multisource_refined_point": 10,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 3,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 11
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293065,
+      "strategy": "free_joint",
+      "elastic_updates": 62,
+      "movement_reasons": {
+        "multisource_refined_point": 21,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 6,
+        "optical_finite_cover": 4,
+        "short_probe": 1,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 1,
+        "certified_mec_clear": 5,
+        "positive_anchor_probe": 1,
+        "posterior_center": 1,
+        "center_lateral": 1,
+        "valuable_intermediate_stop": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293066,
+      "strategy": "free_joint",
+      "elastic_updates": 44,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 8,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "near_positive_anchor": 4,
+        "multiple_source_shared_point": 2,
+        "probabilistic_optical_try": 3,
+        "forward_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293067,
+      "strategy": "free_joint",
+      "elastic_updates": 38,
+      "movement_reasons": {
+        "positive_anchor_probe": 2,
+        "near_positive_anchor": 2,
+        "multisource_refined_point": 4,
+        "short_probe": 4,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "center_lateral": 1,
+        "multiple_source_shared_point": 1,
+        "dynamic_direction_frontier": 1,
+        "valuable_intermediate_stop": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293068,
+      "strategy": "free_joint",
+      "elastic_updates": 59,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 12,
+        "dynamic_coverage_completion": 24,
+        "dynamic_direction_frontier": 1,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 13,
+        "multiple_source_shared_point": 2,
+        "posterior_center": 2,
+        "valuable_intermediate_stop": 1,
+        "near_positive_anchor": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293069,
+      "strategy": "free_joint",
+      "elastic_updates": 44,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "near_positive_anchor": 1,
+        "probabilistic_optical_try": 5,
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 5
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293070,
+      "strategy": "free_joint",
+      "elastic_updates": 37,
+      "movement_reasons": {
+        "short_probe": 1,
+        "probabilistic_optical_try": 13,
+        "multisource_refined_point": 6,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "posterior_center": 3,
+        "valuable_intermediate_stop": 3,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 2
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293071,
+      "strategy": "free_joint",
+      "elastic_updates": 33,
+      "movement_reasons": {
+        "near_positive_anchor": 3,
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 12,
+        "positive_anchor_probe": 2,
+        "probabilistic_optical_try": 11,
+        "onward_service_probe": 1,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 10
+    },
+    {
+      "seed": 20293072,
+      "strategy": "free_joint",
+      "elastic_updates": 34,
+      "movement_reasons": {
+        "short_probe": 3,
+        "probabilistic_optical_try": 8,
+        "multisource_refined_point": 9,
+        "near_positive_anchor": 5,
+        "certified_mec_clear": 10,
+        "dynamic_coverage_completion": 20,
+        "multiple_source_shared_point": 3,
+        "posterior_center": 2
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293073,
+      "strategy": "free_joint",
+      "elastic_updates": 80,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "certified_mec_clear": 3,
+        "valuable_intermediate_stop": 2,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 1,
+        "probabilistic_optical_try": 9,
+        "forward_lateral": 2,
+        "center_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293074,
+      "strategy": "free_joint",
+      "elastic_updates": 64,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 10,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "near_positive_anchor": 3,
+        "multiple_source_shared_point": 4,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 5,
+        "posterior_center": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293075,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 4,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 3,
+        "near_positive_anchor": 2,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293076,
+      "strategy": "free_joint",
+      "elastic_updates": 58,
+      "movement_reasons": {
+        "multisource_refined_point": 3,
+        "certified_mec_clear": 8,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 7
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 23,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293077,
+      "strategy": "free_joint",
+      "elastic_updates": 47,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "near_positive_anchor": 2,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 4,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293078,
+      "strategy": "free_joint",
+      "elastic_updates": 50,
+      "movement_reasons": {
+        "short_probe": 2,
+        "probabilistic_optical_try": 10,
+        "multisource_refined_point": 11,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "near_positive_anchor": 1,
+        "certified_mec_clear": 3,
+        "center_lateral": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293079,
+      "strategy": "free_joint",
+      "elastic_updates": 68,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 4,
+        "near_positive_anchor": 2,
+        "probabilistic_optical_try": 5,
+        "multiple_source_shared_point": 3,
+        "dynamic_direction_frontier": 1,
+        "short_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293080,
+      "strategy": "free_joint",
+      "elastic_updates": 65,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 8,
+        "multisource_refined_point": 6,
+        "dynamic_coverage_completion": 23,
+        "near_positive_anchor": 6,
+        "certified_mec_clear": 8,
+        "valuable_intermediate_stop": 6,
+        "center_lateral": 1,
+        "forward_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293081,
+      "strategy": "free_joint",
+      "elastic_updates": 52,
+      "movement_reasons": {
+        "short_probe": 1,
+        "certified_mec_clear": 7,
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 4,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293082,
+      "strategy": "free_joint",
+      "elastic_updates": 34,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "near_positive_anchor": 1,
+        "probabilistic_optical_try": 12,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 18,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 1,
+        "multiple_source_shared_point": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 22,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293083,
+      "strategy": "free_joint",
+      "elastic_updates": 39,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 5,
+        "certified_mec_clear": 7,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "multiple_source_shared_point": 1,
+        "positive_anchor_probe": 1,
+        "near_positive_anchor": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293084,
+      "strategy": "free_joint",
+      "elastic_updates": 48,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 11,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293085,
+      "strategy": "free_joint",
+      "elastic_updates": 63,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 5,
+        "multisource_refined_point": 11,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "near_positive_anchor": 1,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 2,
+        "certified_mec_clear": 5
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293086,
+      "strategy": "free_joint",
+      "elastic_updates": 54,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 5,
+        "multiple_source_shared_point": 1,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293087,
+      "strategy": "free_joint",
+      "elastic_updates": 57,
+      "movement_reasons": {
+        "multisource_refined_point": 19,
+        "certified_mec_clear": 9,
+        "near_positive_anchor": 2,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293088,
+      "strategy": "free_joint",
+      "elastic_updates": 42,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 2,
+        "probabilistic_optical_try": 10,
+        "near_positive_anchor": 2,
+        "center_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293089,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "near_positive_anchor": 1,
+        "probabilistic_optical_try": 11,
+        "posterior_center": 4,
+        "short_probe": 2
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293090,
+      "strategy": "free_joint",
+      "elastic_updates": 46,
+      "movement_reasons": {
+        "short_probe": 1,
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 3,
+        "probabilistic_optical_try": 8,
+        "certified_mec_clear": 7,
+        "onward_service_probe": 2,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293091,
+      "strategy": "free_joint",
+      "elastic_updates": 40,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 1,
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 9,
+        "multiple_source_shared_point": 3,
+        "onward_service_probe": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 26,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293092,
+      "strategy": "free_joint",
+      "elastic_updates": 58,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 3,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 11,
+        "dynamic_coverage_completion": 22,
+        "forward_lateral": 1,
+        "near_positive_anchor": 1,
+        "positive_anchor_probe": 1,
+        "center_lateral": 1,
+        "valuable_intermediate_stop": 2,
+        "posterior_center": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293093,
+      "strategy": "free_joint",
+      "elastic_updates": 54,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 17,
+        "certified_mec_clear": 9,
+        "dynamic_coverage_completion": 22,
+        "probabilistic_optical_try": 8,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 2
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293094,
+      "strategy": "free_joint",
+      "elastic_updates": 72,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 4,
+        "certified_mec_clear": 10,
+        "forward_lateral": 1,
+        "dynamic_coverage_completion": 24,
+        "multisource_refined_point": 24,
+        "near_positive_anchor": 3,
+        "multiple_source_shared_point": 4,
+        "probabilistic_optical_try": 4,
+        "center_lateral": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293095,
+      "strategy": "free_joint",
+      "elastic_updates": 42,
+      "movement_reasons": {
+        "near_positive_anchor": 3,
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "short_probe": 1,
+        "probabilistic_optical_try": 7,
+        "forward_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293096,
+      "strategy": "free_joint",
+      "elastic_updates": 46,
+      "movement_reasons": {
+        "near_positive_anchor": 2,
+        "probabilistic_optical_try": 12,
+        "multisource_refined_point": 8,
+        "multiple_source_shared_point": 1,
+        "dynamic_coverage_completion": 16,
+        "short_probe": 2,
+        "onward_service_probe": 1,
+        "forward_lateral": 1,
+        "certified_mec_clear": 6,
+        "posterior_center": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293097,
+      "strategy": "free_joint",
+      "elastic_updates": 61,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 20,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 5,
+        "dynamic_coverage_completion": 24,
+        "near_positive_anchor": 3,
+        "certified_mec_clear": 5,
+        "valuable_intermediate_stop": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293098,
+      "strategy": "free_joint",
+      "elastic_updates": 79,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "probabilistic_optical_try": 6,
+        "near_positive_anchor": 1,
+        "short_probe": 2,
+        "multiple_source_shared_point": 1,
+        "positive_anchor_probe": 2,
+        "center_lateral": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293099,
+      "strategy": "free_joint",
+      "elastic_updates": 26,
+      "movement_reasons": {
+        "multisource_refined_point": 15,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 9,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293000,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 7,
+        "short_probe": 9,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "onward_service_probe": 2,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 4,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 9
+    },
+    {
+      "seed": 20293001,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "certified_mec_clear": 11,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "short_probe": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293002,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 2,
+        "forward_lateral": 6,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "positive_anchor_probe": 1,
+        "short_probe": 2
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293003,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "probabilistic_optical_try": 2,
+        "search_route_stop": 24,
+        "positive_anchor_probe": 2,
+        "certified_mec_clear": 7,
+        "center_lateral": 1,
+        "short_probe": 5,
+        "posterior_center": 1,
+        "optical_finite_cover": 47
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293004,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "short_probe": 5,
+        "posterior_center": 1,
+        "positive_anchor_probe": 5,
+        "certified_mec_clear": 14,
+        "forward_lateral": 5,
+        "search_route_stop": 23,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 2
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293005,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "search_route_stop": 24,
+        "positive_anchor_probe": 2,
+        "probabilistic_optical_try": 5,
+        "certified_mec_clear": 8,
+        "forward_lateral": 2,
+        "short_probe": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293006,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "certified_mec_clear": 10,
+        "probabilistic_optical_try": 6,
+        "search_route_stop": 24,
+        "short_probe": 2,
+        "positive_anchor_probe": 3
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293007,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 11,
+        "search_route_stop": 24,
+        "short_probe": 2,
+        "probabilistic_optical_try": 7,
+        "center_lateral": 1,
+        "mec_center": 1,
+        "positive_anchor_probe": 3
+      },
+      "side_scan_count": 41,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293008,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "probabilistic_optical_try": 8,
+        "mec_center": 1,
+        "certified_mec_clear": 10,
+        "search_route_stop": 23,
+        "short_probe": 7,
+        "posterior_center": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 32,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293009,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "certified_mec_clear": 8,
+        "short_probe": 1,
+        "posterior_center": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293010,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "short_probe": 2,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4,
+        "positive_anchor_probe": 5,
+        "center_lateral": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293011,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "probabilistic_optical_try": 6,
+        "search_route_stop": 24,
+        "short_probe": 3,
+        "certified_mec_clear": 7,
+        "mec_center": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293012,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "certified_mec_clear": 13,
+        "short_probe": 4,
+        "search_route_stop": 15,
+        "probabilistic_optical_try": 5,
+        "posterior_center": 1,
+        "center_lateral": 1,
+        "positive_anchor_probe": 5,
+        "mec_center": 1
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293013,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "certified_mec_clear": 8,
+        "short_probe": 4,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293014,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 4,
+        "posterior_center": 1,
+        "search_route_stop": 24,
+        "certified_mec_clear": 9,
+        "center_lateral": 2,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293015,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "onward_service_probe": 2,
+        "short_probe": 4,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293016,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 23,
+        "probabilistic_optical_try": 9,
+        "mec_center": 1,
+        "certified_mec_clear": 8
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293017,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 4,
+        "short_probe": 2,
+        "probabilistic_optical_try": 2,
+        "search_route_stop": 24,
+        "certified_mec_clear": 11,
+        "posterior_center": 1,
+        "positive_anchor_probe": 5
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293018,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "probabilistic_optical_try": 7,
+        "search_route_stop": 24,
+        "center_lateral": 1,
+        "certified_mec_clear": 8,
+        "positive_anchor_probe": 1,
+        "short_probe": 2,
+        "mec_center": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293019,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 18,
+        "certified_mec_clear": 12,
+        "probabilistic_optical_try": 6,
+        "mec_center": 1,
+        "posterior_center": 2,
+        "short_probe": 2
+      },
+      "side_scan_count": 36,
+      "side_scan_halves": 24,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293020,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 2,
+        "short_probe": 4,
+        "certified_mec_clear": 12,
+        "search_route_stop": 24,
+        "forward_lateral": 5,
+        "probabilistic_optical_try": 4
+      },
+      "side_scan_count": 42,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293021,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "search_route_stop": 23,
+        "probabilistic_optical_try": 4,
+        "short_probe": 4,
+        "certified_mec_clear": 10,
+        "mec_center": 1,
+        "positive_anchor_probe": 5
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293022,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "positive_anchor_probe": 3,
+        "certified_mec_clear": 6,
+        "posterior_center": 2,
+        "probabilistic_optical_try": 7,
+        "search_route_stop": 24,
+        "short_probe": 10,
+        "onward_service_probe": 1,
+        "optical_finite_cover": 57
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293023,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 24,
+        "short_probe": 2,
+        "probabilistic_optical_try": 3,
+        "certified_mec_clear": 8,
+        "mec_center": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293024,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "search_route_stop": 24,
+        "short_probe": 2,
+        "certified_mec_clear": 11,
+        "probabilistic_optical_try": 6
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293025,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 17,
+        "probabilistic_optical_try": 11,
+        "posterior_center": 1,
+        "certified_mec_clear": 7,
+        "positive_anchor_probe": 1,
+        "mec_center": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293026,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 3,
+        "short_probe": 2,
+        "forward_lateral": 3,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 6
+      },
+      "side_scan_count": 37,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 9
+    },
+    {
+      "seed": 20293027,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 24,
+        "posterior_center": 1,
+        "probabilistic_optical_try": 3,
+        "certified_mec_clear": 7,
+        "short_probe": 1,
+        "positive_anchor_probe": 2
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293028,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 24,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 2,
+        "mec_center": 1,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293029,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 12,
+        "probabilistic_optical_try": 4,
+        "posterior_center": 2,
+        "short_probe": 3,
+        "search_route_stop": 14,
+        "positive_anchor_probe": 3
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293030,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "short_probe": 4,
+        "onward_service_probe": 2,
+        "probabilistic_optical_try": 7,
+        "search_route_stop": 24,
+        "certified_mec_clear": 8,
+        "posterior_center": 1
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293031,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 10,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 2,
+        "short_probe": 1,
+        "onward_service_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293032,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "search_route_stop": 24,
+        "certified_mec_clear": 10,
+        "probabilistic_optical_try": 7,
+        "forward_lateral": 4,
+        "short_probe": 2,
+        "positive_anchor_probe": 4
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293033,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "search_route_stop": 23,
+        "short_probe": 4,
+        "onward_service_probe": 1,
+        "certified_mec_clear": 11,
+        "probabilistic_optical_try": 4
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293034,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "short_probe": 3,
+        "certified_mec_clear": 4,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 7,
+        "onward_service_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293035,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 6,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 5,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293036,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "positive_anchor_probe": 2,
+        "probabilistic_optical_try": 4,
+        "search_route_stop": 24,
+        "onward_service_probe": 1,
+        "certified_mec_clear": 9,
+        "short_probe": 1
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293037,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "certified_mec_clear": 10,
+        "short_probe": 2,
+        "search_route_stop": 24,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 2
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293038,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 2,
+        "forward_lateral": 6,
+        "probabilistic_optical_try": 4,
+        "search_route_stop": 24,
+        "certified_mec_clear": 10,
+        "positive_anchor_probe": 2
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293039,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 9,
+        "probabilistic_optical_try": 4,
+        "search_route_stop": 23,
+        "certified_mec_clear": 8,
+        "short_probe": 3,
+        "positive_anchor_probe": 3,
+        "center_lateral": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293040,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "short_probe": 2,
+        "certified_mec_clear": 12,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4,
+        "posterior_center": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 32,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293041,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "short_probe": 3,
+        "probabilistic_optical_try": 5,
+        "center_lateral": 1,
+        "certified_mec_clear": 6,
+        "onward_service_probe": 1,
+        "search_route_stop": 24
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293042,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 7,
+        "search_route_stop": 24,
+        "certified_mec_clear": 10,
+        "short_probe": 3,
+        "probabilistic_optical_try": 3,
+        "center_lateral": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293043,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 6,
+        "short_probe": 5,
+        "probabilistic_optical_try": 6,
+        "search_route_stop": 24,
+        "posterior_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293044,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "search_route_stop": 23,
+        "probabilistic_optical_try": 5,
+        "short_probe": 2,
+        "certified_mec_clear": 10,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293045,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 8,
+        "search_route_stop": 23,
+        "short_probe": 1,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 8,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293046,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 8,
+        "search_route_stop": 21,
+        "short_probe": 8,
+        "probabilistic_optical_try": 5,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 10,
+        "center_lateral": 1,
+        "optical_finite_cover": 44
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293047,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 8,
+        "probabilistic_optical_try": 5,
+        "search_route_stop": 23,
+        "mec_center": 1,
+        "certified_mec_clear": 11,
+        "short_probe": 2,
+        "positive_anchor_probe": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293048,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "short_probe": 1,
+        "certified_mec_clear": 10,
+        "forward_lateral": 2,
+        "probabilistic_optical_try": 4,
+        "search_route_stop": 24
+      },
+      "side_scan_count": 27,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293049,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "search_route_stop": 24,
+        "short_probe": 3,
+        "posterior_center": 1,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 6,
+        "forward_lateral": 3,
+        "positive_anchor_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 23,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293050,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "onward_service_probe": 1,
+        "short_probe": 4,
+        "positive_anchor_probe": 3,
+        "probabilistic_optical_try": 2
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293051,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 2,
+        "short_probe": 5,
+        "posterior_center": 1,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "forward_lateral": 3,
+        "positive_anchor_probe": 5
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293052,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4,
+        "certified_mec_clear": 6,
+        "onward_service_probe": 1,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293053,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "short_probe": 5,
+        "onward_service_probe": 1,
+        "certified_mec_clear": 9,
+        "posterior_center": 1,
+        "search_route_stop": 24,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 5
+      },
+      "side_scan_count": 33,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293054,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "search_route_stop": 10,
+        "short_probe": 3,
+        "probabilistic_optical_try": 7,
+        "certified_mec_clear": 9,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 35,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293055,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "search_route_stop": 23,
+        "short_probe": 1,
+        "probabilistic_optical_try": 5,
+        "certified_mec_clear": 9,
+        "center_lateral": 1,
+        "positive_anchor_probe": 2
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293056,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 12,
+        "search_route_stop": 24,
+        "positive_anchor_probe": 1,
+        "short_probe": 1,
+        "mec_center": 2,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293057,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 6,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 7,
+        "certified_mec_clear": 9,
+        "positive_anchor_probe": 2,
+        "short_probe": 6,
+        "optical_finite_cover": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293058,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "short_probe": 7,
+        "certified_mec_clear": 10,
+        "posterior_center": 2,
+        "onward_service_probe": 2,
+        "search_route_stop": 24,
+        "optical_finite_cover": 50,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 35,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 13
+    },
+    {
+      "seed": 20293059,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 3,
+        "short_probe": 5,
+        "certified_mec_clear": 8,
+        "forward_lateral": 2,
+        "center_lateral": 2,
+        "posterior_center": 1,
+        "optical_finite_cover": 53
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293060,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "search_route_stop": 24,
+        "short_probe": 4,
+        "certified_mec_clear": 8,
+        "posterior_center": 4,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 6,
+        "positive_anchor_probe": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293061,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "search_route_stop": 24,
+        "certified_mec_clear": 8,
+        "forward_lateral": 2,
+        "short_probe": 2,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293062,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 9,
+        "mec_center": 1,
+        "positive_anchor_probe": 3,
+        "posterior_center": 1,
+        "short_probe": 7,
+        "optical_finite_cover": 3
+      },
+      "side_scan_count": 32,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293063,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 24,
+        "certified_mec_clear": 8,
+        "short_probe": 1,
+        "probabilistic_optical_try": 2,
+        "posterior_center": 1,
+        "center_lateral": 2,
+        "positive_anchor_probe": 4
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293064,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "onward_service_probe": 1,
+        "certified_mec_clear": 12,
+        "search_route_stop": 24,
+        "short_probe": 1,
+        "posterior_center": 2,
+        "probabilistic_optical_try": 2,
+        "positive_anchor_probe": 6
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293065,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 4,
+        "short_probe": 4,
+        "posterior_center": 4,
+        "search_route_stop": 23,
+        "forward_lateral": 5,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 7,
+        "certified_mec_clear": 7
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293066,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 8,
+        "positive_anchor_probe": 2,
+        "search_route_stop": 22,
+        "short_probe": 2,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293067,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "search_route_stop": 24,
+        "short_probe": 2,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 9,
+        "forward_lateral": 5,
+        "mec_center": 1,
+        "center_lateral": 2
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293068,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 7,
+        "short_probe": 2,
+        "search_route_stop": 24,
+        "certified_mec_clear": 10,
+        "probabilistic_optical_try": 5,
+        "onward_service_probe": 2,
+        "mec_center": 1,
+        "positive_anchor_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293069,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 24,
+        "short_probe": 4,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293070,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 2,
+        "probabilistic_optical_try": 5,
+        "mec_center": 1,
+        "certified_mec_clear": 11,
+        "search_route_stop": 24,
+        "short_probe": 6,
+        "forward_lateral": 3,
+        "center_lateral": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293071,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "short_probe": 3,
+        "certified_mec_clear": 13,
+        "search_route_stop": 20,
+        "probabilistic_optical_try": 3,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 39,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293072,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 7,
+        "certified_mec_clear": 14,
+        "search_route_stop": 21,
+        "short_probe": 6,
+        "probabilistic_optical_try": 2,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 34,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293073,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "short_probe": 3,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4,
+        "certified_mec_clear": 7,
+        "onward_service_probe": 3
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293074,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 8,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 4
+      },
+      "side_scan_count": 34,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293075,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "short_probe": 1,
+        "search_route_stop": 24,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293076,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "probabilistic_optical_try": 9,
+        "posterior_center": 1,
+        "positive_anchor_probe": 2,
+        "certified_mec_clear": 10,
+        "search_route_stop": 24,
+        "forward_lateral": 2,
+        "mec_center": 1,
+        "short_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 32,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293077,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 5,
+        "short_probe": 1,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293078,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 24,
+        "short_probe": 4,
+        "certified_mec_clear": 12,
+        "probabilistic_optical_try": 1,
+        "onward_service_probe": 2,
+        "center_lateral": 2
+      },
+      "side_scan_count": 35,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293079,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "search_route_stop": 23,
+        "center_lateral": 3,
+        "certified_mec_clear": 10,
+        "probabilistic_optical_try": 3,
+        "mec_center": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293080,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "search_route_stop": 23,
+        "certified_mec_clear": 12,
+        "center_lateral": 2,
+        "short_probe": 4,
+        "probabilistic_optical_try": 3,
+        "positive_anchor_probe": 2
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293081,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "certified_mec_clear": 7,
+        "search_route_stop": 24,
+        "short_probe": 4,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 3,
+        "mec_center": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293082,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "short_probe": 4,
+        "search_route_stop": 20,
+        "certified_mec_clear": 11,
+        "probabilistic_optical_try": 5,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 39,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293083,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 6,
+        "search_route_stop": 24,
+        "short_probe": 3,
+        "positive_anchor_probe": 2
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293084,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 9,
+        "short_probe": 3,
+        "probabilistic_optical_try": 3,
+        "search_route_stop": 24,
+        "onward_service_probe": 1,
+        "center_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293085,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "search_route_stop": 23,
+        "short_probe": 3,
+        "probabilistic_optical_try": 8,
+        "certified_mec_clear": 5,
+        "onward_service_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293086,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 6,
+        "short_probe": 5,
+        "positive_anchor_probe": 4,
+        "certified_mec_clear": 9,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293087,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "certified_mec_clear": 10,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 2,
+        "mec_center": 1,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293088,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 1,
+        "short_probe": 3,
+        "probabilistic_optical_try": 8,
+        "search_route_stop": 24,
+        "forward_lateral": 4,
+        "posterior_center": 1,
+        "certified_mec_clear": 6
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293089,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 7,
+        "short_probe": 1,
+        "search_route_stop": 24,
+        "positive_anchor_probe": 1,
+        "center_lateral": 2
+      },
+      "side_scan_count": 38,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293090,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 5,
+        "probabilistic_optical_try": 4,
+        "search_route_stop": 24,
+        "certified_mec_clear": 8,
+        "onward_service_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293091,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "probabilistic_optical_try": 9,
+        "search_route_stop": 24,
+        "certified_mec_clear": 7,
+        "short_probe": 2,
+        "positive_anchor_probe": 2,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293092,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "certified_mec_clear": 9,
+        "search_route_stop": 24,
+        "probabilistic_optical_try": 6,
+        "short_probe": 1,
+        "onward_service_probe": 1
+      },
+      "side_scan_count": 36,
+      "side_scan_halves": 22,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293093,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "probabilistic_optical_try": 7,
+        "search_route_stop": 23,
+        "short_probe": 4,
+        "certified_mec_clear": 8,
+        "onward_service_probe": 2,
+        "positive_anchor_probe": 4,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293094,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 2,
+        "certified_mec_clear": 11,
+        "search_route_stop": 24,
+        "positive_anchor_probe": 3,
+        "probabilistic_optical_try": 2,
+        "onward_service_probe": 2
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293095,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "search_route_stop": 23,
+        "short_probe": 1,
+        "onward_service_probe": 2,
+        "posterior_center": 1,
+        "probabilistic_optical_try": 3,
+        "certified_mec_clear": 11,
+        "positive_anchor_probe": 6,
+        "forward_lateral": 2
+      },
+      "side_scan_count": 30,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293096,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "onward_service_probe": 3,
+        "search_route_stop": 22,
+        "certified_mec_clear": 14,
+        "forward_lateral": 5,
+        "positive_anchor_probe": 6,
+        "probabilistic_optical_try": 2
+      },
+      "side_scan_count": 32,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293097,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 24,
+        "certified_mec_clear": 7,
+        "short_probe": 1,
+        "center_lateral": 1,
+        "probabilistic_optical_try": 3
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293098,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 3,
+        "search_route_stop": 24,
+        "short_probe": 3,
+        "probabilistic_optical_try": 4,
+        "certified_mec_clear": 9,
+        "center_lateral": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293099,
+      "strategy": "old_joint",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 4,
+        "certified_mec_clear": 10,
+        "search_route_stop": 24,
+        "short_probe": 3,
+        "probabilistic_optical_try": 2,
+        "mec_center": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293000,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 3,
+        "multisource_refined_point": 4,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "forward_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293001,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 8,
+        "probabilistic_optical_try": 10,
+        "short_probe": 1,
+        "dynamic_coverage_completion": 22,
+        "multiple_source_shared_point": 3,
+        "onward_service_probe": 1,
+        "posterior_center": 2,
+        "certified_mec_clear": 4
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293002,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 10,
+        "short_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 9,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293003,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "valuable_intermediate_stop": 3,
+        "multiple_source_shared_point": 2,
+        "forward_lateral": 1,
+        "onward_service_probe": 1,
+        "probabilistic_optical_try": 2
+      },
+      "side_scan_count": 5,
+      "side_scan_halves": 5,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293004,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 16,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 2,
+        "forward_lateral": 2,
+        "multiple_source_shared_point": 3,
+        "positive_anchor_probe": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293005,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 5,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293006,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 8,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 9,
+        "valuable_intermediate_stop": 5,
+        "multiple_source_shared_point": 3,
+        "short_probe": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293007,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 8,
+        "center_lateral": 1,
+        "multisource_refined_point": 15,
+        "dynamic_coverage_completion": 23,
+        "short_probe": 2,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 2,
+        "mec_center": 1,
+        "optical_finite_cover": 3
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293008,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 9,
+        "probabilistic_optical_try": 10,
+        "mec_center": 2,
+        "dynamic_coverage_completion": 18,
+        "multisource_refined_point": 4,
+        "multiple_source_shared_point": 2,
+        "forward_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293009,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 3,
+        "certified_mec_clear": 3,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 3,
+        "probabilistic_optical_try": 11,
+        "forward_lateral": 2,
+        "positive_anchor_probe": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293010,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 6,
+        "certified_mec_clear": 4,
+        "dynamic_direction_frontier": 1,
+        "probabilistic_optical_try": 8
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293011,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 6,
+        "forward_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293012,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "multiple_source_shared_point": 3,
+        "certified_mec_clear": 9,
+        "dynamic_coverage_completion": 18,
+        "probabilistic_optical_try": 9,
+        "valuable_intermediate_stop": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293013,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "valuable_intermediate_stop": 4,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 8,
+        "short_probe": 2,
+        "forward_lateral": 1,
+        "positive_anchor_probe": 1,
+        "posterior_center": 2,
+        "optical_finite_cover": 3
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 8
+    },
+    {
+      "seed": 20293014,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 9,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 2,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 1,
+        "optical_finite_cover": 55
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293015,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 5,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 7,
+        "multiple_source_shared_point": 2,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293016,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 23,
+        "forward_lateral": 2,
+        "certified_mec_clear": 5,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 12,
+        "valuable_intermediate_stop": 4,
+        "posterior_center": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293017,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "probabilistic_optical_try": 11,
+        "certified_mec_clear": 2
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293018,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 4,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 9,
+        "certified_mec_clear": 7,
+        "short_probe": 3,
+        "center_lateral": 2,
+        "mec_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293019,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "dynamic_coverage_completion": 17,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 9,
+        "certified_mec_clear": 8,
+        "valuable_intermediate_stop": 2,
+        "short_probe": 1,
+        "forward_lateral": 2,
+        "mec_center": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293020,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 8,
+        "valuable_intermediate_stop": 3,
+        "dynamic_coverage_completion": 24,
+        "short_probe": 1,
+        "multiple_source_shared_point": 3,
+        "forward_lateral": 1,
+        "mec_center": 1,
+        "posterior_center": 2
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293021,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 2,
+        "short_probe": 2,
+        "multiple_source_shared_point": 2,
+        "probabilistic_optical_try": 9,
+        "center_lateral": 1,
+        "posterior_center": 1,
+        "dynamic_direction_frontier": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293022,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 9,
+        "multiple_source_shared_point": 4,
+        "dynamic_coverage_completion": 24,
+        "forward_lateral": 5,
+        "probabilistic_optical_try": 6,
+        "positive_anchor_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293023,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 3,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 11,
+        "dynamic_direction_frontier": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293024,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "probabilistic_optical_try": 12,
+        "dynamic_coverage_completion": 23,
+        "forward_lateral": 1,
+        "certified_mec_clear": 5,
+        "onward_service_probe": 2,
+        "short_probe": 2,
+        "multiple_source_shared_point": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293025,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 14,
+        "dynamic_coverage_completion": 15,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 2,
+        "mec_center": 2,
+        "optical_finite_cover": 53
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293026,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 21,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 10,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 4,
+        "mec_center": 2,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 2,
+        "center_lateral": 1
+      },
+      "side_scan_count": 31,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 10
+    },
+    {
+      "seed": 20293027,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 4,
+        "center_lateral": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293028,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 1,
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "certified_mec_clear": 3,
+        "forward_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293029,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "multiple_source_shared_point": 1,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 13,
+        "dynamic_coverage_completion": 13,
+        "forward_lateral": 1,
+        "onward_service_probe": 1,
+        "positive_anchor_probe": 1,
+        "posterior_center": 1,
+        "center_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293030,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 5,
+        "dynamic_coverage_completion": 24,
+        "center_lateral": 1,
+        "onward_service_probe": 2,
+        "short_probe": 1,
+        "probabilistic_optical_try": 8,
+        "mec_center": 1
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 8
+    },
+    {
+      "seed": 20293031,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 2,
+        "probabilistic_optical_try": 9,
+        "certified_mec_clear": 5,
+        "short_probe": 2,
+        "multiple_source_shared_point": 4,
+        "valuable_intermediate_stop": 3,
+        "forward_lateral": 1,
+        "center_lateral": 2
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293032,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 10,
+        "certified_mec_clear": 6,
+        "valuable_intermediate_stop": 3,
+        "probabilistic_optical_try": 10,
+        "forward_lateral": 4,
+        "multiple_source_shared_point": 2,
+        "center_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293033,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 14,
+        "probabilistic_optical_try": 10,
+        "mec_center": 1,
+        "dynamic_coverage_completion": 23,
+        "multiple_source_shared_point": 4,
+        "certified_mec_clear": 6,
+        "valuable_intermediate_stop": 2,
+        "center_lateral": 1,
+        "short_probe": 1,
+        "onward_service_probe": 2,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293034,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 6,
+        "multiple_source_shared_point": 2,
+        "mec_center": 2,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 1,
+        "probabilistic_optical_try": 6,
+        "center_lateral": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293035,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 3,
+        "mec_center": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293036,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "certified_mec_clear": 6,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 7,
+        "mec_center": 1,
+        "valuable_intermediate_stop": 2,
+        "multiple_source_shared_point": 3,
+        "onward_service_probe": 2,
+        "optical_finite_cover": 51,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293037,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293038,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 13,
+        "dynamic_coverage_completion": 24,
+        "forward_lateral": 4,
+        "short_probe": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293039,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "forward_lateral": 2,
+        "dynamic_coverage_completion": 24,
+        "center_lateral": 2,
+        "probabilistic_optical_try": 7,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 6,
+        "valuable_intermediate_stop": 4,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293040,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "certified_mec_clear": 6,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 22,
+        "valuable_intermediate_stop": 2,
+        "probabilistic_optical_try": 13,
+        "onward_service_probe": 1,
+        "mec_center": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293041,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 9,
+        "probabilistic_optical_try": 5,
+        "multiple_source_shared_point": 2,
+        "dynamic_coverage_completion": 24,
+        "forward_lateral": 1,
+        "certified_mec_clear": 6,
+        "mec_center": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293042,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 5,
+        "dynamic_direction_frontier": 1,
+        "certified_mec_clear": 5,
+        "multiple_source_shared_point": 3,
+        "positive_anchor_probe": 1,
+        "short_probe": 2
+      },
+      "side_scan_count": 9,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293043,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 5,
+        "short_probe": 2,
+        "forward_lateral": 3,
+        "certified_mec_clear": 6,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293044,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 9,
+        "certified_mec_clear": 8,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 23,
+        "probabilistic_optical_try": 8,
+        "center_lateral": 2,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 2,
+        "short_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293045,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 13,
+        "dynamic_direction_frontier": 1,
+        "probabilistic_optical_try": 11,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 2,
+        "short_probe": 2,
+        "certified_mec_clear": 1,
+        "optical_finite_cover": 9
+      },
+      "side_scan_count": 21,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 8
+    },
+    {
+      "seed": 20293046,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 22,
+        "multiple_source_shared_point": 3,
+        "probabilistic_optical_try": 10,
+        "valuable_intermediate_stop": 3,
+        "dynamic_direction_frontier": 1,
+        "certified_mec_clear": 6,
+        "forward_lateral": 3,
+        "center_lateral": 1
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293047,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "dynamic_coverage_completion": 22,
+        "probabilistic_optical_try": 12,
+        "certified_mec_clear": 6,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 4,
+        "mec_center": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293048,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "forward_lateral": 3
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293049,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 10,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 20,
+        "valuable_intermediate_stop": 4,
+        "certified_mec_clear": 8,
+        "short_probe": 3,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293050,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 15,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "optical_finite_cover": 4,
+        "multiple_source_shared_point": 1,
+        "short_probe": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293051,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 3,
+        "multisource_refined_point": 9,
+        "short_probe": 1,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 1,
+        "mec_center": 1,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 7,
+        "posterior_center": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293052,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 2,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 2,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 4,
+        "probabilistic_optical_try": 8,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293053,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 5,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 3,
+        "dynamic_coverage_completion": 23,
+        "multisource_refined_point": 4,
+        "onward_service_probe": 1,
+        "optical_finite_cover": 5
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293054,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 11,
+        "valuable_intermediate_stop": 1,
+        "probabilistic_optical_try": 12,
+        "dynamic_direction_frontier": 2,
+        "multiple_source_shared_point": 3,
+        "short_probe": 2,
+        "certified_mec_clear": 6,
+        "forward_lateral": 2
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293055,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 3,
+        "probabilistic_optical_try": 9,
+        "certified_mec_clear": 6,
+        "dynamic_direction_frontier": 1,
+        "valuable_intermediate_stop": 5,
+        "center_lateral": 2,
+        "mec_center": 1,
+        "forward_lateral": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293056,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 23,
+        "short_probe": 1,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 3
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293057,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 9,
+        "multiple_source_shared_point": 1,
+        "short_probe": 1,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1,
+        "forward_lateral": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 15,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293058,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 3,
+        "probabilistic_optical_try": 11,
+        "short_probe": 1,
+        "center_lateral": 1,
+        "dynamic_coverage_completion": 23,
+        "multiple_source_shared_point": 3,
+        "positive_anchor_probe": 1,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293059,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 2,
+        "onward_service_probe": 1,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 4,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 2,
+        "short_probe": 1
+      },
+      "side_scan_count": 7,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293060,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1,
+        "valuable_intermediate_stop": 2,
+        "short_probe": 1,
+        "probabilistic_optical_try": 4
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293061,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 8,
+        "valuable_intermediate_stop": 3,
+        "mec_center": 1,
+        "certified_mec_clear": 3,
+        "forward_lateral": 1,
+        "posterior_center": 3
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 6,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293062,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 5,
+        "onward_service_probe": 1,
+        "posterior_center": 1,
+        "certified_mec_clear": 6,
+        "short_probe": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293063,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 3,
+        "certified_mec_clear": 3,
+        "valuable_intermediate_stop": 2,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 7,
+        "short_probe": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 7,
+      "side_scan_halves": 7,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293064,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "multisource_refined_point": 7,
+        "multiple_source_shared_point": 3,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 7,
+        "probabilistic_optical_try": 8,
+        "positive_anchor_probe": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293065,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "dynamic_direction_frontier": 3,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 13,
+        "valuable_intermediate_stop": 5,
+        "certified_mec_clear": 2,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293066,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 3,
+        "valuable_intermediate_stop": 1,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 8,
+        "multiple_source_shared_point": 2,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293067,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 3,
+        "dynamic_coverage_completion": 22,
+        "certified_mec_clear": 8,
+        "probabilistic_optical_try": 7,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 2,
+        "valuable_intermediate_stop": 1,
+        "posterior_center": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 6
+    },
+    {
+      "seed": 20293068,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "short_probe": 3,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 9,
+        "valuable_intermediate_stop": 2,
+        "forward_lateral": 1,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293069,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "multiple_source_shared_point": 1,
+        "probabilistic_optical_try": 9,
+        "posterior_center": 1,
+        "certified_mec_clear": 4,
+        "forward_lateral": 2,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293070,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "probabilistic_optical_try": 12,
+        "forward_lateral": 1,
+        "certified_mec_clear": 3,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 4,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293071,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "short_probe": 3,
+        "onward_service_probe": 2,
+        "certified_mec_clear": 5,
+        "multisource_refined_point": 8,
+        "dynamic_coverage_completion": 23,
+        "multiple_source_shared_point": 4,
+        "probabilistic_optical_try": 12,
+        "valuable_intermediate_stop": 3,
+        "center_lateral": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 29,
+      "side_scan_halves": 21,
+      "side_scan_no_signal": 7
+    },
+    {
+      "seed": 20293072,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 21,
+        "positive_anchor_probe": 2,
+        "multiple_source_shared_point": 3,
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 6,
+        "posterior_center": 1,
+        "short_probe": 1,
+        "forward_lateral": 3
+      },
+      "side_scan_count": 22,
+      "side_scan_halves": 18,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293073,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "probabilistic_optical_try": 7,
+        "dynamic_coverage_completion": 24,
+        "certified_mec_clear": 4,
+        "valuable_intermediate_stop": 1,
+        "onward_service_probe": 1,
+        "center_lateral": 1,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 17,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293074,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 12,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 7,
+        "multiple_source_shared_point": 2,
+        "center_lateral": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293075,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "probabilistic_optical_try": 8,
+        "certified_mec_clear": 3,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 16,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293076,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 6,
+        "probabilistic_optical_try": 11,
+        "dynamic_coverage_completion": 24,
+        "multisource_refined_point": 5,
+        "forward_lateral": 1,
+        "dynamic_direction_frontier": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 12,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293077,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "forward_lateral": 1,
+        "certified_mec_clear": 2,
+        "valuable_intermediate_stop": 4,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 15,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293078,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "positive_anchor_probe": 1,
+        "multisource_refined_point": 3,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 12,
+        "short_probe": 6,
+        "valuable_intermediate_stop": 1,
+        "certified_mec_clear": 3,
+        "center_lateral": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 17,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293079,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "short_probe": 2,
+        "multisource_refined_point": 8,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 2,
+        "certified_mec_clear": 4,
+        "multiple_source_shared_point": 1,
+        "forward_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 11,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293080,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 6,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 23,
+        "valuable_intermediate_stop": 3,
+        "multiple_source_shared_point": 3,
+        "forward_lateral": 3,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 5,
+        "short_probe": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 11,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293081,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "onward_service_probe": 1,
+        "probabilistic_optical_try": 4
+      },
+      "side_scan_count": 10,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293082,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 3,
+        "onward_service_probe": 2,
+        "short_probe": 4,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 9,
+        "forward_lateral": 1,
+        "probabilistic_optical_try": 8,
+        "dynamic_direction_frontier": 1,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293083,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "probabilistic_optical_try": 6,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "dynamic_direction_frontier": 1,
+        "valuable_intermediate_stop": 2,
+        "positive_anchor_probe": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293084,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 7,
+        "certified_mec_clear": 6,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 9,
+        "valuable_intermediate_stop": 3,
+        "forward_lateral": 1,
+        "mec_center": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293085,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "certified_mec_clear": 7,
+        "dynamic_coverage_completion": 24,
+        "positive_anchor_probe": 1,
+        "valuable_intermediate_stop": 2,
+        "multiple_source_shared_point": 2,
+        "probabilistic_optical_try": 6,
+        "short_probe": 1,
+        "forward_lateral": 1,
+        "posterior_center": 1
+      },
+      "side_scan_count": 9,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293086,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "dynamic_coverage_completion": 21,
+        "positive_anchor_probe": 1,
+        "probabilistic_optical_try": 10,
+        "posterior_center": 1,
+        "certified_mec_clear": 4,
+        "onward_service_probe": 2,
+        "dynamic_direction_frontier": 1,
+        "valuable_intermediate_stop": 1
+      },
+      "side_scan_count": 23,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293087,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "forward_lateral": 1,
+        "certified_mec_clear": 3,
+        "multisource_refined_point": 6,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 8,
+        "positive_anchor_probe": 1,
+        "valuable_intermediate_stop": 2,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 12,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293088,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "onward_service_probe": 2,
+        "posterior_center": 2,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 3,
+        "certified_mec_clear": 6,
+        "multiple_source_shared_point": 2,
+        "short_probe": 1,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 19,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293089,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "multiple_source_shared_point": 3,
+        "forward_lateral": 3,
+        "probabilistic_optical_try": 9,
+        "dynamic_coverage_completion": 21,
+        "certified_mec_clear": 6,
+        "valuable_intermediate_stop": 2,
+        "posterior_center": 1,
+        "center_lateral": 1
+      },
+      "side_scan_count": 20,
+      "side_scan_halves": 14,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293090,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 6,
+        "dynamic_direction_frontier": 1,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 7,
+        "multiple_source_shared_point": 1,
+        "short_probe": 1,
+        "certified_mec_clear": 4,
+        "positive_anchor_probe": 1,
+        "forward_lateral": 1,
+        "center_lateral": 3
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 9,
+      "side_scan_no_signal": 1
+    },
+    {
+      "seed": 20293091,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 4,
+        "forward_lateral": 3,
+        "probabilistic_optical_try": 13,
+        "dynamic_coverage_completion": 22,
+        "positive_anchor_probe": 1,
+        "certified_mec_clear": 4,
+        "posterior_center": 1,
+        "multiple_source_shared_point": 1,
+        "center_lateral": 2
+      },
+      "side_scan_count": 25,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293092,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 3,
+        "probabilistic_optical_try": 11,
+        "certified_mec_clear": 5,
+        "multisource_refined_point": 4,
+        "dynamic_coverage_completion": 22,
+        "multiple_source_shared_point": 1
+      },
+      "side_scan_count": 28,
+      "side_scan_halves": 20,
+      "side_scan_no_signal": 3
+    },
+    {
+      "seed": 20293093,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "valuable_intermediate_stop": 2,
+        "multisource_refined_point": 7,
+        "multiple_source_shared_point": 2,
+        "certified_mec_clear": 4,
+        "dynamic_coverage_completion": 23,
+        "probabilistic_optical_try": 11,
+        "posterior_center": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 19,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293094,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "certified_mec_clear": 5,
+        "probabilistic_optical_try": 11,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 1,
+        "multiple_source_shared_point": 4,
+        "posterior_center": 1,
+        "onward_service_probe": 1,
+        "forward_lateral": 2,
+        "mec_center": 1
+      },
+      "side_scan_count": 14,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 0
+    },
+    {
+      "seed": 20293095,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 5,
+        "dynamic_coverage_completion": 24,
+        "probabilistic_optical_try": 10,
+        "valuable_intermediate_stop": 2,
+        "posterior_center": 1,
+        "certified_mec_clear": 6,
+        "short_probe": 1
+      },
+      "side_scan_count": 26,
+      "side_scan_halves": 22,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293096,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 11,
+        "valuable_intermediate_stop": 7,
+        "certified_mec_clear": 9,
+        "dynamic_coverage_completion": 22,
+        "probabilistic_optical_try": 7,
+        "posterior_center": 2,
+        "forward_lateral": 2,
+        "center_lateral": 1,
+        "multiple_source_shared_point": 3,
+        "short_probe": 1,
+        "optical_finite_cover": 56
+      },
+      "side_scan_count": 24,
+      "side_scan_halves": 16,
+      "side_scan_no_signal": 5
+    },
+    {
+      "seed": 20293097,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 9,
+        "probabilistic_optical_try": 8,
+        "dynamic_coverage_completion": 24,
+        "multiple_source_shared_point": 2,
+        "valuable_intermediate_stop": 1,
+        "mec_center": 1,
+        "certified_mec_clear": 3,
+        "forward_lateral": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 8,
+      "side_scan_no_signal": 4
+    },
+    {
+      "seed": 20293098,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 12,
+        "forward_lateral": 1,
+        "certified_mec_clear": 4,
+        "dynamic_coverage_completion": 24,
+        "valuable_intermediate_stop": 6,
+        "probabilistic_optical_try": 11,
+        "multiple_source_shared_point": 2,
+        "mec_center": 1,
+        "short_probe": 2
+      },
+      "side_scan_count": 18,
+      "side_scan_halves": 13,
+      "side_scan_no_signal": 2
+    },
+    {
+      "seed": 20293099,
+      "strategy": "previous_dynamic",
+      "elastic_updates": 0,
+      "movement_reasons": {
+        "multisource_refined_point": 8,
+        "certified_mec_clear": 4,
+        "probabilistic_optical_try": 10,
+        "dynamic_coverage_completion": 24,
+        "forward_lateral": 1,
+        "multiple_source_shared_point": 2,
+        "valuable_intermediate_stop": 1,
+        "short_probe": 1
+      },
+      "side_scan_count": 13,
+      "side_scan_halves": 10,
+      "side_scan_no_signal": 2
+    }
+  ]
+}

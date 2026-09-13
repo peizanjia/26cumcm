@@ -1,0 +1,30 @@
+{
+  "tests": {
+    "passed": 101,
+    "wall_s": 18.67,
+    "command": ".venv/Scripts/python.exe -m pytest question4/tuned_joint/test_planner.py question4/free_joint question4/dynamic_joint question4/full_mission question4/zigzag_study/test_study.py -q"
+  },
+  "freeze_guard": {
+    "passed": true,
+    "frozen_manifest_unchanged": true
+  },
+  "status": "Final verification complete",
+  "final_audit": {
+    "passed": true,
+    "runs": 300,
+    "commands": 90805,
+    "clears": 3909
+  },
+  "browser_qa": {
+    "passed": true,
+    "file": "figures/browser_qa/qa.json"
+  },
+  "visual_inspection": {
+    "passed": true,
+    "inspected": [
+      "six final PNG figures",
+      "desktop motion replay",
+      "mobile motion replay"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "replays": 12,
+  "commands": 3551,
+  "rows": [
+    {
+      "strategy": "free_joint",
+      "seed": 20293022,
+      "sources": 13,
+      "clears": 13,
+      "commands": 309,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "free_joint",
+      "seed": 20293023,
+      "sources": 10,
+      "clears": 10,
+      "commands": 343,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "free_joint",
+      "seed": 20293054,
+      "sources": 16,
+      "clears": 16,
+      "commands": 290,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "free_joint",
+      "seed": 20293071,
+      "sources": 16,
+      "clears": 16,
+      "commands": 191,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "old_joint",
+      "seed": 20293022,
+      "sources": 13,
+      "clears": 13,
+      "commands": 409,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "old_joint",
+      "seed": 20293023,
+      "sources": 10,
+      "clears": 10,
+      "commands": 349,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "old_joint",
+      "seed": 20293054,
+      "sources": 16,
+      "clears": 16,
+      "commands": 207,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "old_joint",
+      "seed": 20293071,
+      "sources": 16,
+      "clears": 16,
+      "commands": 240,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "previous_dynamic",
+      "seed": 20293022,
+      "sources": 13,
+      "clears": 13,
+      "commands": 303,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "previous_dynamic",
+      "seed": 20293023,
+      "sources": 10,
+      "clears": 10,
+      "commands": 335,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "previous_dynamic",
+      "seed": 20293054,
+      "sources": 16,
+      "clears": 16,
+      "commands": 238,
+      "repeated_measurements": 0
+    },
+    {
+      "strategy": "previous_dynamic",
+      "seed": 20293071,
+      "sources": 16,
+      "clears": 16,
+      "commands": 337,
+      "repeated_measurements": 0
+    }
+  ]
+}

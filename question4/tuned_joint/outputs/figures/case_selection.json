@@ -1,0 +1,140 @@
+{
+  "rule": "actual complete-mission elapsed cost only; truth used offline for source arrows",
+  "cases": [
+    {
+      "seed": 20296040,
+      "reasons": [
+        "本轮每源耗时最长"
+      ],
+      "current": "tuned_joint",
+      "reference": "free_joint",
+      "current_per_source_s": 672.8408334358942,
+      "delta_from_reference_s": 24.913087393789965,
+      "figure": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\figures\\case_20296040.png",
+      "histories": {
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\old_joint\\20296040.json.gz",
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\free_joint\\20296040.json.gz",
+        "tuned_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\tuned_joint\\20296040.json.gz"
+      },
+      "motion_metrics": {
+        "old_joint": {
+          "command_count": 394,
+          "movement_m": 22341.68842883476,
+          "physical_moves": 42,
+          "measurements": 384,
+          "clear_success": 10,
+          "clear_failure": 0,
+          "search_after_last_clear_s": 199.64726355785933
+        },
+        "free_joint": {
+          "command_count": 363,
+          "movement_m": 21691.38730210522,
+          "physical_moves": 48,
+          "measurements": 351,
+          "clear_success": 10,
+          "clear_failure": 2,
+          "search_after_last_clear_s": 1461.430724205523
+        },
+        "tuned_joint": {
+          "command_count": 361,
+          "movement_m": 22967.04167179471,
+          "physical_moves": 42,
+          "measurements": 350,
+          "clear_success": 10,
+          "clear_failure": 1,
+          "search_after_last_clear_s": 0.0
+        }
+      }
+    },
+    {
+      "seed": 20296005,
+      "reasons": [
+        "相对上一最佳：自由补点退步最多"
+      ],
+      "current": "tuned_joint",
+      "reference": "free_joint",
+      "current_per_source_s": 521.3878816323189,
+      "delta_from_reference_s": 87.11335969045882,
+      "figure": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\figures\\case_20296005.png",
+      "histories": {
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\old_joint\\20296005.json.gz",
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\free_joint\\20296005.json.gz",
+        "tuned_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\tuned_joint\\20296005.json.gz"
+      },
+      "motion_metrics": {
+        "old_joint": {
+          "command_count": 301,
+          "movement_m": 22748.965077252473,
+          "physical_moves": 48,
+          "measurements": 287,
+          "clear_success": 14,
+          "clear_failure": 0,
+          "search_after_last_clear_s": 0.0
+        },
+        "free_joint": {
+          "command_count": 319,
+          "movement_m": 21014.2165359302,
+          "physical_moves": 51,
+          "measurements": 304,
+          "clear_success": 14,
+          "clear_failure": 1,
+          "search_after_last_clear_s": 293.50024328717336
+        },
+        "tuned_joint": {
+          "command_count": 372,
+          "movement_m": 26717.15171426231,
+          "physical_moves": 142,
+          "measurements": 282,
+          "clear_success": 14,
+          "clear_failure": 76,
+          "search_after_last_clear_s": 0.0
+        }
+      }
+    },
+    {
+      "seed": 20296075,
+      "reasons": [
+        "相对上一最佳：自由补点进步最多"
+      ],
+      "current": "tuned_joint",
+      "reference": "free_joint",
+      "current_per_source_s": 260.057078633196,
+      "delta_from_reference_s": -74.95469595621131,
+      "figure": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\figures\\case_20296075.png",
+      "histories": {
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\old_joint\\20296075.json.gz",
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\free_joint\\20296075.json.gz",
+        "tuned_joint": "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\validate_histories\\tuned_joint\\20296075.json.gz"
+      },
+      "motion_metrics": {
+        "old_joint": {
+          "command_count": 196,
+          "movement_m": 15766.391577679575,
+          "physical_moves": 38,
+          "measurements": 180,
+          "clear_success": 16,
+          "clear_failure": 0,
+          "search_after_last_clear_s": 0.0
+        },
+        "free_joint": {
+          "command_count": 212,
+          "movement_m": 20590.941967152597,
+          "physical_moves": 53,
+          "measurements": 195,
+          "clear_success": 16,
+          "clear_failure": 1,
+          "search_after_last_clear_s": 0.0
+        },
+        "tuned_joint": {
+          "command_count": 187,
+          "movement_m": 15304.566290655675,
+          "physical_moves": 36,
+          "measurements": 171,
+          "clear_success": 16,
+          "clear_failure": 0,
+          "search_after_last_clear_s": 0.0
+        }
+      }
+    }
+  ]
+}

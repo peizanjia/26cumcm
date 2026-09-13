@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "validation": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\develop1\\develop.json",
+  "audited_runs": 144,
+  "policy_archive": null,
+  "unique_scenarios": 16,
+  "commands": 45740,
+  "physical_sources": 199,
+  "clears_across_runs": 1791,
+  "repeated_measurements": 0,
+  "issues": [],
+  "checks": [
+    "independent 180-degree reception and <=20m optical outcomes",
+    "all five cost categories and receiver channel state",
+    "fixed repeated-site bearing feedback",
+    "per-channel negative coverage evidence and continuous geometric certificate",
+    "complete actual clearing",
+    "paired scene equality",
+    "persisted command/summary/source/phase accounting",
+    "frozen code hashes"
+  ]
+}

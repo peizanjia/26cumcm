@@ -1,0 +1,158 @@
+{
+  "name": "desktop",
+  "viewport": {
+    "width": 1440,
+    "height": 1120
+  },
+  "cases": [
+    {
+      "seed": 20296040,
+      "pairs": [
+        [
+          "old_joint",
+          "old_joint"
+        ],
+        [
+          "old_joint",
+          "free_joint"
+        ],
+        [
+          "old_joint",
+          "tuned_joint"
+        ],
+        [
+          "free_joint",
+          "old_joint"
+        ],
+        [
+          "free_joint",
+          "free_joint"
+        ],
+        [
+          "free_joint",
+          "tuned_joint"
+        ],
+        [
+          "tuned_joint",
+          "old_joint"
+        ],
+        [
+          "tuned_joint",
+          "free_joint"
+        ],
+        [
+          "tuned_joint",
+          "tuned_joint"
+        ]
+      ]
+    },
+    {
+      "seed": 20296005,
+      "pairs": [
+        [
+          "old_joint",
+          "old_joint"
+        ],
+        [
+          "old_joint",
+          "free_joint"
+        ],
+        [
+          "old_joint",
+          "tuned_joint"
+        ],
+        [
+          "free_joint",
+          "old_joint"
+        ],
+        [
+          "free_joint",
+          "free_joint"
+        ],
+        [
+          "free_joint",
+          "tuned_joint"
+        ],
+        [
+          "tuned_joint",
+          "old_joint"
+        ],
+        [
+          "tuned_joint",
+          "free_joint"
+        ],
+        [
+          "tuned_joint",
+          "tuned_joint"
+        ]
+      ]
+    },
+    {
+      "seed": 20296075,
+      "pairs": [
+        [
+          "old_joint",
+          "old_joint"
+        ],
+        [
+          "old_joint",
+          "free_joint"
+        ],
+        [
+          "old_joint",
+          "tuned_joint"
+        ],
+        [
+          "free_joint",
+          "old_joint"
+        ],
+        [
+          "free_joint",
+          "free_joint"
+        ],
+        [
+          "free_joint",
+          "tuned_joint"
+        ],
+        [
+          "tuned_joint",
+          "old_joint"
+        ],
+        [
+          "tuned_joint",
+          "free_joint"
+        ],
+        [
+          "tuned_joint",
+          "tuned_joint"
+        ]
+      ]
+    }
+  ],
+  "strategyPairs": 27,
+  "timePositions": 108,
+  "errors": [],
+  "failedRequests": [],
+  "screenshots": [
+    "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\figures\\browser_qa\\desktop.png",
+    "D:\\Code_Projects\\26cumcm\\question4\\tuned_joint\\outputs\\figures\\browser_qa\\desktop_replay.png"
+  ],
+  "metadata": {
+    "cases": [
+      20296040,
+      20296005,
+      20296075
+    ],
+    "strategies": [
+      "old_joint",
+      "free_joint",
+      "tuned_joint"
+    ],
+    "reference": "free_joint",
+    "current": "tuned_joint",
+    "compatibility": false,
+    "figureCount": 6,
+    "commandCount": 2705
+  },
+  "passed": true
+}

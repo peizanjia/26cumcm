@@ -1,0 +1,21 @@
+{
+  "free_joint": {
+    "policy": "free_joint"
+  },
+  "priced": {
+    "policy": "tuned_joint",
+    "parameters": {
+      "bundle_scans": false,
+      "replacement_candidates": 0
+    }
+  },
+  "bundled": {
+    "policy": "tuned_joint",
+    "parameters": {
+      "replacement_candidates": 0
+    }
+  },
+  "replacement": {
+    "policy": "tuned_joint"
+  }
+}

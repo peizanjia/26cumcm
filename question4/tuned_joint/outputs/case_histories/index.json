@@ -1,0 +1,83 @@
+{
+  "scope": "local synthetic actual histories; identical bytes to evaluated runs",
+  "seeds": [
+    20296005,
+    20296040,
+    20296075
+  ],
+  "entries": [
+    {
+      "seed": 20296005,
+      "strategy": "free_joint",
+      "file": "case_histories/free_joint/20296005.json.gz",
+      "bytes": 303456,
+      "sha256": "6bffd9bca8de72e4040d878694fab57d4976c19cb1a72b1577c3e6d0ebde2ea4",
+      "per_source_s": 434.2745219418601
+    },
+    {
+      "seed": 20296040,
+      "strategy": "free_joint",
+      "file": "case_histories/free_joint/20296040.json.gz",
+      "bytes": 155663,
+      "sha256": "5a45f8e761f9f5502e01beff861f79ad31e298553c170df7d94c3b516600b831",
+      "per_source_s": 647.9277460421042
+    },
+    {
+      "seed": 20296075,
+      "strategy": "free_joint",
+      "file": "case_histories/free_joint/20296075.json.gz",
+      "bytes": 298022,
+      "sha256": "885aa566453f1007ba9a258a900bc8770754b1ec10cc6e9a1a58d18853e12147",
+      "per_source_s": 335.0117745894073
+    },
+    {
+      "seed": 20296005,
+      "strategy": "old_joint",
+      "file": "case_histories/old_joint/20296005.json.gz",
+      "bytes": 23557,
+      "sha256": "6f2fc932f10bbede8375c3a00d4d96a2e1a4b7cb11060408c6e15ff0f61b5213",
+      "per_source_s": 452.5566439607497
+    },
+    {
+      "seed": 20296040,
+      "strategy": "old_joint",
+      "file": "case_histories/old_joint/20296040.json.gz",
+      "bytes": 21445,
+      "sha256": "48dbf8b708cba5ab9403a8f9ff7600d5e70b7398a3a6b7e5f38590e6d7f0c7fe",
+      "per_source_s": 681.8337685766954
+    },
+    {
+      "seed": 20296075,
+      "strategy": "old_joint",
+      "file": "case_histories/old_joint/20296075.json.gz",
+      "bytes": 19163,
+      "sha256": "f82157502564ee2a472f5fea39fdf10269332cb6c89dc4da6a6b9fb57405138b",
+      "per_source_s": 269.4548947209947
+    },
+    {
+      "seed": 20296005,
+      "strategy": "tuned_joint",
+      "file": "case_histories/tuned_joint/20296005.json.gz",
+      "bytes": 338574,
+      "sha256": "af6370cda0367d7d17257799c81497e9e8aa8a07aca013b9c5c1d2c14b708931",
+      "per_source_s": 521.3878816323189
+    },
+    {
+      "seed": 20296040,
+      "strategy": "tuned_joint",
+      "file": "case_histories/tuned_joint/20296040.json.gz",
+      "bytes": 162890,
+      "sha256": "362d9be70cff02dc92e3c70385468b89a973e42546143456f3ea373f5f034ac1",
+      "per_source_s": 672.8408334358942
+    },
+    {
+      "seed": 20296075,
+      "strategy": "tuned_joint",
+      "file": "case_histories/tuned_joint/20296075.json.gz",
+      "bytes": 209551,
+      "sha256": "f276cb04011bd93e50c73b7e2631b9b1ed3f501d61860c84c649744384b77c68",
+      "per_source_s": 260.057078633196
+    }
+  ],
+  "total_bytes": 1532321
+}

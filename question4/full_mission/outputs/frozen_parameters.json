@@ -1,0 +1,53 @@
+{
+  "selected_on_development": "joint_sparse",
+  "parameters": {
+    "zigzag": {
+      "strategy": "zigzag",
+      "inner": 980.0,
+      "outer": 1870.0,
+      "service_detour": 650.0,
+      "side_gain": 0.025,
+      "side_scans": true,
+      "known_side_scans": true,
+      "prune_coverage": true,
+      "clear_try_radius": 48.0,
+      "probe_fraction": 0.72,
+      "lateral_ratio": 0.25,
+      "max_radio_steps": 8,
+      "service_tail_weight": 0.3,
+      "max_commands": 7000
+    },
+    "dual": {
+      "strategy": "dual",
+      "inner": 980.0,
+      "outer": 1870.0,
+      "service_detour": 650.0,
+      "side_gain": 0.025,
+      "side_scans": true,
+      "known_side_scans": true,
+      "prune_coverage": true,
+      "clear_try_radius": 48.0,
+      "probe_fraction": 0.72,
+      "lateral_ratio": 0.25,
+      "max_radio_steps": 8,
+      "service_tail_weight": 0.3,
+      "max_commands": 7000
+    },
+    "joint": {
+      "strategy": "joint",
+      "inner": 980.0,
+      "outer": 1870.0,
+      "service_detour": 650.0,
+      "side_gain": 0.05,
+      "side_scans": true,
+      "known_side_scans": true,
+      "prune_coverage": true,
+      "clear_try_radius": 48.0,
+      "probe_fraction": 0.72,
+      "lateral_ratio": 0.25,
+      "max_radio_steps": 8,
+      "service_tail_weight": 0.3,
+      "max_commands": 7000
+    }
+  }
+}

@@ -1,0 +1,267 @@
+{
+  "scope": "local synthetic complete mission",
+  "source_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\validate.json",
+  "overview": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\overview.png",
+  "cases": [
+    {
+      "seed": 20293054,
+      "tags": [
+        "相对旧联合退步最多"
+      ],
+      "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\case_20293054.png",
+      "metrics": {
+        "free_joint": {
+          "physical_stops": 56,
+          "stop_kinds": {
+            "service": 32,
+            "intermediate": 2,
+            "search": 22
+          },
+          "shared_stops": 22,
+          "intermediate_stops": 2,
+          "movement_m": 22427.394897725568,
+          "known_no_signal": 4,
+          "clear_failures": 3,
+          "clear_successes": 16,
+          "discovered": 16,
+          "search_after_last_clear_s": 0.0,
+          "arrival_reasons": {
+            "multisource_refined_point": 9,
+            "valuable_intermediate_stop": 2,
+            "dynamic_coverage_completion": 22,
+            "forward_lateral": 2,
+            "certified_mec_clear": 8,
+            "probabilistic_optical_try": 11,
+            "near_positive_anchor": 2
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        },
+        "old_joint": {
+          "physical_stops": 36,
+          "stop_kinds": {
+            "service": 26,
+            "search": 10
+          },
+          "shared_stops": 23,
+          "intermediate_stops": 0,
+          "movement_m": 15828.497016881418,
+          "known_no_signal": 3,
+          "clear_failures": 0,
+          "clear_successes": 16,
+          "discovered": 16,
+          "search_after_last_clear_s": 0.0,
+          "arrival_reasons": {
+            "forward_lateral": 5,
+            "search_route_stop": 10,
+            "short_probe": 3,
+            "probabilistic_optical_try": 7,
+            "certified_mec_clear": 9,
+            "center_lateral": 1,
+            "positive_anchor_probe": 1
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        }
+      },
+      "history_files": {
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\free_joint\\20293054.json.gz",
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\old_joint\\20293054.json.gz"
+      },
+      "unknown_overlay": {
+        "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\unknown_20293054_c14.png",
+        "channel": 14,
+        "action": 290,
+        "time_s": 6176.478979545111,
+        "remaining_mass": 0.013959390862944163,
+        "discovered_source_count": 16,
+        "source_count_upper_bound_reached": true
+      }
+    },
+    {
+      "seed": 20293022,
+      "tags": [
+        "相对旧联合改善最多"
+      ],
+      "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\case_20293022.png",
+      "metrics": {
+        "free_joint": {
+          "physical_stops": 52,
+          "stop_kinds": {
+            "service": 26,
+            "search": 24,
+            "intermediate": 2
+          },
+          "shared_stops": 12,
+          "intermediate_stops": 2,
+          "movement_m": 23882.60737274127,
+          "known_no_signal": 0,
+          "clear_failures": 0,
+          "clear_successes": 13,
+          "discovered": 13,
+          "search_after_last_clear_s": 317.9636397014965,
+          "arrival_reasons": {
+            "positive_anchor_probe": 1,
+            "certified_mec_clear": 6,
+            "multisource_refined_point": 11,
+            "probabilistic_optical_try": 7,
+            "dynamic_coverage_completion": 24,
+            "multiple_source_shared_point": 1,
+            "valuable_intermediate_stop": 2
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        },
+        "old_joint": {
+          "physical_stops": 113,
+          "stop_kinds": {
+            "service": 89,
+            "search": 24
+          },
+          "shared_stops": 18,
+          "intermediate_stops": 0,
+          "movement_m": 28267.480132251403,
+          "known_no_signal": 13,
+          "clear_failures": 57,
+          "clear_successes": 13,
+          "discovered": 13,
+          "search_after_last_clear_s": 225.07233921237366,
+          "arrival_reasons": {
+            "forward_lateral": 3,
+            "positive_anchor_probe": 3,
+            "certified_mec_clear": 6,
+            "posterior_center": 2,
+            "probabilistic_optical_try": 7,
+            "search_route_stop": 24,
+            "short_probe": 10,
+            "onward_service_probe": 1,
+            "optical_finite_cover": 57
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        }
+      },
+      "history_files": {
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\free_joint\\20293022.json.gz",
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\old_joint\\20293022.json.gz"
+      },
+      "unknown_overlay": {
+        "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\unknown_20293022_c16.png",
+        "channel": 16,
+        "action": 308,
+        "time_s": 6591.521474548252,
+        "remaining_mass": 0.00676818950930626,
+        "discovered_source_count": 13,
+        "source_count_upper_bound_reached": false
+      }
+    },
+    {
+      "seed": 20293023,
+      "tags": [
+        "自由补点最慢"
+      ],
+      "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\case_20293023.png",
+      "metrics": {
+        "free_joint": {
+          "physical_stops": 59,
+          "stop_kinds": {
+            "service": 31,
+            "search": 24,
+            "intermediate": 4
+          },
+          "shared_stops": 8,
+          "intermediate_stops": 4,
+          "movement_m": 21970.01247932668,
+          "known_no_signal": 3,
+          "clear_failures": 2,
+          "clear_successes": 10,
+          "discovered": 10,
+          "search_after_last_clear_s": 0.0,
+          "arrival_reasons": {
+            "multisource_refined_point": 17,
+            "multiple_source_shared_point": 1,
+            "dynamic_coverage_completion": 24,
+            "valuable_intermediate_stop": 4,
+            "probabilistic_optical_try": 6,
+            "certified_mec_clear": 3,
+            "optical_finite_cover": 3,
+            "onward_service_probe": 1
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        },
+        "old_joint": {
+          "physical_stops": 41,
+          "stop_kinds": {
+            "service": 17,
+            "search": 24
+          },
+          "shared_stops": 14,
+          "intermediate_stops": 0,
+          "movement_m": 22312.751917416,
+          "known_no_signal": 1,
+          "clear_failures": 1,
+          "clear_successes": 10,
+          "discovered": 10,
+          "search_after_last_clear_s": 942.9145687795462,
+          "arrival_reasons": {
+            "forward_lateral": 2,
+            "search_route_stop": 24,
+            "short_probe": 2,
+            "probabilistic_optical_try": 3,
+            "certified_mec_clear": 8,
+            "mec_center": 1,
+            "center_lateral": 1
+          },
+          "interpretations": [
+            "共享停点按实际动作判断：同点搜索与服务，或服务至少两个已知频道",
+            "中途停点按实际到达动作的intermediate原因判断，不把经过线段当测量",
+            "全局图的a编号为真实动作序号（从1起），为清晰只抽取部分编号"
+          ]
+        }
+      },
+      "history_files": {
+        "free_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\free_joint\\20293023.json.gz",
+        "old_joint": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\isolated_replays\\replay_histories\\old_joint\\20293023.json.gz"
+      },
+      "unknown_overlay": {
+        "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\unknown_20293023_c20.png",
+        "channel": 20,
+        "action": 341,
+        "time_s": 6062.846431487912,
+        "remaining_mass": 0.005922165820642978,
+        "discovered_source_count": 10,
+        "source_count_upper_bound_reached": false
+      }
+    }
+  ],
+  "definitions": {
+    "metric": "每场完整总时间／实际源数，再对共同场景等权平均",
+    "truth": "源坐标和朝向只用于离线评估显示，不重建或更改动作",
+    "motion": "同位置连续扫描合并为停点；移动只按实际命令from→position",
+    "shared": "实际同点完成搜索和服务，或服务至少两个已知频道"
+  },
+  "statistics_verified_by": "runtime_recheck.json + audit.json",
+  "continuous_certificate": {
+    "channel": 1,
+    "support_count": 25,
+    "max_edge_m": 999.6817424437307,
+    "hull_inradius_m": 1800.3747884669137,
+    "image": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\figures\\continuous_certificate.png"
+  }
+}

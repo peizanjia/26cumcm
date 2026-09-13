@@ -1,0 +1,154 @@
+{
+  "format_version": 1,
+  "algorithm": "normalized_Matern52_GP_expected_improvement_paired_scene_noise",
+  "scope": "local_synthetic_parameter_selection",
+  "started_utc": "2026-09-13T01:28:08.988188+00:00",
+  "settings": {
+    "evaluator_module": "question4.free_joint.evaluate",
+    "base_config": {
+      "policy": "tuned_joint",
+      "parameters": {
+        "strategy": "tuned_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048,
+        "posterior_route_mix": 0.0,
+        "approach_clear_boundary": false,
+        "future_scan_weight": 1.0,
+        "bundle_scans": true,
+        "replacement_candidates": 6
+      },
+      "label": "tuned_joint"
+    },
+    "space": {
+      "forecast_weight": {
+        "type": "float",
+        "low": 0.75,
+        "high": 1.3,
+        "scale": "linear"
+      },
+      "unknown_credit_cap_s": {
+        "type": "float",
+        "low": 35.0,
+        "high": 100.0,
+        "scale": "linear"
+      },
+      "scan_min_net_s": {
+        "type": "float",
+        "low": 0.0,
+        "high": 7.0,
+        "scale": "linear"
+      },
+      "cross_source_weight": {
+        "type": "float",
+        "low": 0.5,
+        "high": 1.5,
+        "scale": "linear"
+      },
+      "probe_fraction": {
+        "type": "float",
+        "low": 0.5,
+        "high": 0.85,
+        "scale": "linear"
+      },
+      "lateral_ratio": {
+        "type": "float",
+        "low": 0.12,
+        "high": 0.38,
+        "scale": "linear"
+      },
+      "revisit_penalty_s": {
+        "type": "float",
+        "low": 0.0,
+        "high": 35.0,
+        "scale": "linear"
+      }
+    },
+    "train_seeds": [
+      20295000,
+      20295001,
+      20295002,
+      20295003,
+      20295004,
+      20295005,
+      20295006,
+      20295007
+    ],
+    "initial_sobol": 8,
+    "random_seed": 20260913,
+    "failure_penalty": 1000000.0,
+    "pool_power": 11,
+    "keep_histories": true
+  },
+  "requested_trials": 33,
+  "status": "running",
+  "code_sha256": {
+    "question4/free_joint/belief.py": "70822215f6a569fe8a79969aa1c04c9711b9e04ee33ca1bf412aec0bf574a7ce",
+    "question4/free_joint/coverage.py": "53932ed5b0af7c5e894c9d5c017a82a84d804c5c6e0730ff5b223777ae61b7fd",
+    "question4/free_joint/planner.py": "2ea19fc68a40ffd3e45b15dd5fb45bc7217ac330a5afa744d473d2a012a1235b",
+    "question4/free_joint/proof.py": "c976574eab5ee8083cfbceb3c87ec319e98b388eda5b7c04932a7e03a75b17b6",
+    "question4/free_joint/__init__.py": "d4611e7b6ba4e6bff87d9da832de1374c300b3c8c0191e19bc8be6d4fda2e270",
+    "question4/free_joint/frozen_dynamic/coverage.py": "8f2ebeeca5ed237dee233f624c077bbff7f9bbc372a9994537680ee583b7301a",
+    "question4/free_joint/frozen_dynamic/information.py": "488935d4fa2d649d8d89d7114fbbbd8cc8de2f4b9496e8d9d8e9ae95cf1b7833",
+    "question4/free_joint/frozen_dynamic/planner.py": "648a25aa3d4ff7716e82ac0102d5fb1e2a6bf6e3daf3b58514d38e9255ea88bb",
+    "question4/free_joint/frozen_dynamic/__init__.py": "eedc48051e1c54a34ed4cbd902a4e53638e599e80039c4cd4157c22ef72acb40",
+    "question4/tuned_joint/planner.py": "95494103cdd06e665db498c28b2e52cfcf95a459d197d459ea19efc4f25fad75",
+    "question4/full_mission/planner.py": "4e127170c081af1d47219892611773a03eb4dd5b4c765254b7b417db4f67c313",
+    "question4/full_mission/service.py": "3608f0ace8a60abf77bda9013ad0d219b2189f86f4e3ec1cb91acd9fc5ad3a29",
+    "question4/full_mission/simulator.py": "39b6c707f2b57a4b2fb9768da4e5164cb1071b13da5a2ac7a223bd1db3c3650a",
+    "question4/zigzag_study/study.py": "863161b98296391e0073a2350af0c8f0581f761add48e0910d95f4ed8ffea036",
+    "question4/zigzag_study/routes.py": "3d83c0b653c432ec129853764914df90e0eb77679129a1caf5abce99f3769e35",
+    "question4/benchmark.py": "75b1e44626bfbb2fc3d95a7d49bf892f8a5deccc4a09f793bde0876732ad8ba4",
+    "question1/geometry.py": "9da1d259fd6c0222f8a1863073b7fc0654d252bc2e411c7fd239ddaf44454399",
+    "question1/enclosing_circle.py": "1409494772a1daba1c542e1838e5f133950d6599b550090b733a05c13ca9e419",
+    "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\optimization\\bayes.py": "3b15421432750f52d8fca500166d7fb5727df9b1f392d9f1607300bba0696491",
+    "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\evaluate.py": "0312a5b031db7e69aa0f33767b2f25cceb526fa0752c106e68827c508943d092",
+    "D:\\Code_Projects\\26cumcm\\question3\\global_policy\\tour_optimization\\gaussian_process.py": "8945cd6c245991d7530a9d7ac8cbcc4a2651f2d2b5c34ce1fbb9a24276e5fd3e"
+  },
+  "environment": {
+    "python": "3.12.5",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "workers": 8,
+    "omp_threads": null,
+    "openblas_threads": null
+  },
+  "limitation": "Best tested training candidate; no global optimum claim and no held-out evaluation in this run"
+}

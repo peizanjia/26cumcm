@@ -1,0 +1,42 @@
+{
+  "scope": "Consolidation of three completed independent per-command audits on the same 32 selection scenes",
+  "passed": true,
+  "audited_runs": 224,
+  "commands": 67704,
+  "clears_across_runs": 2926,
+  "unique_scenarios": 32,
+  "physical_sources": 418,
+  "repeated_measurements": 0,
+  "parts": [
+    {
+      "file": "confirm_baselines/audit.json",
+      "sha256": "f0d5fe9114c39bcb8cbdd1df91ce703ae0843b023ef262143d34d26ff3f88ceb",
+      "passed": true,
+      "audited_runs": 64,
+      "commands": 20015,
+      "physical_sources": 418,
+      "clears_across_runs": 836,
+      "repeated_measurements": 0
+    },
+    {
+      "file": "confirmation/bayes_candidates_audit.json",
+      "sha256": "468206cfb2aa6913f0c6cdcd37ef2d51713fd7c8af5d39e60e815eff7e9653ba",
+      "passed": true,
+      "audited_runs": 96,
+      "commands": 28302,
+      "physical_sources": 418,
+      "clears_across_runs": 1254,
+      "repeated_measurements": 0
+    },
+    {
+      "file": "confirmation_extra/audit.json",
+      "sha256": "de891b9f6567a118f3ece9691813d3117fa06c320cf9c1a2681ec9f71203979c",
+      "passed": true,
+      "audited_runs": 64,
+      "commands": 19387,
+      "physical_sources": 418,
+      "clears_across_runs": 836,
+      "repeated_measurements": 0
+    }
+  ]
+}

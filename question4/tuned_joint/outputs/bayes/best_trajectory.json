@@ -1,0 +1,233 @@
+[
+  {
+    "trial": "trial_000",
+    "objective": 420.9317508866134,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_001",
+    "objective": 441.0940767971514,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_002",
+    "objective": 449.88496930584836,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_003",
+    "objective": 442.77858289575533,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_004",
+    "objective": 444.8285495700238,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_005",
+    "objective": 449.0278267426851,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_006",
+    "objective": 421.8159913945219,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_007",
+    "objective": 441.5836092315315,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_008",
+    "objective": 427.162516307642,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_009",
+    "objective": 431.56743364285734,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_010",
+    "objective": 431.7510933249773,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_011",
+    "objective": 435.71312273858246,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_012",
+    "objective": 440.9349205885535,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_013",
+    "objective": 429.1017418273177,
+    "complete": true,
+    "best_trial": "trial_000",
+    "best_mean_per_source_s": 420.9317508866134
+  },
+  {
+    "trial": "trial_014",
+    "objective": 419.8337892052584,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_015",
+    "objective": 426.97677397372956,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_016",
+    "objective": 436.2550291808932,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_017",
+    "objective": 420.2005979061564,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_018",
+    "objective": 423.56471229533554,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_019",
+    "objective": 431.5177079559845,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_020",
+    "objective": 428.08078935820674,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_021",
+    "objective": 425.1416320616373,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_022",
+    "objective": 440.6139907689341,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_023",
+    "objective": 430.10726463320606,
+    "complete": true,
+    "best_trial": "trial_014",
+    "best_mean_per_source_s": 419.8337892052584
+  },
+  {
+    "trial": "trial_024",
+    "objective": 416.40905458009274,
+    "complete": true,
+    "best_trial": "trial_024",
+    "best_mean_per_source_s": 416.40905458009274
+  },
+  {
+    "trial": "trial_025",
+    "objective": 433.0367379303283,
+    "complete": true,
+    "best_trial": "trial_024",
+    "best_mean_per_source_s": 416.40905458009274
+  },
+  {
+    "trial": "trial_026",
+    "objective": 424.75361126566474,
+    "complete": true,
+    "best_trial": "trial_024",
+    "best_mean_per_source_s": 416.40905458009274
+  },
+  {
+    "trial": "trial_027",
+    "objective": 413.3095129515794,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  },
+  {
+    "trial": "trial_028",
+    "objective": 423.8781734790602,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  },
+  {
+    "trial": "trial_029",
+    "objective": 432.5785083576523,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  },
+  {
+    "trial": "trial_030",
+    "objective": 420.0878927120723,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  },
+  {
+    "trial": "trial_031",
+    "objective": 418.43270848599417,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  },
+  {
+    "trial": "trial_032",
+    "objective": 436.31236209423497,
+    "complete": true,
+    "best_trial": "trial_027",
+    "best_mean_per_source_s": 413.3095129515794
+  }
+]

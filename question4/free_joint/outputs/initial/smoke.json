@@ -1,0 +1,5305 @@
+{
+  "stage": "smoke",
+  "scope": "local synthetic complete mission",
+  "seeds": [
+    20290000,
+    20290001,
+    20290002,
+    20290003
+  ],
+  "configs": {
+    "old_joint": {
+      "policy": "old_joint",
+      "parameters": {
+        "strategy": "joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.05,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000
+      },
+      "label": "旧联合：固定搜索站与已知源重排"
+    },
+    "previous_dynamic": {
+      "policy": "dynamic",
+      "parameters": {
+        "strategy": "dynamic",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60,
+        "forecast_weight": 1,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500
+      },
+      "label": "动态未知域＋跨源联合测点"
+    },
+    "free_all": {
+      "policy": "free_joint",
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 14.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "label": "free_all"
+    },
+    "belief_only": {
+      "policy": "free_joint",
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": false,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "label": "belief_only"
+    }
+  },
+  "summary": [
+    {
+      "id": "old_joint",
+      "strategy": "old_joint",
+      "label": "旧联合：固定搜索站与已知源重排",
+      "count": 4,
+      "source_count": 48,
+      "cleared": 48,
+      "completed_count": 4,
+      "failed_count": 0,
+      "completion_rate": 1.0,
+      "mean_per_source_s": 547.7068243775478,
+      "p90_per_source_s": 629.9954468829739,
+      "worst_per_source_s": 655.7786771228101,
+      "median_per_source_s": 543.8958024527358,
+      "completed_only_mean_per_source_s": 547.7068243775478,
+      "pooled_per_source_s": 536.4647226249803,
+      "mean_total_s": 6437.576671499763,
+      "costs_per_source": {
+        "movement": 382.87614255936603,
+        "measure": 133.25757575757575,
+        "switch": 26.38560606060606,
+        "clear_success": 5.0,
+        "clear_failure": 0.1875
+      },
+      "mean_counters": {
+        "clear_failures": 0.75,
+        "clears": 12.75,
+        "coverage_fallbacks": 0.0,
+        "known_no_signal": 3.5,
+        "measures": 306.75,
+        "no_signal": 269.0,
+        "optical_fallback_clears": 0.0,
+        "pruned_stations": 0.0,
+        "replans": 43.5,
+        "search_stops": 26.25,
+        "side_known_measures": 22.5,
+        "side_search_stops": 1.25
+      },
+      "phase_costs_per_source": {
+        "origin": 10.142045454545453,
+        "search": 391.502573578822,
+        "service": 125.85803867751368,
+        "side_known": 11.43598484848485,
+        "side_search": 8.76818181818182
+      },
+      "mean_search_after_last_clear_s": 94.61019003028218,
+      "mean_planning_wall_s": 3.4449680499965325,
+      "worst_planning_wall_s": 3.5284829000011086,
+      "worst_seed": 20290001,
+      "failed_seeds": [],
+      "score_rule": "Full-mission statistics are null if any run failed; costs on failed runs are elapsed costs only"
+    },
+    {
+      "id": "previous_dynamic",
+      "strategy": "previous_dynamic",
+      "label": "动态未知域＋跨源联合测点",
+      "count": 4,
+      "source_count": 48,
+      "cleared": 48,
+      "completed_count": 4,
+      "failed_count": 0,
+      "completion_rate": 1.0,
+      "mean_per_source_s": 543.8629713450284,
+      "p90_per_source_s": 616.175916952218,
+      "worst_per_source_s": 648.6908679931523,
+      "median_per_source_s": 524.5211205623791,
+      "completed_only_mean_per_source_s": 543.8629713450284,
+      "pooled_per_source_s": 535.43519832302,
+      "mean_total_s": 6425.222379876242,
+      "costs_per_source": {
+        "movement": 387.1750925571496,
+        "measure": 127.66856060606061,
+        "switch": 23.620454545454546,
+        "clear_success": 5.0,
+        "clear_failure": 0.39886363636363636
+      },
+      "mean_counters": {
+        "actual_cross_source_measurements": 17.25,
+        "clear_failures": 1.5,
+        "clears": 13.5,
+        "coverage_fallbacks": 0.0,
+        "coverage_required_scans": 200.5,
+        "dynamic_search_moves": 25.0,
+        "dynamic_service_moves": 25.75,
+        "intermediate_stops": 2.25,
+        "known_no_signal": 4.5,
+        "known_skipped": 197.75,
+        "measures": 297.5,
+        "no_signal": 260.5,
+        "optical_fallback_clears": 0.0,
+        "position_candidates_evaluated": 781.25,
+        "predicted_cross_source_choices": 9.75,
+        "pruned_stations": 0.0,
+        "refined_stops": 9.25,
+        "replans": 50.75,
+        "search_stops": 0.0,
+        "shared_point_moves": 1.0,
+        "side_known_measures": 17.25,
+        "side_search_stops": 0.0,
+        "stop_reassessments": 291.0,
+        "unknown_skipped": 243.25
+      },
+      "phase_costs_per_source": {
+        "origin": 10.142045454545453,
+        "search": 360.73436647843386,
+        "service": 155.38163516962484,
+        "side_known": 8.479924242424243,
+        "side_search": 9.125
+      },
+      "mean_search_after_last_clear_s": 394.2510305539204,
+      "mean_planning_wall_s": 25.209406150002906,
+      "worst_planning_wall_s": 55.33068360001198,
+      "worst_seed": 20290001,
+      "failed_seeds": [],
+      "score_rule": "Full-mission statistics are null if any run failed; costs on failed runs are elapsed costs only"
+    },
+    {
+      "id": "free_all",
+      "strategy": "free_all",
+      "label": "free_all",
+      "count": 4,
+      "source_count": 48,
+      "cleared": 48,
+      "completed_count": 4,
+      "failed_count": 0,
+      "completion_rate": 1.0,
+      "mean_per_source_s": 557.5459083112851,
+      "p90_per_source_s": 645.1970838569946,
+      "worst_per_source_s": 661.0103057301287,
+      "median_per_source_s": 571.9415094766737,
+      "completed_only_mean_per_source_s": 557.5459083112851,
+      "pooled_per_source_s": 543.9115488961125,
+      "mean_total_s": 6526.938586753351,
+      "costs_per_source": {
+        "movement": 357.58189315976995,
+        "measure": 163.76704545454547,
+        "switch": 30.934469696969696,
+        "clear_success": 5.0,
+        "clear_failure": 0.2625
+      },
+      "mean_counters": {
+        "actual_cross_source_measurements": 19.25,
+        "clear_failures": 1.25,
+        "clears": 13.25,
+        "coverage_fallbacks": 0.0,
+        "coverage_required_scans": 196.75,
+        "dynamic_search_moves": 24.0,
+        "dynamic_service_moves": 23.5,
+        "intermediate_stops": 0.5,
+        "known_no_signal": 2.75,
+        "known_skipped": 193.25,
+        "measures": 377.25,
+        "no_signal": 338.5,
+        "optical_fallback_clears": 0.0,
+        "position_candidates_evaluated": 818.25,
+        "predicted_cross_source_choices": 11.0,
+        "pruned_stations": 0.0,
+        "refined_stops": 4.25,
+        "replans": 47.5,
+        "search_stops": 0.0,
+        "shared_point_moves": 1.5,
+        "side_known_measures": 19.25,
+        "side_search_stops": 0.0,
+        "stop_reassessments": 370.5,
+        "unknown_skipped": 120.75
+      },
+      "phase_costs_per_source": {
+        "origin": 10.142045454545453,
+        "search": 358.94808151674476,
+        "service": 123.35237224908585,
+        "side_known": 9.670454545454547,
+        "side_search": 55.43295454545455
+      },
+      "mean_search_after_last_clear_s": 313.66167229405596,
+      "mean_planning_wall_s": 41.43226180000056,
+      "worst_planning_wall_s": 51.90464829999837,
+      "worst_seed": 20290001,
+      "failed_seeds": [],
+      "score_rule": "Full-mission statistics are null if any run failed; costs on failed runs are elapsed costs only"
+    },
+    {
+      "id": "belief_only",
+      "strategy": "belief_only",
+      "label": "belief_only",
+      "count": 4,
+      "source_count": 48,
+      "cleared": 48,
+      "completed_count": 4,
+      "failed_count": 0,
+      "completion_rate": 1.0,
+      "mean_per_source_s": 517.781615391057,
+      "p90_per_source_s": 599.2201736658266,
+      "worst_per_source_s": 627.6648753474249,
+      "median_per_source_s": 515.7304154208556,
+      "completed_only_mean_per_source_s": 517.781615391057,
+      "pooled_per_source_s": 506.2779343984528,
+      "mean_total_s": 6075.335212781434,
+      "costs_per_source": {
+        "movement": 365.67441842136,
+        "measure": 123.71969696969695,
+        "switch": 23.038636363636364,
+        "clear_success": 5.0,
+        "clear_failure": 0.3488636363636364
+      },
+      "mean_counters": {
+        "actual_cross_source_measurements": 17.0,
+        "clear_failures": 1.25,
+        "clears": 13.25,
+        "coverage_fallbacks": 0.0,
+        "coverage_required_scans": 202.25,
+        "dynamic_search_moves": 23.75,
+        "dynamic_service_moves": 25.25,
+        "intermediate_stops": 0.75,
+        "known_no_signal": 1.75,
+        "known_skipped": 194.5,
+        "measures": 287.0,
+        "no_signal": 247.5,
+        "optical_fallback_clears": 0.0,
+        "position_candidates_evaluated": 835.75,
+        "predicted_cross_source_choices": 10.75,
+        "pruned_stations": 0.0,
+        "refined_stops": 6.5,
+        "replans": 49.0,
+        "search_stops": 0.0,
+        "shared_point_moves": 0.5,
+        "side_known_measures": 17.0,
+        "side_search_stops": 0.0,
+        "stop_reassessments": 280.25,
+        "unknown_skipped": 266.0
+      },
+      "phase_costs_per_source": {
+        "origin": 10.142045454545453,
+        "search": 358.3655543989851,
+        "service": 135.92818220419312,
+        "side_known": 8.283333333333333,
+        "side_search": 5.0625
+      },
+      "mean_search_after_last_clear_s": 529.4209566253694,
+      "mean_planning_wall_s": 19.314962249998644,
+      "worst_planning_wall_s": 26.187166799994884,
+      "worst_seed": 20290001,
+      "failed_seeds": [],
+      "score_rule": "Full-mission statistics are null if any run failed; costs on failed runs are elapsed costs only"
+    }
+  ],
+  "rows": [
+    {
+      "time_s": 5983.339533195367,
+      "costs": {
+        "movement": 4324.339533195367,
+        "measure": 1350.0,
+        "switch": 246.0,
+        "clear_success": 60.0,
+        "clear_failure": 3.0
+      },
+      "counters": {
+        "measures": 270,
+        "clears": 13,
+        "clear_failures": 1,
+        "no_signal": 234,
+        "known_no_signal": 2,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 16,
+        "pruned_stations": 0,
+        "replans": 47,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 23,
+        "shared_point_moves": 0,
+        "intermediate_stops": 2,
+        "refined_stops": 2,
+        "stop_reassessments": 263,
+        "unknown_skipped": 217,
+        "known_skipped": 199,
+        "predicted_cross_source_choices": 10,
+        "actual_cross_source_measurements": 16,
+        "coverage_required_scans": 183,
+        "position_candidates_evaluated": 896
+      },
+      "completed": true,
+      "cleared": 12,
+      "source_times": {
+        "1": {
+          "found_s": 936.1537534670371,
+          "cleared_s": 4030.9420659715497,
+          "service_time_s": 76.26988823752481,
+          "service_move_m": 326.3494411876236,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 757.3821456438128,
+          "cleared_s": 3770.5958187073534,
+          "service_time_s": 241.5177275959469,
+          "service_move_m": 1122.5886379797346,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 35.0,
+          "cleared_s": 614.6845375391232,
+          "service_time_s": 140.92113855495091,
+          "service_move_m": 649.6056927747547,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": 47.0,
+          "cleared_s": 1999.8792240876467,
+          "service_time_s": 135.05864342073346,
+          "service_move_m": 520.2932171036676,
+          "measures": 5,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1303.1046944687469,
+          "cleared_s": 4839.903011895594,
+          "service_time_s": 250.7768099814416,
+          "service_move_m": 1168.884049907208,
+          "measures": 7,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 365.20635421172483,
+          "service_time_s": 29.079534175415006,
+          "service_move_m": 90.39767087707514,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 799.3821456438128,
+          "cleared_s": 3449.8185721475193,
+          "service_time_s": 118.66979433782808,
+          "service_move_m": 538.348971689141,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 83.0,
+          "cleared_s": 473.6580556961861,
+          "service_time_s": 214.44072546187004,
+          "service_move_m": 957.2036273093502,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 549.9011950430734,
+          "service_time_s": 82.24313934688723,
+          "service_move_m": 356.2156967344364,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 1872.433902484592,
+          "cleared_s": 2210.552924808668,
+          "service_time_s": 180.83305470202436,
+          "service_move_m": 769.1652735101238,
+          "measures": 12,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 2855.7020384807274,
+          "service_time_s": 141.72109814042653,
+          "service_move_m": 568.6054907021331,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 2593.0969112237676,
+          "service_time_s": 100.06547928221948,
+          "service_move_m": 415.3273964110979,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 26.187166799994884,
+      "command_count": 283,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": false,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 47,
+      "seed": 20290000,
+      "strategy": "belief_only",
+      "label": "belief_only",
+      "policy": "free_joint",
+      "source_count": 12,
+      "per_source_s": 498.6116277662806,
+      "elapsed_per_source_s": 498.6116277662806,
+      "error": null,
+      "wall_s": 26.198996899998747,
+      "costs_per_source": {
+        "movement": 360.3616277662806,
+        "measure": 112.5,
+        "switch": 20.5,
+        "clear_success": 5.0,
+        "clear_failure": 0.25
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1617.597033237269,
+          "move_s": 1496.5970332372694,
+          "commands": 23
+        },
+        "side_known": {
+          "time_s": 94.0,
+          "move_s": 0.0,
+          "commands": 16
+        },
+        "search": {
+          "time_s": 4053.7424999580994,
+          "move_s": 2827.7424999580994,
+          "commands": 207
+        },
+        "side_search": {
+          "time_s": 99.0,
+          "move_s": 0.0,
+          "commands": 17
+        }
+      },
+      "max_source_service_s": 250.7768099814416,
+      "search_after_last_clear_s": 1143.4365212997727,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\belief_only\\20290000.json.gz"
+    },
+    {
+      "time_s": 6276.648753474249,
+      "costs": {
+        "movement": 4305.648753474247,
+        "measure": 1615.0,
+        "switch": 300.0,
+        "clear_success": 50.0,
+        "clear_failure": 6.0
+      },
+      "counters": {
+        "measures": 323,
+        "clears": 12,
+        "clear_failures": 2,
+        "no_signal": 280,
+        "known_no_signal": 1,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 15,
+        "pruned_stations": 0,
+        "replans": 54,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 30,
+        "shared_point_moves": 1,
+        "intermediate_stops": 0,
+        "refined_stops": 15,
+        "stop_reassessments": 315,
+        "unknown_skipped": 388,
+        "known_skipped": 211,
+        "predicted_cross_source_choices": 10,
+        "actual_cross_source_measurements": 15,
+        "coverage_required_scans": 245,
+        "position_candidates_evaluated": 769
+      },
+      "completed": true,
+      "cleared": 10,
+      "source_times": {
+        "1": {
+          "found_s": 2219.0239955456173,
+          "cleared_s": 3872.524776627407,
+          "service_time_s": 121.179720551826,
+          "service_move_m": 520.8986027591297,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 3139.852764152499,
+          "service_time_s": 229.8392227526333,
+          "service_move_m": 919.196113763167,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 2249.0239955456173,
+          "cleared_s": 2609.1797958236934,
+          "service_time_s": 152.5516698140027,
+          "service_move_m": 607.75834907001,
+          "measures": 13,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 685.5439966323262,
+          "service_time_s": 212.653131728095,
+          "service_move_m": 893.2656586404747,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": 1498.7729690890162,
+          "cleared_s": 5076.081210291783,
+          "service_time_s": 263.624672101276,
+          "service_move_m": 1263.1233605063785,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 2099.4883105924605,
+          "cleared_s": 4015.094281771208,
+          "service_time_s": 251.60809052071772,
+          "service_move_m": 1158.040452603591,
+          "measures": 10,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "16": {
+          "found_s": 600.3501292601295,
+          "cleared_s": 5808.42223984726,
+          "service_time_s": 95.9874654070154,
+          "service_move_m": 369.93732703507624,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 1947.1003367786225,
+          "service_time_s": 187.38786880073144,
+          "service_move_m": 766.9393440036571,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 113.0,
+          "cleared_s": 2935.9568991877795,
+          "service_time_s": 87.86760952643988,
+          "service_move_m": 324.3380476322,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 612.3501292601295,
+          "cleared_s": 1053.2870743031447,
+          "service_time_s": 203.81959543686014,
+          "service_move_m": 939.097977184301,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 15.309546600008616,
+      "command_count": 335,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": false,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 54,
+      "seed": 20290001,
+      "strategy": "belief_only",
+      "label": "belief_only",
+      "policy": "free_joint",
+      "source_count": 10,
+      "per_source_s": 627.6648753474249,
+      "elapsed_per_source_s": 627.6648753474249,
+      "error": null,
+      "wall_s": 15.32201889998396,
+      "costs_per_source": {
+        "movement": 430.56487534742473,
+        "measure": 161.5,
+        "switch": 30.0,
+        "clear_success": 5.0,
+        "clear_failure": 0.6
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1717.5190466395968,
+          "move_s": 1552.5190466395968,
+          "commands": 31
+        },
+        "side_known": {
+          "time_s": 89.0,
+          "move_s": 0.0,
+          "commands": 15
+        },
+        "search": {
+          "time_s": 4351.129706834651,
+          "move_s": 2753.1297068346503,
+          "commands": 269
+        }
+      },
+      "max_source_service_s": 263.624672101276,
+      "search_after_last_clear_s": 468.2265136269889,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\belief_only\\20290001.json.gz"
+    },
+    {
+      "time_s": 5861.341233829736,
+      "costs": {
+        "movement": 4040.3412338297344,
+        "measure": 1480.0,
+        "switch": 280.0,
+        "clear_success": 55.0,
+        "clear_failure": 6.0
+      },
+      "counters": {
+        "measures": 296,
+        "clears": 13,
+        "clear_failures": 2,
+        "no_signal": 267,
+        "known_no_signal": 1,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 11,
+        "pruned_stations": 0,
+        "replans": 45,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 21,
+        "shared_point_moves": 0,
+        "intermediate_stops": 0,
+        "refined_stops": 4,
+        "stop_reassessments": 289,
+        "unknown_skipped": 237,
+        "known_skipped": 188,
+        "predicted_cross_source_choices": 7,
+        "actual_cross_source_measurements": 11,
+        "coverage_required_scans": 233,
+        "position_candidates_evaluated": 681
+      },
+      "completed": true,
+      "cleared": 11,
+      "source_times": {
+        "1": {
+          "found_s": 1197.68697532842,
+          "cleared_s": 4544.474419077295,
+          "service_time_s": 180.10157485035006,
+          "service_move_m": 800.50787425175,
+          "measures": 8,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 4004.540005050175,
+          "cleared_s": 4140.8007777872235,
+          "service_time_s": 100.26077273704868,
+          "service_move_m": 446.3038636852431,
+          "measures": 20,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 377.123180766599,
+          "cleared_s": 5717.678377646183,
+          "service_time_s": 67.89373925170457,
+          "service_move_m": 224.46869625852062,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 383.123180766599,
+          "cleared_s": 5667.784638394479,
+          "service_time_s": 139.30947652680658,
+          "service_move_m": 611.547382634033,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 53.0,
+          "cleared_s": 2344.8320436773465,
+          "service_time_s": 189.11103731957755,
+          "service_move_m": 845.5551865978874,
+          "measures": 3,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "10": {
+          "found_s": 1406.1985324072418,
+          "cleared_s": 3897.884460900668,
+          "service_time_s": 88.11326259470525,
+          "service_move_m": 385.56631297352726,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 1430.1985324072418,
+          "cleared_s": 3815.7711983059626,
+          "service_time_s": 118.51738964870447,
+          "service_move_m": 507.5869482435222,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 89.0,
+          "cleared_s": 479.08230573770817,
+          "service_time_s": 121.02483735076416,
+          "service_move_m": 500.1241867538208,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 645.9253768778275,
+          "cleared_s": 5164.6705879560495,
+          "service_time_s": 161.81228072189606,
+          "service_move_m": 754.0614036094814,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 663.9253768778275,
+          "cleared_s": 5183.859406370561,
+          "service_time_s": 25.188818414511843,
+          "service_move_m": 70.94409207256082,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 936.7988232356311,
+          "service_time_s": 88.89797585694873,
+          "service_move_m": 389.4898792847438,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 13.788779299997259,
+      "command_count": 309,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": false,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 45,
+      "seed": 20290002,
+      "strategy": "belief_only",
+      "label": "belief_only",
+      "policy": "free_joint",
+      "source_count": 11,
+      "per_source_s": 532.8492030754305,
+      "elapsed_per_source_s": 532.8492030754305,
+      "error": null,
+      "wall_s": 13.794843199983006,
+      "costs_per_source": {
+        "movement": 367.30374852997585,
+        "measure": 134.54545454545453,
+        "switch": 25.454545454545453,
+        "clear_success": 5.0,
+        "clear_failure": 0.5454545454545454
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1214.231165273018,
+          "move_s": 1107.2311652730182,
+          "commands": 21
+        },
+        "side_known": {
+          "time_s": 66.0,
+          "move_s": 0.0,
+          "commands": 11
+        },
+        "search": {
+          "time_s": 4462.110068556717,
+          "move_s": 2933.110068556716,
+          "commands": 257
+        }
+      },
+      "max_source_service_s": 189.11103731957755,
+      "search_after_last_clear_s": 143.66285618355232,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\belief_only\\20290002.json.gz"
+    },
+    {
+      "time_s": 6180.011330626383,
+      "costs": {
+        "movement": 4567.011330626382,
+        "measure": 1295.0,
+        "switch": 243.0,
+        "clear_success": 75.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 259,
+        "clears": 15,
+        "clear_failures": 0,
+        "no_signal": 209,
+        "known_no_signal": 3,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 26,
+        "pruned_stations": 0,
+        "replans": 50,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 23,
+        "dynamic_service_moves": 27,
+        "shared_point_moves": 1,
+        "intermediate_stops": 1,
+        "refined_stops": 5,
+        "stop_reassessments": 254,
+        "unknown_skipped": 222,
+        "known_skipped": 180,
+        "predicted_cross_source_choices": 16,
+        "actual_cross_source_measurements": 26,
+        "coverage_required_scans": 148,
+        "position_candidates_evaluated": 997
+      },
+      "completed": true,
+      "cleared": 15,
+      "source_times": {
+        "1": {
+          "found_s": 5.0,
+          "cleared_s": 2508.60867790533,
+          "service_time_s": 269.45033700496174,
+          "service_move_m": 1202.251685024809,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": 4492.699664816351,
+          "cleared_s": 4926.135382666427,
+          "service_time_s": 84.45752186783011,
+          "service_move_m": 337.28760933915026,
+          "measures": 19,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 2388.9264555444993,
+          "cleared_s": 2833.9297023115214,
+          "service_time_s": 152.42804241105523,
+          "service_move_m": 677.1402120552759,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 339.58174968373055,
+          "service_time_s": 114.02902123188397,
+          "service_move_m": 515.1451061594199,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": 2934.5581924092476,
+          "cleared_s": 3332.202104820748,
+          "service_time_s": 127.50613450714718,
+          "service_move_m": 532.5306725357366,
+          "measures": 14,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 1072.0730616170006,
+          "cleared_s": 1480.7178903564995,
+          "service_time_s": 55.59869614378181,
+          "service_move_m": 192.99348071890927,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 5098.9918872888675,
+          "cleared_s": 5462.276347691476,
+          "service_time_s": 186.1869591647328,
+          "service_move_m": 845.934795823664,
+          "measures": 23,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 735.1221206152909,
+          "cleared_s": 4619.379378875878,
+          "service_time_s": 102.6797140595263,
+          "service_move_m": 428.39857029762976,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 741.1221206152909,
+          "cleared_s": 4387.233446976576,
+          "service_time_s": 123.62424962879777,
+          "service_move_m": 533.1212481439895,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 1772.6787318236952,
+          "service_time_s": 161.7810516001545,
+          "service_move_m": 663.9052580007722,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 77.0,
+          "cleared_s": 1983.7994825925316,
+          "service_time_s": 133.39982687726092,
+          "service_move_m": 466.99913438630387,
+          "measures": 7,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 5817.653395235219,
+          "service_time_s": 208.60829868179326,
+          "service_move_m": 898.0414934089633,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 584.1179336750804,
+          "service_time_s": 154.6392115526054,
+          "service_move_m": 688.1960577630269,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 429.478722122475,
+          "service_time_s": 89.89697243874446,
+          "service_move_m": 394.4848621937222,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 2126.2855363537237,
+          "cleared_s": 2293.523117755232,
+          "service_time_s": 93.36026274848791,
+          "service_move_m": 411.8013137424406,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 28,
+          "clears": 0,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 21.974356299993815,
+      "command_count": 274,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": false,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 50,
+      "seed": 20290003,
+      "strategy": "belief_only",
+      "label": "belief_only",
+      "policy": "free_joint",
+      "source_count": 15,
+      "per_source_s": 412.0007553750922,
+      "elapsed_per_source_s": 412.0007553750922,
+      "error": null,
+      "wall_s": 21.986567399988417,
+      "costs_per_source": {
+        "movement": 304.4674220417588,
+        "measure": 86.33333333333333,
+        "switch": 16.2,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1901.6462999187627,
+          "move_s": 1757.6462999187627,
+          "commands": 27
+        },
+        "side_known": {
+          "time_s": 156.0,
+          "move_s": 0.0,
+          "commands": 26
+        },
+        "search": {
+          "time_s": 3823.3650307076196,
+          "move_s": 2809.3650307076196,
+          "commands": 171
+        },
+        "side_search": {
+          "time_s": 180.0,
+          "move_s": 0.0,
+          "commands": 30
+        }
+      },
+      "max_source_service_s": 269.45033700496174,
+      "search_after_last_clear_s": 362.35793539116366,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\belief_only\\20290003.json.gz"
+    },
+    {
+      "time_s": 6427.001433603988,
+      "costs": {
+        "movement": 4266.001433603988,
+        "measure": 1765.0,
+        "switch": 333.0,
+        "clear_success": 60.0,
+        "clear_failure": 3.0
+      },
+      "counters": {
+        "measures": 353,
+        "clears": 13,
+        "clear_failures": 1,
+        "no_signal": 315,
+        "known_no_signal": 5,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 23,
+        "pruned_stations": 0,
+        "replans": 45,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 21,
+        "shared_point_moves": 1,
+        "intermediate_stops": 0,
+        "refined_stops": 1,
+        "stop_reassessments": 346,
+        "unknown_skipped": 91,
+        "known_skipped": 181,
+        "predicted_cross_source_choices": 14,
+        "actual_cross_source_measurements": 23,
+        "coverage_required_scans": 181,
+        "position_candidates_evaluated": 847
+      },
+      "completed": true,
+      "cleared": 12,
+      "source_times": {
+        "1": {
+          "found_s": 3060.9995499643846,
+          "cleared_s": 3758.065544346441,
+          "service_time_s": 78.47841914173705,
+          "service_move_m": 307.3920957086846,
+          "measures": 21,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 249.13779605890107,
+          "cleared_s": 3503.7023994096025,
+          "service_time_s": 211.61208769092946,
+          "service_move_m": 913.0604384546476,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 35.0,
+          "cleared_s": 2789.0583285892326,
+          "service_time_s": 178.74200545677826,
+          "service_move_m": 838.7100272838911,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": 47.0,
+          "cleared_s": 1585.7089132474655,
+          "service_time_s": 115.25182217134989,
+          "service_move_m": 436.2591108567493,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 730.1699309816737,
+          "cleared_s": 1235.275375539526,
+          "service_time_s": 64.76143460693106,
+          "service_move_m": 238.80717303465548,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 676.1699309816737,
+          "service_time_s": 197.36746764389972,
+          "service_move_m": 931.8373382194986,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 291.1377960589011,
+          "cleared_s": 6208.995075439011,
+          "service_time_s": 121.9729120377342,
+          "service_move_m": 524.8645601886732,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 83.0,
+          "cleared_s": 2994.3477556101543,
+          "service_time_s": 98.50608452487177,
+          "service_move_m": 362.53042262435986,
+          "measures": 4,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 2853.8416710852825,
+          "service_time_s": 70.78334249604995,
+          "service_move_m": 298.91671248024926,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 1415.5920191670125,
+          "cleared_s": 1851.7843703962772,
+          "service_time_s": 194.5022885380804,
+          "service_move_m": 832.5114426904009,
+          "measures": 12,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 2311.8125046544797,
+          "service_time_s": 71.76152290484788,
+          "service_move_m": 243.80761452423917,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 35,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 2258.050981749632,
+          "service_time_s": 35.189716516154476,
+          "service_move_m": 30.948582580772875,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 44.05087239999557,
+      "command_count": 366,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 14.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 45,
+      "seed": 20290000,
+      "strategy": "free_all",
+      "label": "free_all",
+      "policy": "free_joint",
+      "source_count": 12,
+      "per_source_s": 535.5834528003323,
+      "elapsed_per_source_s": 535.5834528003323,
+      "error": null,
+      "wall_s": 44.06390119998832,
+      "costs_per_source": {
+        "movement": 355.50011946699897,
+        "measure": 147.08333333333334,
+        "switch": 27.75,
+        "clear_success": 5.0,
+        "clear_failure": 0.25
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1300.9291037293644,
+          "move_s": 1191.9291037293644,
+          "commands": 21
+        },
+        "side_known": {
+          "time_s": 138.0,
+          "move_s": 0.0,
+          "commands": 23
+        },
+        "side_search": {
+          "time_s": 581.0,
+          "move_s": 0.0,
+          "commands": 97
+        },
+        "search": {
+          "time_s": 4288.072329874623,
+          "move_s": 3074.0723298746234,
+          "commands": 205
+        }
+      },
+      "max_source_service_s": 211.61208769092946,
+      "search_after_last_clear_s": 218.00635816497652,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\free_all\\20290000.json.gz"
+    },
+    {
+      "time_s": 6610.103057301287,
+      "costs": {
+        "movement": 4105.103057301285,
+        "measure": 2065.0,
+        "switch": 390.0,
+        "clear_success": 50.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 413,
+        "clears": 10,
+        "clear_failures": 0,
+        "no_signal": 378,
+        "known_no_signal": 2,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 17,
+        "pruned_stations": 0,
+        "replans": 43,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 23,
+        "dynamic_service_moves": 20,
+        "shared_point_moves": 1,
+        "intermediate_stops": 0,
+        "refined_stops": 6,
+        "stop_reassessments": 403,
+        "unknown_skipped": 120,
+        "known_skipped": 145,
+        "predicted_cross_source_choices": 8,
+        "actual_cross_source_measurements": 17,
+        "coverage_required_scans": 219,
+        "position_candidates_evaluated": 558
+      },
+      "completed": true,
+      "cleared": 10,
+      "source_times": {
+        "1": {
+          "found_s": 1425.889471602845,
+          "cleared_s": 5576.320694366971,
+          "service_time_s": 65.48557115865151,
+          "service_move_m": 242.42785579325644,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 1026.2454228060537,
+          "service_time_s": 239.66698875997315,
+          "service_move_m": 1028.334943799865,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 1270.583192062263,
+          "cleared_s": 1578.8908908456006,
+          "service_time_s": 182.30769878333763,
+          "service_move_m": 856.5384939166881,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 4304.389247001577,
+          "service_time_s": 116.10543070031522,
+          "service_move_m": 465.52715350157484,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": 2465.8451748688058,
+          "cleared_s": 2943.232886766624,
+          "service_time_s": 144.2756114004428,
+          "service_move_m": 636.3780570022152,
+          "measures": 17,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 1491.889471602845,
+          "cleared_s": 5719.990136575421,
+          "service_time_s": 155.66944220845016,
+          "service_move_m": 663.34721104225,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 290.2787118073685,
+          "cleared_s": 3808.3920252268886,
+          "service_time_s": 103.28829055524102,
+          "service_move_m": 401.4414527762039,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 2303.157571985001,
+          "service_time_s": 168.82433002729613,
+          "service_move_m": 699.1216501364812,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 34,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 113.0,
+          "cleared_s": 1178.5298365001988,
+          "service_time_s": 200.90400477879427,
+          "service_move_m": 889.5200238939717,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 302.2787118073685,
+          "cleared_s": 612.5524401966578,
+          "service_time_s": 97.12282598707498,
+          "service_move_m": 430.61412993537493,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 34.23004220001167,
+      "command_count": 423,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 14.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 43,
+      "seed": 20290001,
+      "strategy": "free_all",
+      "label": "free_all",
+      "policy": "free_joint",
+      "source_count": 10,
+      "per_source_s": 661.0103057301287,
+      "elapsed_per_source_s": 661.0103057301287,
+      "error": null,
+      "wall_s": 34.241880399989896,
+      "costs_per_source": {
+        "movement": 410.5103057301285,
+        "measure": 206.5,
+        "switch": 39.0,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1371.6501943595763,
+          "move_s": 1262.6501943595763,
+          "commands": 20
+        },
+        "side_known": {
+          "time_s": 102.0,
+          "move_s": 0.0,
+          "commands": 17
+        },
+        "side_search": {
+          "time_s": 742.0,
+          "move_s": 0.0,
+          "commands": 124
+        },
+        "search": {
+          "time_s": 4275.452862941709,
+          "move_s": 2842.4528629417096,
+          "commands": 242
+        }
+      },
+      "max_source_service_s": 239.66698875997315,
+      "search_after_last_clear_s": 890.1129207258655,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\free_all\\20290001.json.gz"
+    },
+    {
+      "time_s": 6691.295227683166,
+      "costs": {
+        "movement": 3993.295227683166,
+        "measure": 2220.0,
+        "switch": 423.0,
+        "clear_success": 55.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 444,
+        "clears": 11,
+        "clear_failures": 0,
+        "no_signal": 409,
+        "known_no_signal": 3,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 15,
+        "pruned_stations": 0,
+        "replans": 47,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 23,
+        "shared_point_moves": 3,
+        "intermediate_stops": 1,
+        "refined_stops": 6,
+        "stop_reassessments": 435,
+        "unknown_skipped": 153,
+        "known_skipped": 143,
+        "predicted_cross_source_choices": 10,
+        "actual_cross_source_measurements": 15,
+        "coverage_required_scans": 259,
+        "position_candidates_evaluated": 625
+      },
+      "completed": true,
+      "cleared": 11,
+      "source_times": {
+        "1": {
+          "found_s": 4868.058477363576,
+          "cleared_s": 5247.548448555817,
+          "service_time_s": 253.48997119224168,
+          "service_move_m": 1182.4498559612114,
+          "measures": 27,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 6540.539396629338,
+          "cleared_s": 6691.295227683166,
+          "service_time_s": 108.75583105382793,
+          "service_move_m": 488.7791552691381,
+          "measures": 34,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 1020.5921013192104,
+          "cleared_s": 3697.18546412259,
+          "service_time_s": 112.76837400020213,
+          "service_move_m": 448.84187000100957,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 858.0570167282795,
+          "cleared_s": 3748.28319621431,
+          "service_time_s": 129.63281668265097,
+          "service_move_m": 473.16408341325536,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 53.0,
+          "cleared_s": 1705.9584479024359,
+          "service_time_s": 102.77405973488885,
+          "service_move_m": 368.8702986744445,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 5734.370389343465,
+          "cleared_s": 6438.231279277285,
+          "service_time_s": 89.18943135744121,
+          "service_move_m": 390.9471567872057,
+          "measures": 30,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 2191.1535162602854,
+          "cleared_s": 6355.041847919843,
+          "service_time_s": 285.2766531446091,
+          "service_move_m": 1341.3832657230446,
+          "measures": 15,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 89.0,
+          "cleared_s": 1278.8063170314467,
+          "service_time_s": 267.92454733210934,
+          "service_move_m": 1194.6227366605465,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 486.2663314056647,
+          "cleared_s": 4371.819815237731,
+          "service_time_s": 27.41807602199151,
+          "service_move_m": 52.090380109958915,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 33,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 504.2663314056647,
+          "cleared_s": 4356.401739215739,
+          "service_time_s": 126.27947260230826,
+          "service_move_m": 551.3973630115418,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 396.2663314056647,
+          "service_time_s": 163.2663314056647,
+          "service_move_m": 766.3316570283234,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 35.543484299996635,
+      "command_count": 455,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 14.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 47,
+      "seed": 20290002,
+      "strategy": "free_all",
+      "label": "free_all",
+      "policy": "free_joint",
+      "source_count": 11,
+      "per_source_s": 608.299566153015,
+      "elapsed_per_source_s": 608.299566153015,
+      "error": null,
+      "wall_s": 35.55629209999461,
+      "costs_per_source": {
+        "movement": 363.0268388802878,
+        "measure": 201.8181818181818,
+        "switch": 38.45454545454545,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1576.775564527936,
+          "move_s": 1451.775564527936,
+          "commands": 23
+        },
+        "side_known": {
+          "time_s": 90.0,
+          "move_s": 0.0,
+          "commands": 15
+        },
+        "side_search": {
+          "time_s": 684.0,
+          "move_s": 0.0,
+          "commands": 114
+        },
+        "search": {
+          "time_s": 4221.519663155231,
+          "move_s": 2541.51966315523,
+          "commands": 283
+        }
+      },
+      "max_source_service_s": 285.2766531446091,
+      "search_after_last_clear_s": 0.0,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\free_all\\20290002.json.gz"
+    },
+    {
+      "time_s": 6379.354628424966,
+      "costs": {
+        "movement": 4519.354628424968,
+        "measure": 1495.0,
+        "switch": 278.0,
+        "clear_success": 75.0,
+        "clear_failure": 12.0
+      },
+      "counters": {
+        "measures": 299,
+        "clears": 19,
+        "clear_failures": 4,
+        "no_signal": 252,
+        "known_no_signal": 1,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 22,
+        "pruned_stations": 0,
+        "replans": 55,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 25,
+        "dynamic_service_moves": 30,
+        "shared_point_moves": 1,
+        "intermediate_stops": 1,
+        "refined_stops": 4,
+        "stop_reassessments": 298,
+        "unknown_skipped": 119,
+        "known_skipped": 304,
+        "predicted_cross_source_choices": 12,
+        "actual_cross_source_measurements": 22,
+        "coverage_required_scans": 128,
+        "position_candidates_evaluated": 1243
+      },
+      "completed": true,
+      "cleared": 15,
+      "source_times": {
+        "1": {
+          "found_s": 5.0,
+          "cleared_s": 911.6095973317689,
+          "service_time_s": 78.80154480090641,
+          "service_move_m": 284.00772400453184,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": 1487.3832723848623,
+          "cleared_s": 5157.504964176369,
+          "service_time_s": 79.9539083140271,
+          "service_move_m": 344.769541570137,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 836.411336437463,
+          "cleared_s": 6232.827218139584,
+          "service_time_s": 63.69792132283874,
+          "service_move_m": 203.48960661419542,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 2380.308001224356,
+          "service_time_s": 116.37002414349172,
+          "service_move_m": 526.850120717458,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": 3452.634188884811,
+          "cleared_s": 3610.0714527061423,
+          "service_time_s": 127.43726382133127,
+          "service_move_m": 557.1863191066561,
+          "measures": 22,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 255.55272845184658,
+          "cleared_s": 2822.3926939113294,
+          "service_time_s": 52.28118917860775,
+          "service_move_m": 206.40594589303862,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 1334.4078018840073,
+          "cleared_s": 5668.128376882751,
+          "service_time_s": 82.01339841120807,
+          "service_move_m": 325.0669920560414,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 37,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 1653.3587428857172,
+          "cleared_s": 4875.5517568512905,
+          "service_time_s": 102.02260817280148,
+          "service_move_m": 425.11304086400855,
+          "measures": 13,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1659.3587428857172,
+          "cleared_s": 4654.973767728399,
+          "service_time_s": 144.0134010853335,
+          "service_move_m": 575.0670054266716,
+          "measures": 14,
+          "clears": 3,
+          "failed_clears": 2
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 3312.268748564856,
+          "service_time_s": 126.06520462886368,
+          "service_move_m": 455.3260231443183,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 37,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 77.0,
+          "cleared_s": 3136.850460408872,
+          "service_time_s": 31.8978214677295,
+          "service_move_m": 74.48910733864862,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 37,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 37,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 1207.044753000826,
+          "service_time_s": 211.00938696450186,
+          "service_move_m": 895.0469348225095,
+          "measures": 5,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 2269.937977080864,
+          "service_time_s": 156.36856372200646,
+          "service_move_m": 681.8428186100319,
+          "measures": 3,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 2776.1115047327216,
+          "service_time_s": 111.90686166371779,
+          "service_move_m": 504.53430831858964,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 729.8582692248003,
+          "cleared_s": 2949.3576956618317,
+          "service_time_s": 215.51806896316498,
+          "service_move_m": 1022.5903448158239,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 37,
+          "clears": 0,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 51.90464829999837,
+      "command_count": 318,
+      "parameters": {
+        "strategy": "free_joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60.0,
+        "forecast_weight": 1.0,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500,
+        "adaptive_belief": true,
+        "elastic_coverage": true,
+        "near_anchor_probes": true,
+        "stationary_unknown_cap_s": 14.0,
+        "stationary_unknown_gain": 0.015,
+        "integration_min": 128,
+        "integration_max": 2048
+      },
+      "dynamic_stop_count": 55,
+      "seed": 20290003,
+      "strategy": "free_all",
+      "label": "free_all",
+      "policy": "free_joint",
+      "source_count": 15,
+      "per_source_s": 425.2903085616644,
+      "elapsed_per_source_s": 425.2903085616644,
+      "error": null,
+      "wall_s": 51.926009600021644,
+      "costs_per_source": {
+        "movement": 301.2903085616645,
+        "measure": 99.66666666666667,
+        "switch": 18.533333333333335,
+        "clear_success": 5.0,
+        "clear_failure": 0.8
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1567.3571666605324,
+          "move_s": 1416.3571666605321,
+          "commands": 30
+        },
+        "side_known": {
+          "time_s": 132.0,
+          "move_s": 0.0,
+          "commands": 22
+        },
+        "side_search": {
+          "time_s": 554.0,
+          "move_s": 0.0,
+          "commands": 93
+        },
+        "search": {
+          "time_s": 4006.9974617644352,
+          "move_s": 3102.997461764435,
+          "commands": 153
+        }
+      },
+      "max_source_service_s": 215.51806896316498,
+      "search_after_last_clear_s": 146.52741028538185,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\free_all\\20290003.json.gz"
+    },
+    {
+      "time_s": 6215.48434298539,
+      "costs": {
+        "movement": 4434.48434298539,
+        "measure": 1430.0,
+        "switch": 282.0,
+        "clear_success": 60.0,
+        "clear_failure": 9.0
+      },
+      "counters": {
+        "measures": 286,
+        "clears": 15,
+        "clear_failures": 3,
+        "no_signal": 247,
+        "known_no_signal": 5,
+        "search_stops": 27,
+        "side_search_stops": 2,
+        "side_known_measures": 25,
+        "pruned_stations": 0,
+        "replans": 46,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0
+      },
+      "completed": true,
+      "cleared": 12,
+      "source_times": {
+        "1": {
+          "found_s": 2134.649729499313,
+          "cleared_s": 2839.4063212405626,
+          "service_time_s": 242.67465179284227,
+          "service_move_m": 1103.373258964211,
+          "measures": 14,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 1494.6620823130531,
+          "cleared_s": 2540.6393756667603,
+          "service_time_s": 152.36092436953095,
+          "service_move_m": 556.8046218476547,
+          "measures": 14,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 35.0,
+          "cleared_s": 1813.457731805138,
+          "service_time_s": 109.3385838118968,
+          "service_move_m": 461.692919059484,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": 47.0,
+          "cleared_s": 397.7802487545866,
+          "service_time_s": 188.78024875458655,
+          "service_move_m": 888.9012437729327,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 295.9354354935956,
+          "cleared_s": 3842.6112341797516,
+          "service_time_s": 96.01509693451817,
+          "service_move_m": 395.0754846725897,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 3559.0581576147606,
+          "service_time_s": 148.27796081891847,
+          "service_move_m": 686.3898040945915,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 1357.205016632865,
+          "cleared_s": 6089.1539720447945,
+          "service_time_s": 199.4812309274812,
+          "service_move_m": 882.4061546374038,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 83.0,
+          "cleared_s": 2059.768122842877,
+          "service_time_s": 115.79043805716219,
+          "service_move_m": 448.95219028581175,
+          "measures": 3,
+          "clears": 4,
+          "failed_clears": 3
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 1889.9776847857147,
+          "service_time_s": 70.51995298057659,
+          "service_move_m": 297.5997649028832,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 520.8631670074047,
+          "cleared_s": 823.7897692038588,
+          "service_time_s": 105.46953651626586,
+          "service_move_m": 417.34768258132937,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 1249.173253859641,
+          "service_time_s": 77.35182714348707,
+          "service_move_m": 246.7591357174363,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 27,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 1177.8214267161538,
+          "service_time_s": 71.94167331196923,
+          "service_move_m": 214.7083665598456,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 3.5284829000011086,
+      "command_count": 301,
+      "parameters": {
+        "strategy": "joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.05,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000
+      },
+      "seed": 20290000,
+      "strategy": "old_joint",
+      "label": "旧联合：固定搜索站与已知源重排",
+      "policy": "old_joint",
+      "source_count": 12,
+      "per_source_s": 517.9570285821159,
+      "elapsed_per_source_s": 517.9570285821159,
+      "error": null,
+      "wall_s": 4.031666500028223,
+      "costs_per_source": {
+        "movement": 369.5403619154492,
+        "measure": 119.16666666666667,
+        "switch": 23.5,
+        "clear_success": 5.0,
+        "clear_failure": 0.75
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1429.0021254192347,
+          "move_s": 1320.0021254192347,
+          "commands": 22
+        },
+        "side_search": {
+          "time_s": 132.0,
+          "move_s": 0.0,
+          "commands": 22
+        },
+        "side_known": {
+          "time_s": 149.0,
+          "move_s": 0.0,
+          "commands": 25
+        },
+        "search": {
+          "time_s": 4386.482217566155,
+          "move_s": 3114.482217566154,
+          "commands": 212
+        }
+      },
+      "max_source_service_s": 242.67465179284227,
+      "search_after_last_clear_s": 126.33037094059546,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\old_joint\\20290000.json.gz"
+    },
+    {
+      "time_s": 6557.786771228101,
+      "costs": {
+        "movement": 4450.786771228103,
+        "measure": 1715.0,
+        "switch": 342.0,
+        "clear_success": 50.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 343,
+        "clears": 10,
+        "clear_failures": 0,
+        "no_signal": 308,
+        "known_no_signal": 3,
+        "search_stops": 26,
+        "side_search_stops": 1,
+        "side_known_measures": 24,
+        "pruned_stations": 0,
+        "replans": 38,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0
+      },
+      "completed": true,
+      "cleared": 10,
+      "source_times": {
+        "1": {
+          "found_s": 1698.947693359577,
+          "cleared_s": 5706.931887804336,
+          "service_time_s": 226.58845413500194,
+          "service_move_m": 987.942270675011,
+          "measures": 12,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 2545.7772516471564,
+          "service_time_s": 81.09780006744904,
+          "service_move_m": 320.4890003372451,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 1728.947693359577,
+          "cleared_s": 2073.1348813676977,
+          "service_time_s": 57.81575693343166,
+          "service_move_m": 204.07878466715846,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 2814.1527875927404,
+          "service_time_s": 106.59373980172086,
+          "service_move_m": 387.96869900860486,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": 708.8558822219982,
+          "cleared_s": 3575.0826193724915,
+          "service_time_s": 110.67070817509648,
+          "service_move_m": 468.35354087548194,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 1573.4906276793888,
+          "cleared_s": 5946.840636287133,
+          "service_time_s": 130.65909439382358,
+          "service_move_m": 538.2954719691181,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 2713.5590477910196,
+          "cleared_s": 4398.3646773491255,
+          "service_time_s": 169.01128758151026,
+          "service_move_m": 700.0564379075499,
+          "measures": 16,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 396.0269680206524,
+          "service_time_s": 181.02696802065242,
+          "service_move_m": 850.1348401032621,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 113.0,
+          "cleared_s": 2464.6794515797073,
+          "service_time_s": 36.76486550275786,
+          "service_move_m": 98.82432751379025,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 2725.5590477910196,
+          "cleared_s": 6557.786771228101,
+          "service_time_s": 452.9733759339033,
+          "service_move_m": 2119.8668796695174,
+          "measures": 16,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 3.400938299979316,
+      "command_count": 353,
+      "parameters": {
+        "strategy": "joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.05,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000
+      },
+      "seed": 20290001,
+      "strategy": "old_joint",
+      "label": "旧联合：固定搜索站与已知源重排",
+      "policy": "old_joint",
+      "source_count": 10,
+      "per_source_s": 655.7786771228101,
+      "elapsed_per_source_s": 655.7786771228101,
+      "error": null,
+      "wall_s": 3.9001600999908987,
+      "costs_per_source": {
+        "movement": 445.0786771228103,
+        "measure": 171.5,
+        "switch": 34.2,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1409.2020505453477,
+          "move_s": 1335.2020505453477,
+          "commands": 14
+        },
+        "side_search": {
+          "time_s": 96.0,
+          "move_s": 0.0,
+          "commands": 16
+        },
+        "search": {
+          "time_s": 4789.584720682755,
+          "move_s": 3115.5847206827557,
+          "commands": 279
+        },
+        "side_known": {
+          "time_s": 144.0,
+          "move_s": 0.0,
+          "commands": 24
+        }
+      },
+      "max_source_service_s": 452.9733759339033,
+      "search_after_last_clear_s": 0.0,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\old_joint\\20290001.json.gz"
+    },
+    {
+      "time_s": 6268.180339556914,
+      "costs": {
+        "movement": 4087.1803395569123,
+        "measure": 1775.0,
+        "switch": 351.0,
+        "clear_success": 55.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 355,
+        "clears": 11,
+        "clear_failures": 0,
+        "no_signal": 324,
+        "known_no_signal": 4,
+        "search_stops": 26,
+        "side_search_stops": 1,
+        "side_known_measures": 18,
+        "pruned_stations": 0,
+        "replans": 41,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0
+      },
+      "completed": true,
+      "cleared": 11,
+      "source_times": {
+        "1": {
+          "found_s": 1624.7342171016205,
+          "cleared_s": 3477.4181667423495,
+          "service_time_s": 107.95728728549102,
+          "service_move_m": 424.7864364274544,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 3624.024043594756,
+          "cleared_s": 3942.124608026828,
+          "service_time_s": 178.82915834871937,
+          "service_move_m": 814.145791743597,
+          "measures": 18,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 5249.604966929304,
+          "cleared_s": 5601.500877314144,
+          "service_time_s": 179.77619133338067,
+          "service_move_m": 813.8809566668997,
+          "measures": 24,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 2514.2076187595103,
+          "cleared_s": 5657.303620578384,
+          "service_time_s": 79.80274326423933,
+          "service_move_m": 254.0137163211961,
+          "measures": 16,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 53.0,
+          "cleared_s": 421.0005598519157,
+          "service_time_s": 194.00055985191568,
+          "service_move_m": 915.0027992595783,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1330.7227055078126,
+          "cleared_s": 3862.2536510630575,
+          "service_time_s": 103.2714060833523,
+          "service_move_m": 431.3570304167607,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 1151.2656398276245,
+          "cleared_s": 1491.715039722929,
+          "service_time_s": 112.99233421511644,
+          "service_move_m": 454.96167107558296,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 89.0,
+          "cleared_s": 6135.5158380842595,
+          "service_time_s": 44.88454812485725,
+          "service_move_m": 114.42274062428451,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 2544.2076187595103,
+          "cleared_s": 2685.280606657739,
+          "service_time_s": 23.264927455185898,
+          "service_move_m": 61.32463727592948,
+          "measures": 13,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 2376.7505530793223,
+          "cleared_s": 2656.015679202553,
+          "service_time_s": 99.8080604430429,
+          "service_move_m": 444.04030221521464,
+          "measures": 12,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 2217.6425233428236,
+          "service_time_s": 119.9941748808269,
+          "service_move_m": 514.9708744041349,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 3.407870900002308,
+      "command_count": 366,
+      "parameters": {
+        "strategy": "joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.05,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000
+      },
+      "seed": 20290002,
+      "strategy": "old_joint",
+      "label": "旧联合：固定搜索站与已知源重排",
+      "policy": "old_joint",
+      "source_count": 11,
+      "per_source_s": 569.8345763233558,
+      "elapsed_per_source_s": 569.8345763233558,
+      "error": null,
+      "wall_s": 3.9216981999925338,
+      "costs_per_source": {
+        "movement": 371.5618490506284,
+        "measure": 161.36363636363637,
+        "switch": 31.90909090909091,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1137.5813912861265,
+          "move_s": 1048.5813912861265,
+          "commands": 17
+        },
+        "side_search": {
+          "time_s": 102.0,
+          "move_s": 0.0,
+          "commands": 17
+        },
+        "side_known": {
+          "time_s": 107.0,
+          "move_s": 0.0,
+          "commands": 18
+        },
+        "search": {
+          "time_s": 4802.598948270785,
+          "move_s": 3038.598948270787,
+          "commands": 294
+        }
+      },
+      "max_source_service_s": 194.00055985191568,
+      "search_after_last_clear_s": 132.6645014726546,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\old_joint\\20290002.json.gz"
+    },
+    {
+      "time_s": 6708.855232228644,
+      "costs": {
+        "movement": 5179.855232228645,
+        "measure": 1215.0,
+        "switch": 239.0,
+        "clear_success": 75.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 243,
+        "clears": 15,
+        "clear_failures": 0,
+        "no_signal": 197,
+        "known_no_signal": 2,
+        "search_stops": 26,
+        "side_search_stops": 1,
+        "side_known_measures": 23,
+        "pruned_stations": 0,
+        "replans": 49,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0
+      },
+      "completed": true,
+      "cleared": 15,
+      "source_times": {
+        "1": {
+          "found_s": 5.0,
+          "cleared_s": 602.6779382034057,
+          "service_time_s": 216.8862728511998,
+          "service_move_m": 969.431364255999,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": 5156.248493309364,
+          "cleared_s": 5376.486335844338,
+          "service_time_s": 190.23784253497433,
+          "service_move_m": 871.1892126748699,
+          "measures": 23,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 432.40039779098805,
+          "cleared_s": 1868.5839885066773,
+          "service_time_s": 97.31750107325547,
+          "service_move_m": 371.5875053662773,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 4899.5340005452845,
+          "service_time_s": 94.33709669038126,
+          "service_move_m": 386.6854834519073,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": 2268.7916414769993,
+          "cleared_s": 2489.9789501873024,
+          "service_time_s": 179.1873087103031,
+          "service_move_m": 840.9365435515163,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 273.60873243878217,
+          "cleared_s": 4770.026075839916,
+          "service_time_s": 208.85569509562606,
+          "service_move_m": 929.2784754781328,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 963.266708527801,
+          "cleared_s": 1173.44133554489,
+          "service_time_s": 168.17462701708905,
+          "service_move_m": 760.873135085445,
+          "measures": 7,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 3225.8446252844847,
+          "cleared_s": 6589.409344520765,
+          "service_time_s": 128.06862785960766,
+          "service_move_m": 525.3431392980397,
+          "measures": 18,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 3076.3875596042963,
+          "cleared_s": 3417.175178806676,
+          "service_time_s": 161.33055352219117,
+          "service_move_m": 726.652767610955,
+          "measures": 16,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 4579.17038074429,
+          "service_time_s": 195.14695071908864,
+          "service_move_m": 860.734753595444,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 77.0,
+          "cleared_s": 2095.663204570724,
+          "service_time_s": 54.75686893479542,
+          "service_move_m": 188.78434467397744,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 698.7621422089913,
+          "service_time_s": 108.08420400558566,
+          "service_move_m": 455.4210200279282,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 5010.50421628929,
+          "service_time_s": 122.97021574400515,
+          "service_move_m": 529.8510787200254,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 4817.196903854903,
+          "service_time_s": 53.17082801498691,
+          "service_move_m": 210.85414007493262,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 486.40039779098805,
+          "cleared_s": 6132.660249295141,
+          "service_time_s": 259.654643531856,
+          "service_move_m": 1213.2732176592808,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 3.442580100003397,
+      "command_count": 258,
+      "parameters": {
+        "strategy": "joint",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.05,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000
+      },
+      "seed": 20290003,
+      "strategy": "old_joint",
+      "label": "旧联合：固定搜索站与已知源重排",
+      "policy": "old_joint",
+      "source_count": 15,
+      "per_source_s": 447.2570154819096,
+      "elapsed_per_source_s": 447.2570154819096,
+      "error": null,
+      "wall_s": 3.945407899998827,
+      "costs_per_source": {
+        "movement": 345.3236821485763,
+        "measure": 81.0,
+        "switch": 15.933333333333334,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 2100.1792363049462,
+          "move_s": 1968.1792363049462,
+          "commands": 25
+        },
+        "side_search": {
+          "time_s": 78.0,
+          "move_s": 0.0,
+          "commands": 13
+        },
+        "side_known": {
+          "time_s": 138.0,
+          "move_s": 0.0,
+          "commands": 23
+        },
+        "search": {
+          "time_s": 4273.6759959237,
+          "move_s": 3211.6759959236983,
+          "commands": 177
+        }
+      },
+      "max_source_service_s": 259.654643531856,
+      "search_after_last_clear_s": 119.44588770787868,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\old_joint\\20290003.json.gz"
+    },
+    {
+      "time_s": 6104.814519216647,
+      "costs": {
+        "movement": 4420.814519216645,
+        "measure": 1365.0,
+        "switch": 250.0,
+        "clear_success": 60.0,
+        "clear_failure": 9.0
+      },
+      "counters": {
+        "measures": 273,
+        "clears": 15,
+        "clear_failures": 3,
+        "no_signal": 235,
+        "known_no_signal": 3,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 20,
+        "pruned_stations": 0,
+        "replans": 49,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 25,
+        "dynamic_service_moves": 24,
+        "shared_point_moves": 1,
+        "intermediate_stops": 1,
+        "refined_stops": 7,
+        "stop_reassessments": 268,
+        "unknown_skipped": 242,
+        "known_skipped": 134,
+        "predicted_cross_source_choices": 12,
+        "actual_cross_source_measurements": 20,
+        "coverage_required_scans": 192,
+        "position_candidates_evaluated": 757
+      },
+      "completed": true,
+      "cleared": 12,
+      "source_times": {
+        "1": {
+          "found_s": 2499.4652456626764,
+          "cleared_s": 3267.289870185559,
+          "service_time_s": 147.49996438456446,
+          "service_move_m": 567.4998219228214,
+          "measures": 15,
+          "clears": 3,
+          "failed_clears": 2
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 658.74900492624,
+          "cleared_s": 3039.1354170427253,
+          "service_time_s": 188.19491462456665,
+          "service_move_m": 855.9745731228327,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 35.0,
+          "cleared_s": 516.7199976265306,
+          "service_time_s": 135.39879577257096,
+          "service_move_m": 621.993978862855,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": 47.0,
+          "cleared_s": 1844.479029782371,
+          "service_time_s": 79.40601097687818,
+          "service_move_m": 317.030054884391,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1726.7966485587222,
+          "cleared_s": 2122.0142126993524,
+          "service_time_s": 149.3495681634745,
+          "service_move_m": 636.7478408173721,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 348.17989524915083,
+          "service_time_s": 128.58943387906925,
+          "service_move_m": 587.9471693953462,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 700.74900492624,
+          "cleared_s": 5933.365453950774,
+          "service_time_s": 126.38926292840029,
+          "service_move_m": 551.9463146420027,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 83.0,
+          "cleared_s": 2623.693606808239,
+          "service_time_s": 42.25967790768527,
+          "service_move_m": 126.29838953842605,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 451.9116632240412,
+          "service_time_s": 98.73176797489037,
+          "service_move_m": 438.65883987445187,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 1744.7966485587222,
+          "cleared_s": 4826.647738741783,
+          "service_time_s": 211.61851752304642,
+          "service_move_m": 948.0925876152328,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 1110.7666426520848,
+          "service_time_s": 130.09920275792047,
+          "service_move_m": 505.49601378960176,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 26,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 1171.7352645005687,
+          "service_time_s": 162.5779169643281,
+          "service_move_m": 657.8895848216409,
+          "measures": 5,
+          "clears": 2,
+          "failed_clears": 1
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 18.830031199991936,
+      "command_count": 288,
+      "parameters": {
+        "strategy": "dynamic",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60,
+        "forecast_weight": 1,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500
+      },
+      "dynamic_stop_count": 49,
+      "seed": 20290000,
+      "strategy": "previous_dynamic",
+      "label": "动态未知域＋跨源联合测点",
+      "policy": "dynamic",
+      "source_count": 12,
+      "per_source_s": 508.73454326805387,
+      "elapsed_per_source_s": 508.73454326805387,
+      "error": null,
+      "wall_s": 18.843373000010615,
+      "costs_per_source": {
+        "movement": 368.4012099347204,
+        "measure": 113.75,
+        "switch": 20.833333333333332,
+        "clear_success": 5.0,
+        "clear_failure": 0.75
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1483.1150338573952,
+          "move_s": 1363.115033857395,
+          "commands": 24
+        },
+        "side_known": {
+          "time_s": 117.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "search": {
+          "time_s": 4343.6994853592505,
+          "move_s": 3057.699485359251,
+          "commands": 217
+        },
+        "side_search": {
+          "time_s": 42.0,
+          "move_s": 0.0,
+          "commands": 7
+        }
+      },
+      "max_source_service_s": 211.61851752304642,
+      "search_after_last_clear_s": 171.44906526587238,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\previous_dynamic\\20290000.json.gz"
+    },
+    {
+      "time_s": 6486.908679931524,
+      "costs": {
+        "movement": 4506.908679931523,
+        "measure": 1625.0,
+        "switch": 302.0,
+        "clear_success": 50.0,
+        "clear_failure": 3.0
+      },
+      "counters": {
+        "measures": 325,
+        "clears": 11,
+        "clear_failures": 1,
+        "no_signal": 292,
+        "known_no_signal": 2,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 12,
+        "pruned_stations": 0,
+        "replans": 48,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 24,
+        "shared_point_moves": 1,
+        "intermediate_stops": 1,
+        "refined_stops": 9,
+        "stop_reassessments": 316,
+        "unknown_skipped": 299,
+        "known_skipped": 144,
+        "predicted_cross_source_choices": 8,
+        "actual_cross_source_measurements": 12,
+        "coverage_required_scans": 256,
+        "position_candidates_evaluated": 585
+      },
+      "completed": true,
+      "cleared": 10,
+      "source_times": {
+        "1": {
+          "found_s": 795.0168256217801,
+          "cleared_s": 3389.852728238583,
+          "service_time_s": 153.03004003206433,
+          "service_move_m": 650.1502001603205,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 2627.8608665826496,
+          "service_time_s": 97.93655815117472,
+          "service_move_m": 374.6827907558747,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 529.1367154674326,
+          "cleared_s": 993.8671237958467,
+          "service_time_s": 242.6442887835832,
+          "service_move_m": 1078.2214439179165,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 6207.160950539042,
+          "service_time_s": 289.63191852868954,
+          "service_move_m": 1338.1595926434493,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": 1720.334279904569,
+          "cleared_s": 4616.899681935641,
+          "service_time_s": 253.6732883490779,
+          "service_move_m": 1188.3664417453915,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 861.0168256217801,
+          "cleared_s": 3528.7190824731347,
+          "service_time_s": 202.11799238267758,
+          "service_move_m": 880.5899619133892,
+          "measures": 6,
+          "clears": 2,
+          "failed_clears": 1
+        },
+        "16": {
+          "found_s": 5691.575004483958,
+          "cleared_s": 5837.618616425835,
+          "service_time_s": 146.04361194187732,
+          "service_move_m": 680.2180597093858,
+          "measures": 23,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 1615.041651317699,
+          "service_time_s": 181.90536410100526,
+          "service_move_m": 824.5268205050266,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 113.0,
+          "cleared_s": 434.77171284035563,
+          "service_time_s": 167.3578277850573,
+          "service_move_m": 751.7891389252866,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 2098.285220907635,
+          "cleared_s": 2342.4548030178403,
+          "service_time_s": 238.16958211020528,
+          "service_move_m": 1110.847910551026,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 13.533323699986795,
+      "command_count": 336,
+      "parameters": {
+        "strategy": "dynamic",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60,
+        "forecast_weight": 1,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500
+      },
+      "dynamic_stop_count": 48,
+      "seed": 20290001,
+      "strategy": "previous_dynamic",
+      "label": "动态未知域＋跨源联合测点",
+      "policy": "dynamic",
+      "source_count": 10,
+      "per_source_s": 648.6908679931523,
+      "elapsed_per_source_s": 648.6908679931523,
+      "error": null,
+      "wall_s": 13.543135700019775,
+      "costs_per_source": {
+        "movement": 450.69086799315227,
+        "measure": 162.5,
+        "switch": 30.2,
+        "clear_success": 5.0,
+        "clear_failure": 0.3
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1900.5104721654136,
+          "move_s": 1775.5104721654136,
+          "commands": 24
+        },
+        "side_known": {
+          "time_s": 72.0,
+          "move_s": 0.0,
+          "commands": 12
+        },
+        "search": {
+          "time_s": 4395.398207766109,
+          "move_s": 2731.39820776611,
+          "commands": 280
+        }
+      },
+      "max_source_service_s": 289.63191852868954,
+      "search_after_last_clear_s": 279.74772939248214,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\previous_dynamic\\20290001.json.gz"
+    },
+    {
+      "time_s": 5943.384676423749,
+      "costs": {
+        "movement": 4064.384676423748,
+        "measure": 1530.0,
+        "switch": 288.0,
+        "clear_success": 55.0,
+        "clear_failure": 6.0
+      },
+      "counters": {
+        "measures": 306,
+        "clears": 13,
+        "clear_failures": 2,
+        "no_signal": 275,
+        "known_no_signal": 3,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 16,
+        "pruned_stations": 0,
+        "replans": 44,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 24,
+        "dynamic_service_moves": 20,
+        "shared_point_moves": 1,
+        "intermediate_stops": 2,
+        "refined_stops": 3,
+        "stop_reassessments": 299,
+        "unknown_skipped": 220,
+        "known_skipped": 166,
+        "predicted_cross_source_choices": 8,
+        "actual_cross_source_measurements": 16,
+        "coverage_required_scans": 239,
+        "position_candidates_evaluated": 479
+      },
+      "completed": true,
+      "cleared": 11,
+      "source_times": {
+        "1": {
+          "found_s": 1938.1337923473795,
+          "cleared_s": 5481.828685633103,
+          "service_time_s": 74.23990667172893,
+          "service_move_m": 316.19953335864614,
+          "measures": 11,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 4942.648361624395,
+          "cleared_s": 5084.131147398077,
+          "service_time_s": 105.48278577368183,
+          "service_move_m": 472.4139288684066,
+          "measures": 23,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 365.41200478889544,
+          "cleared_s": 3237.4389290550857,
+          "service_time_s": 137.1473488497768,
+          "service_move_m": 510.73674424888367,
+          "measures": 6,
+          "clears": 3,
+          "failed_clears": 2
+        },
+        "7": {
+          "found_s": 371.41200478889544,
+          "cleared_s": 3163.2812751224565,
+          "service_time_s": 87.2584799340566,
+          "service_move_m": 351.2923996702831,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 53.0,
+          "cleared_s": 968.3551704486277,
+          "service_time_s": 77.84197144949906,
+          "service_move_m": 304.20985724749545,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1618.1828513443133,
+          "cleared_s": 4835.655993654165,
+          "service_time_s": 164.7324101575307,
+          "service_move_m": 738.6620507876534,
+          "measures": 10,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": 1465.2073808434584,
+          "cleared_s": 4752.905532253605,
+          "service_time_s": 118.94353322497318,
+          "service_move_m": 509.71766612486647,
+          "measures": 9,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": 89.0,
+          "cleared_s": 615.629847053688,
+          "service_time_s": 122.48758495904372,
+          "service_move_m": 557.4379247952188,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 413.41200478889544,
+          "cleared_s": 2649.778363435875,
+          "service_time_s": 147.5312299881686,
+          "service_move_m": 597.6561499408442,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 25,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 431.41200478889544,
+          "cleared_s": 2668.2665308429023,
+          "service_time_s": 36.488167407027504,
+          "service_move_m": 67.4408370351377,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": 119.0,
+          "cleared_s": 2425.159941445013,
+          "service_time_s": 225.02757482504876,
+          "service_move_m": 1075.1378741252424,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 13.143586100020912,
+      "command_count": 319,
+      "parameters": {
+        "strategy": "dynamic",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60,
+        "forecast_weight": 1,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500
+      },
+      "dynamic_stop_count": 44,
+      "seed": 20290002,
+      "strategy": "previous_dynamic",
+      "label": "动态未知域＋跨源联合测点",
+      "policy": "dynamic",
+      "source_count": 11,
+      "per_source_s": 540.3076978567044,
+      "elapsed_per_source_s": 540.3076978567044,
+      "error": null,
+      "wall_s": 13.158753299998352,
+      "costs_per_source": {
+        "movement": 369.48951603852254,
+        "measure": 139.0909090909091,
+        "switch": 26.181818181818183,
+        "clear_success": 5.0,
+        "clear_failure": 0.5454545454545454
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 1202.1809932405358,
+          "move_s": 1100.1809932405358,
+          "commands": 20
+        },
+        "side_known": {
+          "time_s": 95.0,
+          "move_s": 0.0,
+          "commands": 16
+        },
+        "search": {
+          "time_s": 4527.203683183212,
+          "move_s": 2964.2036831832115,
+          "commands": 263
+        }
+      },
+      "max_source_service_s": 225.02757482504876,
+      "search_after_last_clear_s": 461.5559907906454,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\previous_dynamic\\20290002.json.gz"
+    },
+    {
+      "time_s": 7165.7816439330445,
+      "costs": {
+        "movement": 5401.7816439330445,
+        "measure": 1430.0,
+        "switch": 259.0,
+        "clear_success": 75.0,
+        "clear_failure": 0.0
+      },
+      "counters": {
+        "measures": 286,
+        "clears": 15,
+        "clear_failures": 0,
+        "no_signal": 240,
+        "known_no_signal": 10,
+        "search_stops": 0,
+        "side_search_stops": 0,
+        "side_known_measures": 21,
+        "pruned_stations": 0,
+        "replans": 62,
+        "optical_fallback_clears": 0,
+        "coverage_fallbacks": 0,
+        "dynamic_search_moves": 27,
+        "dynamic_service_moves": 35,
+        "shared_point_moves": 1,
+        "intermediate_stops": 5,
+        "refined_stops": 18,
+        "stop_reassessments": 281,
+        "unknown_skipped": 212,
+        "known_skipped": 347,
+        "predicted_cross_source_choices": 11,
+        "actual_cross_source_measurements": 21,
+        "coverage_required_scans": 115,
+        "position_candidates_evaluated": 1304
+      },
+      "completed": true,
+      "cleared": 15,
+      "source_times": {
+        "1": {
+          "found_s": 5.0,
+          "cleared_s": 3877.0879763227445,
+          "service_time_s": 296.13705711543105,
+          "service_move_m": 1245.6852855771563,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "2": {
+          "found_s": 1704.6546782802636,
+          "cleared_s": 5943.048166451233,
+          "service_time_s": 67.47131381506915,
+          "service_move_m": 282.3565690753447,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "3": {
+          "found_s": 1539.6792077794087,
+          "cleared_s": 4906.302444610191,
+          "service_time_s": 112.84588380853802,
+          "service_move_m": 449.2294190426895,
+          "measures": 7,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "4": {
+          "found_s": 23.0,
+          "cleared_s": 572.5873290637692,
+          "service_time_s": 199.62435873685695,
+          "service_move_m": 943.1217936842845,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "5": {
+          "found_s": 2975.148963921408,
+          "cleared_s": 4446.510272013015,
+          "service_time_s": 170.36453316440884,
+          "service_move_m": 706.8226658220461,
+          "measures": 18,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "6": {
+          "found_s": 918.6702392249699,
+          "cleared_s": 4133.485624296454,
+          "service_time_s": 140.12795611070578,
+          "service_move_m": 615.6397805535311,
+          "measures": 4,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "7": {
+          "found_s": 1551.6792077794087,
+          "cleared_s": 5439.6445749647955,
+          "service_time_s": 148.97886115324218,
+          "service_move_m": 689.8943057662129,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "8": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 39,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "9": {
+          "found_s": 1876.6301487811186,
+          "cleared_s": 6277.197755252739,
+          "service_time_s": 44.43257099017228,
+          "service_move_m": 137.16285495086055,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "10": {
+          "found_s": 1882.6301487811186,
+          "cleared_s": 6501.530307166363,
+          "service_time_s": 358.67310513834695,
+          "service_move_m": 1708.3655256917339,
+          "measures": 8,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "11": {
+          "found_s": 65.0,
+          "cleared_s": 4366.6887863500415,
+          "service_time_s": 220.99405729197588,
+          "service_move_m": 934.9702864598794,
+          "measures": 6,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "12": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 39,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "13": {
+          "found_s": 77.0,
+          "cleared_s": 1068.8567821156803,
+          "service_time_s": 108.18654289071037,
+          "service_move_m": 455.93271445355197,
+          "measures": 3,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "14": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 39,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "15": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 39,
+          "clears": 0,
+          "failed_clears": 0
+        },
+        "16": {
+          "found_s": 95.0,
+          "cleared_s": 3642.5739235093542,
+          "service_time_s": 580.2138616273849,
+          "service_move_m": 2756.0693081369245,
+          "measures": 5,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "17": {
+          "found_s": 101.0,
+          "cleared_s": 465.03198156789256,
+          "service_time_s": 170.9170263105214,
+          "service_move_m": 799.585131552607,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "18": {
+          "found_s": 107.0,
+          "cleared_s": 659.0405875947173,
+          "service_time_s": 87.45325853094812,
+          "service_move_m": 382.2662926547408,
+          "measures": 2,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "19": {
+          "found_s": 966.6702392249699,
+          "cleared_s": 4005.3576681857485,
+          "service_time_s": 397.48050486803686,
+          "service_move_m": 1827.4025243401852,
+          "measures": 7,
+          "clears": 1,
+          "failed_clears": 0
+        },
+        "20": {
+          "found_s": null,
+          "cleared_s": null,
+          "service_time_s": 0.0,
+          "service_move_m": 0.0,
+          "measures": 39,
+          "clears": 0,
+          "failed_clears": 0
+        }
+      },
+      "coverage_certified": true,
+      "planning_wall_s": 55.33068360001198,
+      "command_count": 301,
+      "parameters": {
+        "strategy": "dynamic",
+        "inner": 980.0,
+        "outer": 1870.0,
+        "service_detour": 650.0,
+        "side_gain": 0.025,
+        "side_scans": true,
+        "known_side_scans": true,
+        "prune_coverage": true,
+        "clear_try_radius": 48.0,
+        "probe_fraction": 0.72,
+        "lateral_ratio": 0.25,
+        "max_radio_steps": 8,
+        "service_tail_weight": 0.3,
+        "max_commands": 7000,
+        "cross_source_weight": 1.0,
+        "unknown_credit_weight": 0.65,
+        "unknown_credit_cap_s": 60,
+        "forecast_weight": 1,
+        "scan_min_net_s": 2.0,
+        "revisit_penalty_s": 20.0,
+        "revisit_radius_m": 110.0,
+        "candidate_limit": 20,
+        "service_candidates_per_source": 3,
+        "information_samples": 3,
+        "frontier_candidates": 14,
+        "shared_candidates": 8,
+        "waypoint_candidates": 8,
+        "refine_candidates": true,
+        "refine_step_m": 70.0,
+        "forecast_passes": 1,
+        "coverage_spacing": 225.0,
+        "coverage_directions": 24,
+        "max_dynamic_stops": 500
+      },
+      "dynamic_stop_count": 62,
+      "seed": 20290003,
+      "strategy": "previous_dynamic",
+      "label": "动态未知域＋跨源联合测点",
+      "policy": "dynamic",
+      "source_count": 15,
+      "per_source_s": 477.718776262203,
+      "elapsed_per_source_s": 477.718776262203,
+      "error": null,
+      "wall_s": 55.3438015000138,
+      "costs_per_source": {
+        "movement": 360.11877626220297,
+        "measure": 95.33333333333333,
+        "switch": 17.266666666666666,
+        "clear_success": 5.0,
+        "clear_failure": 0.0
+      },
+      "phases": {
+        "origin": {
+          "time_s": 119.0,
+          "move_s": 0.0,
+          "commands": 20
+        },
+        "service": {
+          "time_s": 2978.90089155235,
+          "move_s": 2786.9008915523505,
+          "commands": 35
+        },
+        "side_known": {
+          "time_s": 125.0,
+          "move_s": 0.0,
+          "commands": 21
+        },
+        "search": {
+          "time_s": 3447.880752380696,
+          "move_s": 2614.880752380696,
+          "commands": 142
+        },
+        "side_search": {
+          "time_s": 495.0,
+          "move_s": 0.0,
+          "commands": 83
+        }
+      },
+      "max_source_service_s": 580.2138616273849,
+      "search_after_last_clear_s": 664.2513367666816,
+      "history_file": "D:\\Code_Projects\\26cumcm\\question4\\free_joint\\outputs\\initial\\smoke_histories\\previous_dynamic\\20290003.json.gz"
+    }
+  ],
+  "paired": [
+    {
+      "first": "previous_dynamic",
+      "second": "old_joint",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": -3.8438530325194478,
+      "bootstrap95_s": [
+        -23.917111132402994,
+        20.540699256704542
+      ],
+      "first_faster_fraction": 0.75
+    },
+    {
+      "first": "free_all",
+      "second": "old_joint",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": 9.839083933737271,
+      "bootstrap95_s": [
+        -12.068424135629783,
+        30.156649524074055
+      ],
+      "first_faster_fraction": 0.25
+    },
+    {
+      "first": "free_all",
+      "second": "previous_dynamic",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": 13.682936966256719,
+      "bootstrap95_s": [
+        -32.609123392334325,
+        54.07376065647705
+      ],
+      "first_faster_fraction": 0.25
+    },
+    {
+      "first": "belief_only",
+      "second": "old_joint",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": -29.9252089864908,
+      "bootstrap95_s": [
+        -36.12081667737135,
+        -23.323115638580802
+      ],
+      "first_faster_fraction": 1.0
+    },
+    {
+      "first": "belief_only",
+      "second": "previous_dynamic",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": -26.081355953971354,
+      "bootstrap95_s": [
+        -51.819244540776424,
+        -8.790705141523574
+      ],
+      "first_faster_fraction": 1.0
+    },
+    {
+      "first": "belief_only",
+      "second": "free_all",
+      "meaning": "first minus second, seconds/source",
+      "paired_count": 4,
+      "complete_pairs": 4,
+      "failed_pairs": 0,
+      "complete_group": true,
+      "mean_difference_s": -39.76429292022807,
+      "bootstrap95_s": [
+        -64.92412990386433,
+        -19.2101211484421
+      ],
+      "first_faster_fraction": 1.0
+    }
+  ],
+  "code_sha256": {
+    "question4/free_joint/belief.py": "70822215f6a569fe8a79969aa1c04c9711b9e04ee33ca1bf412aec0bf574a7ce",
+    "question4/free_joint/coverage.py": "691f415c9cc57e81edc4311d2870121662d56426dc15aadd25a9083ff7550035",
+    "question4/free_joint/planner.py": "6e026318ce6d7f070a8cfe5269d506a1db073c5393fd3f39d7180a5635078969",
+    "question4/free_joint/proof.py": "c976574eab5ee8083cfbceb3c87ec319e98b388eda5b7c04932a7e03a75b17b6",
+    "question4/free_joint/__init__.py": "d4611e7b6ba4e6bff87d9da832de1374c300b3c8c0191e19bc8be6d4fda2e270",
+    "question4/dynamic_joint/coverage.py": "8f2ebeeca5ed237dee233f624c077bbff7f9bbc372a9994537680ee583b7301a",
+    "question4/dynamic_joint/information.py": "488935d4fa2d649d8d89d7114fbbbd8cc8de2f4b9496e8d9d8e9ae95cf1b7833",
+    "question4/dynamic_joint/planner.py": "648a25aa3d4ff7716e82ac0102d5fb1e2a6bf6e3daf3b58514d38e9255ea88bb",
+    "question4/dynamic_joint/__init__.py": "71aeb7d8dbce4c65f70faf5c86bdf869a6cb754b2966dee3be218d7c4e3a9bb1",
+    "question4/full_mission/planner.py": "4e127170c081af1d47219892611773a03eb4dd5b4c765254b7b417db4f67c313",
+    "question4/full_mission/service.py": "3608f0ace8a60abf77bda9013ad0d219b2189f86f4e3ec1cb91acd9fc5ad3a29",
+    "question4/full_mission/simulator.py": "39b6c707f2b57a4b2fb9768da4e5164cb1071b13da5a2ac7a223bd1db3c3650a"
+  }
+}

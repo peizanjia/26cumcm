@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "status": 200,
+  "browser": "152.0.4191.66",
+  "scenes": [
+    "20293022",
+    "20293023",
+    "20293054",
+    "20293071"
+  ],
+  "strategies": [
+    "free_joint",
+    "old_joint",
+    "previous_dynamic"
+  ],
+  "checks": [
+    {
+      "scene": "20293022",
+      "strategy": "free_joint",
+      "clear": "13 / 13",
+      "secondsPerSource": "507.50",
+      "mapPaths": 347
+    },
+    {
+      "scene": "20293022",
+      "strategy": "old_joint",
+      "clear": "13 / 13",
+      "secondsPerSource": "608.50",
+      "mapPaths": 504
+    },
+    {
+      "scene": "20293022",
+      "strategy": "previous_dynamic",
+      "clear": "13 / 13",
+      "secondsPerSource": "516.98",
+      "mapPaths": 343
+    },
+    {
+      "scene": "20293023",
+      "strategy": "free_joint",
+      "clear": "10 / 10",
+      "secondsPerSource": "640.80",
+      "mapPaths": 375
+    },
+    {
+      "scene": "20293023",
+      "strategy": "old_joint",
+      "clear": "10 / 10",
+      "secondsPerSource": "654.16",
+      "mapPaths": 380
+    },
+    {
+      "scene": "20293023",
+      "strategy": "previous_dynamic",
+      "clear": "10 / 10",
+      "secondsPerSource": "591.91",
+      "mapPaths": 369
+    },
+    {
+      "scene": "20293054",
+      "strategy": "free_joint",
+      "clear": "16 / 16",
+      "secondsPerSource": "386.03",
+      "mapPaths": 344
+    },
+    {
+      "scene": "20293054",
+      "strategy": "old_joint",
+      "clear": "16 / 16",
+      "secondsPerSource": "274.36",
+      "mapPaths": 261
+    },
+    {
+      "scene": "20293054",
+      "strategy": "previous_dynamic",
+      "clear": "16 / 16",
+      "secondsPerSource": "293.91",
+      "mapPaths": 284
+    },
+    {
+      "scene": "20293071",
+      "strategy": "free_joint",
+      "clear": "16 / 16",
+      "secondsPerSource": "295.38",
+      "mapPaths": 237
+    },
+    {
+      "scene": "20293071",
+      "strategy": "old_joint",
+      "clear": "16 / 16",
+      "secondsPerSource": "336.87",
+      "mapPaths": 285
+    },
+    {
+      "scene": "20293071",
+      "strategy": "previous_dynamic",
+      "clear": "16 / 16",
+      "secondsPerSource": "414.43",
+      "mapPaths": 384
+    }
+  ],
+  "gridCount": 78,
+  "horizontalOverflow": false,
+  "errors": []
+}
