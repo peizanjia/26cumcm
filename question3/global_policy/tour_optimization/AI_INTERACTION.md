@@ -1,5 +1,11 @@
 # 第三问：共路策略继续优化
 
+## 官方练习连接主程序（2026-09-13）
+- 用户要求将已推送最终策略连接附件中的模拟器，并支持手动开始一次、脚本运行一次、结束后不退出继续下一次。附件确认接口只有 `/enter`、`/measure`、`/clear`、`/exit`；开始测试按钮没有HTTP调用方式。
+- 新增 `official_main.py`。它使用 `best_parameters.json` 创建最终 `tour` Planner，`OfficialHTTPClient` 对 `/enter` 使用同一个request_id持续轮询，HTTP连接错误重试但不重复生成动作ID；收到accepted=true后由Planner执行全部公开动作。每局保存summary、commands.jsonl、http_requests.jsonl（完整请求/响应）、decisions、map和配置到独立时间戳目录。
+- 新增 `question3/main.py` 薄入口，推荐从项目根目录用 `python -m question3.main` 启动。
+- 主循环一局结束后返回下一次`/enter`等待，`--once`可只运行一局，Ctrl+C在活动局尽量发送`/exit`。`--launch-simulator --simulator-exe`可先启动已解压模拟器，但不能代替界面开始点击。
+- 新增 `test_official_main.py`，用本地临时HTTP服务器验证：开始轮询两次且复用request_id；动作payload包含default arena、位置和频道并使用新的request_id；请求历史可保存。2项测试通过；另用本地模拟器完成一次HTTP端到端联调（16/16，184.5881s/源），不计入策略统计、未连接官方服务、未进行官方练习。
 ## 本轮提交与推送（2026-09-12）
 - 用户要求确认交互记录已同步后push到remote。已核查根目录、第三问、全局策略及本方案记录一致，准备提交本轮第三问源码、参数搜索/验证证据、报告与离线诊断到origin/main。第四问及其文献并行修改不纳入本次提交。
 - 沿用已完成的105项策略测试、100场最终验证和新增下界诊断核验；提交前检查Git差异。通过既有本机代理完成origin读取，未改全局Git配置；实际提交与推送结果随后记录。

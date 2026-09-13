@@ -4,6 +4,32 @@
 
 后续追问：参与优化的7个参数、真实GP+EI流程、可用于论文的文字，以及新做的100场离线瓶颈/下界分析，见[参数优化与下一步](PARAMETERS_AND_NEXT_STEPS.md)。当前成绩保持不变，下一版联合连续观测与未知发现分支尚未实施。
 
+## 官方练习测试主程序
+
+[official_main.py](official_main.py) 使用本目录的 `best_parameters.json`，通过附件规定的 `/enter`、`/measure`、`/clear`、`/exit` 四个接口运行最终 `tour` 策略。脚本启动后会持续轮询 `/enter`；你在模拟器界面手动点击一次“开始测试”并完成倒计时后，接口返回 `accepted=true`，脚本自动执行一局并保存完整公开命令、响应、决策和地图。结束后脚本不会退出，会继续等待下一次手动开始。按 Ctrl+C 可停止；活动测试中按下时会尽量先发送 `/exit`。
+
+模拟器的开始按钮属于 GUI 流程，附件没有提供可调用的开始测试 HTTP 接口，因此脚本不模拟鼠标点击，也不读取模拟器隐藏状态。可以用 `--launch-simulator` 自动启动已经解压的 `jammers-simulator.exe`，测试开始仍由界面点击完成。
+
+从项目根目录运行（将 `YOUR_LOGIN_ID` 替换为当前登录模拟器显示的队伍/机器人标识）：
+
+```powershell
+.\.venv\Scripts\python.exe -m question3.main --robot-id YOUR_LOGIN_ID
+```
+
+只运行一局：
+
+```powershell
+.\.venv\Scripts\python.exe -m question3.main --robot-id YOUR_LOGIN_ID --once
+```
+
+如果已经解压模拟器，也可以让脚本先启动它：
+
+```powershell
+.\.venv\Scripts\python.exe -m question3.main --robot-id YOUR_LOGIN_ID --launch-simulator --simulator-exe D:\Jammers-simulator\jammers-simulator.exe
+```
+
+每局输出保存到 `outputs/official_practice/run_YYYYmmdd_HHMMSS_NNN/`，包括 `summary.json`、`commands.jsonl`、`http_requests.jsonl`、`decisions.json`、`map.json` 和 `run_configuration.json`。其中 `http_requests.jsonl` 保留每个成功 HTTP 请求的完整请求体（含 `request_id`）和响应体。脚本不会把失败的 `/enter` 轮询当作有效动作；网络错误使用同一 `request_id` 重试，避免重复计时。
+
 **本轮选出的最佳配置在100个全新场景中平均242.3597 s/源，同场上一版tour为257.1196 s/源，平均节省14.7599 s/源（5.7405%）。84/100场更快，全部1302/1302个源清除成功。尚未达到平均200以下。**
 
 上一轮报告的250.9197使用20272500–20272599；本轮最终使用20273700–20273799。场景难度不同，比较改善应使用上面的同场257.1196对照，不能把不同批均值直接相减。开发84场的231.2757同样不能冒充最终成绩。
